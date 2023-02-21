@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+{% block 'content' %}
+<!-- Start Breadcrumb 
+============================================= -->
+<div class="breadcrumb-area text-center shadow dark text-light bg-cover" style="background-image: url(assets/img/2440x1578.png);">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+                <h1>{% translate "Blog" %}</h1>
+                <ul class="breadcrumb">
+                    <li><a {% if "candidate" in request.path %}href="{% url 'candidate_home' %}" {% else %}{% if "candidate" in request.path %} href="{% url 'candidate_home' %}?cookieset=1" {% else %}href="{% url 'home' %}?cookieset=1"{% endif %}{% endif %}><i class="fas fa-home"></i> {% translate "Ana sayfa" %}</a></li>
+                    <li class="active">{% translate "Blog" %}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Breadcrumb -->
+<!-- Start Blog 
+    ============================================= -->
+    <div class="blog-area bg-gray default-padding bottom-less">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="site-heading text-center">
+                        <h4>{% translate "Blog" %}</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% if all_blog %}
+            <div class="container">
+                <div class="blog-items">
+                    <div class="row">
+                        
+                            {% for item in all_blog %}
+                            
+                            <a {% if "candidate" in request.path %} href="{% url 'candidate_blog_detail' item.slug %}"{% else %} href="{% url 'blog_detail' item.slug %}"{% endif %}>
+                                <!-- Single Item -->
+                                <div class="single-item col-lg-4 col-md-6">
+                                    <div class="item">
+                                        <div class="thumb">
+                                            <img src="{{item.img_url.url}}" alt="Thumb">
+                                            <div class="date">{{ item.created_at }}</div>
+                                        </div>
+
+                                        <div class="info">
+                                            <div class="meta">
+                                            <ul>
+                                                <li>
+                                                    <a>{{item.writer}}</a>
+                                                </li>
+                                            </ul>
+                                            </div>
+                                            <h4>
+                                                <a {% if "candidate" in request.path %} href="{% url 'candidate_blog_detail' item.slug %}"{% else %} href="{% url 'blog_detail' item.slug %}"{% endif %}>{{item.title|safe}}</a>
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Single Item -->
+                            </a>
+
+                            {% endfor %}
+                        
+                    </div>
+                </div>
+            </div>
+            {% else %}
+            <div class="container">
+                <div class="blog-items">
+                    <div class="row">
+                        
+                           
+                            <!-- Single Item -->
+                            <div class="single-item col-lg-12 col-md-12 text-center">
+                                <div class="item">
+                                    <div class="info">
+                                        <h4>
+                                            {% translate "Blog bulunamadı..." %}
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Item -->
+                        
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+        
+    </div>
+    <!-- End Blog Area --> 
+{% endblock %}

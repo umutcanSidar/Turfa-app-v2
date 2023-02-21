@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block 'content' %}
+
+ <!-- Start Breadcrumb 
+    ============================================= -->
+    <div class="breadcrumb-area text-center shadow dark text-light bg-cover" style="background-image: url({% static 'img/kontakt.jpg' %});">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <h1>Başarılı</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Breadcrumb -->
+     <!-- Start Contact Area 
+    ============================================= -->
+    <div class="contact-area default-padding bg-theme inc-shape extra-margin">
+        <div class="container">
+            <div class="row align-center">
+                <div class="col-lg-12 info">
+                    <div class="content">
+                        <h2>Başarılı</h2>
+                        <p>
+                           İsteğiniz Başarıyla iletilmiştir.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Contact Area -->
+
+    <script>
+        setTimeout(function() {
+            window.location.replace("/")
+        }, 4000)
+    </script>
+
+{% endblock %}

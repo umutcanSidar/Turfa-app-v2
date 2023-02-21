@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block 'content' %}
+
+ <!-- Start Breadcrumb 
+    ============================================= -->
+    <div class="breadcrumb-area text-center shadow dark text-light bg-cover" style="background-image: url({% static 'img/kontakt.jpg' %});">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <h1>{% translate "İletişim" %}</h1>
+                    <ul class="breadcrumb">
+                        <li><a {% if "candidate" in request.path %} href="{% url 'candidate_home' %}?cookieset=1" {% else %}href="{% url 'home' %}?cookieset=1"{% endif %}><i class="fas fa-home"></i> {% translate "Ana Sayfa" %}</a></li>
+                        <li class="active">{% translate "İletişim" %}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Breadcrumb -->
+     <!-- Start Contact Area 
+    ============================================= -->
+    <div class="contact-area default-padding bg-theme inc-shape extra-margin">
+        <div class="container">
+            <div class="row align-center">
+                <div class="col-lg-5 info">
+                    <div class="content">
+                        {% if contact %}
+                            {% blocktrans with contact.content|safe as content %} {{content}} {% endblocktrans %}
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="col-lg-6 offset-lg-1 contact-form-box">
+                    <div class="form-box">
+                        <form method="POST" class="contact-form">
+                            {% csrf_token %}
+                            <div class="row">
+                            {% for field in form %}
+                                {% if forloop.counter == 2 %}
+                                
+                                    <div class="col-lg-6">
+                                        <div class="form-group comments">
+                                            {{field}}
+                                        </div>
+                                    </div>
+                                
+                                {% elif forloop.counter == 3 %}
+                                
+                                    <div class="col-lg-6">
+                                        <div class="form-group comments">
+                                            {{field}}
+                                        </div>
+                                    </div>
+                                
+                                {% else %}
+                                    <div class="col-lg-12">
+                                        <div class="form-group comments">
+                                            {{field}}
+                                        </div>
+                                    </div>
+                                {% endif %}
+                                
+                            {% endfor %}
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <button type="submit" name="submit" id="submit">
+                                        {% translate "Gönder" %} <i class="fa fa-paper-plane"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- Alert Message -->
+                            <div class="col-lg-12 alert-notification">
+                                <div id="message" class="alert-msg"></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Contact Area -->
+
+{% endblock %}

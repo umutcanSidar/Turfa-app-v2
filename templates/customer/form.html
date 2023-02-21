@@ -1,0 +1,167 @@
+{% extends 'base.html' %} 
+{% load static %} 
+{% load i18n %}
+{% block 'content' %}
+<!-- Start Breadcrumb 
+    ============================================= -->
+<div
+  class="breadcrumb-area text-center shadow dark text-light bg-cover"
+  style="background-image: url({% static 'img/kontakt.jpg' %})"
+>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2">
+        <h1>{% translate "Başvuru Formu" %}</h1>
+        <ul class="breadcrumb">
+          <li>
+            {% comment %} <a href="{% url 'index' %}"><i class="fas fa-home"></i> Home</a> {% endcomment %}
+          </li>
+          <li class="active">{% translate "Başvuru Formu" %}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Breadcrumb -->
+<!-- Start Contact Area 
+    ============================================= -->
+<div class="contact-area default-padding bg-theme inc-shape extra-margin">
+  <div class="container">
+    <div class="row align-center">
+      <div class="col-lg-12 contact-form-box">
+        <div class="form-box">
+          <form method="POST" id="form-container" class="contact-form">
+            {% csrf_token %} 
+            <div class="row">
+                {% for field in forms.candidate_form %}
+                <div class="col-lg-6 col-sm-12 mt-3">
+                  <div class="form-group comments">
+                    {% if field.field.widget.input_type == "select" or field.field.widget.input_type == "radio" %}
+                      <label class="us-display-block">{{field.label}}</label>
+                    {% endif %}
+                    {{field}}
+                  </div>
+                </div> 
+                {% endfor %}
+            </div>
+            <div class="row">
+              <div class="col-sm-12 mt-5 mb-3 text-light">
+                <h3>{% translate "Eğitim Durumu" %}</h3>
+              </div>
+            </div>
+            <div class="education_form">
+              <div class="row">
+                {% for field in forms.educations_form %}
+                <div class="col-lg-6 col-sm-12 mt-3">
+                  <div class="form-group comments">
+                    {% if field.field.widget.input_type == "select" or field.field.widget.input_type == "radio" %}
+                      <label class="us-display-block">{{field.label}}</label>
+                    {% endif %}
+                    {{field}}
+                  </div>
+                </div>
+                {% endfor %}
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12 col-sm-12 mt-3 text-center">
+                <button id="add-form-education" type="button">+ {% translate "Eğitim Bilgisi Ekle" %}</button>
+              </div>
+             </div>       
+            <div class="row">
+              <div class="col-sm-12 mt-5 mb-3 text-light">
+                <h3>{% translate "Çalışma Geçmişi" %}</h3>
+              </div>
+            </div>
+            <div class="experience_form">
+              <div class="row">
+              {% for field in forms.experiences_form %}
+                {% for el in field %}
+                  <div class="col-lg-6 col-sm-12 mt-3">
+                    <div class="form-group comments">
+                      {% if field.field.widget.input_type == "select" or field.field.widget.input_type == "radio" %}
+                        <label class="us-display-block">{{field.label}}</label>
+                      {% endif %}
+                    {{el}}
+                    
+                    </div>
+                  </div>
+                {% endfor %}
+              {% endfor %} 
+              </div>
+            </div>
+           <div class="row">
+            <div class="col-lg-12 col-sm-12 mt-3 text-center">
+              <button id="add-form-experience" type="button">+ {% translate "Deneyim Ekle" %}</button>
+            </div>
+           </div>       
+            <div class="row">
+              <div class="col-lg-12 mt-5">
+                <button type="submit" name="submit" id="submit">
+                  {% translate "Gönder" %} <i class="fa fa-paper-plane"></i>
+                </button>
+              </div>
+            </div>
+            <!-- Alert Message -->
+            <div class="col-lg-12 alert-notification">
+              <div id="message" class="alert-msg"></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Contact Area -->
+<script>
+
+  
+  let experienceForm = document.querySelectorAll(".experience_form")
+  let container = document.querySelector("#form-container")
+  let addButtonExperience = document.querySelector("#add-form-experience")
+  let totalForms = document.querySelector("#id_form-TOTAL_FORMS")
+  let countEd = 1
+  let countEx = 1
+  let formNum = experienceForm.length-1
+
+  function addFormExperience(e){
+      e.preventDefault()
+
+      let newForm = experienceForm[0].cloneNode(true)
+      let formRegex = RegExp(`form-(\\d){1}-`,'g')
+      countEx++
+      formNum++
+      newForm.innerHTML = newForm.innerHTML.replace(formRegex, `form-${formNum}-`)
+      container.insertBefore(newForm, experienceForm[0])
+
+      if(countEx == 3) {
+        addButtonExperience.style.display = "none"
+      }
+      
+  }
+
+  let educationForm = document.querySelectorAll(".education_form")
+  let addButtonEducation = document.querySelector("#add-form-education")
+
+  function addFormEductaion(e){
+      e.preventDefault()
+
+      let newForm = educationForm[0].cloneNode(true)
+      let formRegex = RegExp(`form-(\\d){1}-`,'g')
+      countEd++
+      formNum++
+      newForm.innerHTML = newForm.innerHTML.replace(formRegex, `form-${formNum}-`)
+      container.insertBefore(newForm, educationForm[0])
+
+      if(countEd == 3) {
+        addButtonEducation.style.display = "none"
+      }
+      
+  }
+
+  
+  addButtonExperience.addEventListener('click', addFormExperience)
+  addButtonEducation.addEventListener('click', addFormEductaion)
+  
+</script>
+{% endblock %}

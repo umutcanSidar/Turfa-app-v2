@@ -1,0 +1,438 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block 'content' %}
+<!-- Start Banner 
+    ============================================= -->
+    <div class="banner-area inc-video top-pad-50">
+        
+        <div id="bootcarousel" class="carousel text-light slide carousel-fade animate_text" data-ride="carousel">
+
+            <!-- Indicators for slides -->
+            <!--<div class="carousel-indicator">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <ol class="carousel-indicators right">
+                                <li data-target="#bootcarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#bootcarousel" data-slide-to="1"></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>-->
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="carousel-item bg-cover active" style="background-image: url({% static 'img/promo.jpg' %}); background-position: left top !important;">
+                    <div class="box-table">
+                        <div class="box-cell shadow dark">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-8">
+                                        <div class="content">
+                                            <h2 data-animation="animated slideInRight">Wir finden Fachkräfte für Ihre <span>Unternehmen</span></h2>
+                                            <br>
+                                            <h3><span>Kostenlose Beratungsgespräch</span></h3>
+                                            <a data-animation="animated zoomInUp" class="btn btn-theme effect btn-md" href="{% url 'contact' %}">Kontakt verknüpfen</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Shape -->
+                        <!--<div class="shape-right-bottom"  data-animation="animated slideInUp" style="background-image: url(assets/img/shape/banner-right-shape.png);"></div>-->
+                        <!-- Shape -->
+                    </div>
+                </div>
+            </div>
+            <!-- End Wrapper for slides -->
+
+        </div>
+    </div>
+    <!-- End Banner -->
+
+    <!-- Star Features Area
+    ============================================= -->
+    <div class="features-area default-padding">
+        <div class="container-full">
+            <div class="features-content">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2">
+                        <div class="site-heading text-center">
+                            <h4>Überblick</h4>
+                            <h2>Was bietet TürFa für Ihre Unternehmen?</h2>
+                            <div class="devider"></div>
+                        </div>
+                    </div>
+                    <!-- Single Item -->
+                    <div class="single-item col-lg-4 col-md-6">
+                        <div class="item">
+                            <i class="flaticon-speech-bubble"></i>
+                            <div class="top">
+                                <span>01</span>
+                                <h4>Unterbringung & Onboarding</h4>
+                            </div>
+                            <p>
+                                Übernahme von allen Formalitäten für Aufenthalt, Beschäftigung und Unterbringung. Begleitung der beruflichen und privaten Integration
+
+                            </p>
+                            <a href="#"><i class="arrow_right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Single Item -->
+                    <!-- Single Item -->
+                    <div class="single-item col-lg-4 col-md-6">
+                        <div class="item">
+                            <i class="flaticon-label"></i>
+                            <div class="top">
+                                <span>02</span>
+                                <h4>Rekrutierung</h4>
+                            </div>
+                            <p>
+                                Rekrutierung geeigneter Bewerber in Istanbul (nach bedarf). Durchführung von Sprachkursen mit Integration und medizinische Inhalte
+                            </p>
+                            <a href="#"><i class="arrow_right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Single Item -->
+                    <!-- Single Item -->
+                    <div class="single-item col-lg-4 col-md-6">
+                        <div class="item">
+                            <i class="flaticon-file"></i>
+                            <div class="top">
+                                <span>03</span>
+                                <h4>Überprüfung</h4>
+                            </div>
+                            <p>
+                                Suche nach Fachkräfte und Überprüfung von Kandidaten (Assessment und Sprachprüfung)
+                            </p>
+                            <a href="#"><i class="arrow_right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Single Item -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Features Area -->
+
+    <!-- Star About Area
+    ============================================= -->
+    <div class="about-area bg-dark overflow-hidden text-light relative">
+        <!-- Fixed Shape -->
+        <div class="fixed-shape" style="background-image: url({% static 'img/shape/8.png' %});"></div>
+        <!-- End Fixed Shape -->
+        <div class="container">
+            <div class="about-items">
+                <div class="row">
+                    <div class="col-lg-6 thumb order-lg-last" style="background-image: url({% static 'img/about/about.jpg' %});">
+                        <div class="successr-ate">
+                            <div class="icon">
+                                <i class="flaticon-target"></i>
+                            </div>
+                            <div class="content text-center">
+                                <span>Wir finden</span>
+                                <h3 class="mb-0">den besten Kandidaten</h3>
+                                <span>für Ihr Unternehmen</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 info">
+                        <h4>Unsere Vorteile</h4>
+                        <h2>Was macht Türfa?</h2>
+                        <p>
+                            Türfa findet qualifizierten türkischen Fachkräften für Unternehmen und helfen Ihnen bei der Einstellung für folgende Berufe: Fach- und Assistentsärzte, Pflegefachkräfte, Altenpfleger, OTA, ATA; Physiotherapeuten. 
+                        </p>
+                        <ul>
+                            <li>
+                              <p>
+                                Suche nach Fachkräfte und Überprüfung von Kandidaten (Assessment
+                                und Sprachprüfung)
+                              </p>
+                            </li>
+                            <li>
+                              <p>
+                                Organisation und Durchführung von Vorstellungsgesprächen im
+                                Türkei oder Online
+                              </p>
+                            </li>
+                            <li>
+                              <p>Rekrutierung geeigneter Bewerber in Istanbul (nach bedarf).</p>
+                            </li>
+                            <li>
+                              <p>
+                                Übernahme von allen Formalitäten für Aufenthalt, Beschäftigung
+                                und Unterbringung
+                              </p>
+                            </li>
+                            <li>
+                              <p>
+                                Begleitung der Arbeit und des Einstellungsprozesses mit Übersetzern
+                              </p>
+                            </li>
+                            <li>
+                              <p>
+                                Begleitung der beruflichen und privaten Integration
+                              </p>
+                            </li>
+                            
+                        </ul>
+                        <a class="btn btn-light effect btn-md" href="about-us.html">Erfahren Sie Mehr</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End About Area -->
+
+    <!-- Star Services Area
+    ============================================= -->
+    <div class="services-area bg-gray default-padding bottom-less">
+        <!-- Shape -->
+        <div class="right-shape">
+            <img src="{% static 'img/shape/9-red.png' %}" alt="Shape">
+        </div>
+        <!-- Shape -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="site-heading text-center">
+                        <h4>Unsere Deinstleistungen</h4>
+                        <h2>Medizinische Fachkräfte</h2>
+                        <br>
+                        <h3>gesundheitlichen Bereich</h3>
+                        <div class="devider"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-full">
+            <div class="services-items">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>
+                            Aktuell fehlen in Deutschland 120.000 Pflegekräfte und der Bedarf wird in den nächsten Jahren stetig steigen.
+                        </p>
+                        <p>
+                            Während in Deutschland ein Fachkräftemangel herrscht, gibt es in der Türkei aufgrund der anhaltenden Wirtschaftskrise über 60.000 arbeitslose Pflegekräfte. Als Unternehmen bieten wir eine Lösung von der sowohl Sie als Arbeitgeber in Deutschland als auch Arbeitnehmer aus der Türkei profitieren. Denn diese Fachkräfte finden wir für Sie! Wir rekrutieren Fachkräfte in der Türkei die in Deutschland arbeiten möchten, bringen Sie mit den passenden Kandidaten zusammen und unterstützen Sie bei der Durchführung aller bürokratischer und organisatorischer Prozesse. Außerdem unterstützen wir Ihre Arbeitnehmer während ihres ersten Jahrs in Deutschland sowohl bei bürokratischen Abläufen als auch bei der Integration, um so einen bestmöglichen Start für ein langfristiges und erfolgreiches Arbeitsverhältnis zu schaffen.
+                        </p>
+                        <p>
+                            <strong>
+                                Die drei wichtigsten Eckpunkte bei der Rekrutierung von Arbeitskräften aus dem Ausland
+                            </strong>
+                        </p>
+                        <ul>
+                            <li>
+                                <p>
+                                    <b>3- Wieso überhaupt aus dem Ausland rekrutieren?</b> <br />
+                                    Aktuell fehlen 120.000 Pflegekräfte in Deutschland und dieser massive Bedarf wird in den nächsten Jahren stetig wachsen, denn die Bevölkerung in Deutschland wird immer älter. Doch Arbeitnehmer in deutschsprachigen Ländern zu finden wird immer schwieriger, da auch in Österreich und der Schweiz aktuell schon über 86.000 Pflegekräfte fehlen.
+                                    <br/><br/>
+                                    Deshalb sind wir davon überzeugt, dass Pflegekräfte aus der Türkei eine gute Lösung darstellen. Die Arbeitnehmer in der Türkei sind jung, gut ausgebildet, haben häufig schon einen Bezug zu Deutschland und wollen deshalb hier ein langfristiges Arbeitsverhältnis beginnen um ein planbares und sicheres Leben führen zu können.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <b>2- Ist die ganze Bürokratie nicht viel zu kompliziert?</b> <br />
+                                    Der bürokratische Aufwand der notwendig ist, damit ein Arbeitnehmer aus einem Drittstaat in Deutschland arbeiten darf, kann erschlagend wirken. Deshalb ist ein wichtiger Baustein unserer Dienstleistung für Sie die Begleitung und Übernahme aller bürokratischen Prozesse, um so einen reibungslosen Ablauf des Verfahrens zu gewährleisten und Ihren idealen Kandidaten zu Ihnen zu bringen. Das gesamte Verfahren wird voraussichtlich 6 Monate dauern.    
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <b>3- Wie funktioniert erfolgreiches On-Boarding?</b><br />
+                                    Um eine erfolgreiche Integration ausländischer Arbeitnehmer in Deutschland zu gewährleisten sind sowohl organisatorische Hilfestellung als auch eine Betreuung der Arbeitnehmer vor und nach der Ankunft in Deutschland notwendig.    
+                                </p>
+                                <p>
+                                    Mehr!
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <div class="container-full">
+            <div class="services-items">
+                <div class="row">
+                    <!-- Single Item -->
+                    <div class="col-lg-6 col-md-6 single-item">
+                        <div class="item">
+                            <div class="info">
+                                <i class="flaticon-money"></i>
+                                <h4>Ärzte</h4>
+                                <p>
+                                    Alles was Sie wissen müssen
+                                </p>
+                                <div class="bottom">
+                                    <span>01</span>
+                                    <a href="{% url 'blog-list' %}">herunterladen</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+                    <!-- Single Item -->
+                    <div class="col-lg-6 col-md-6 single-item">
+                        <div class="item">
+                            <div class="info">
+                                <i class="flaticon-budget"></i>
+                                <h4>Medizinische Fachkräfte
+                                </h4>
+                                <p>
+                                    Alles was Sie wissen müssen
+                                    <br>
+                                </p>
+                                <div class="bottom">
+                                    <span>02</span>
+                                    <a href="{% url 'blog-list' %}">herunterladen</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        
+    </div>
+    <!-- End Services Area -->
+
+        <!-- Star Services Area
+    ============================================= -->
+    <div class="services-area bg-gray default-padding bottom-less">
+        <!-- Shape -->
+        <div class="right-shape">
+            <img src="{% static 'img/shape/9-red.png' %}" alt="Shape">
+        </div>
+        <!-- Shape -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="site-heading text-center">
+                        <h2>Auslandsrekrutierung</h2>
+                        <div class="devider"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-full">
+            <div class="services-items">
+                <div class="row">
+                    <div class="col-md-12 mb-5">
+                        Wenn Sie eine bestimmte Menge von Fachkräfte in Ihre Unternehmen brauchen, bieten wir unsere Rekrutierungslösung. D.h wir finden beruflich passende Kandidaten für Sie mit wenig Deutschkenntnise und organisieren für sie medizinische Super Intensive Sprachkurse, Workshops und Gespräche mit Ihren Kollegen aus Deutschland.   
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-full">
+            <div class="services-items">
+                <div class="row">
+                    <!-- Single Item -->
+                    <div class="col-lg-6 col-md-6 single-item">
+                        <div class="item">
+                            <div class="info">
+                                <i class="flaticon-money"></i>
+                                <h4>Ärzte</h4>
+                                <p>
+                                    Alles was Sie wissen müssen
+                                </p>
+                                <div class="bottom">
+                                    <span>01</span>
+                                    <a href="#" download>herunterladen</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+                    <!-- Single Item -->
+                    <div class="col-lg-6 col-md-6 single-item">
+                        <div class="item">
+                            <div class="info">
+                                <i class="flaticon-budget"></i>
+                                <h4>Medizinische Fachkräfte
+                                </h4>
+                                <p>
+                                    Alles was Sie wissen müssen
+                                    <br>
+                                </p>
+                                <div class="bottom">
+                                    <span>02</span>
+                                    <a href="#" download>herunterladen</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        
+    </div>
+    <!-- End Services Area -->
+
+    {% if blog %}
+    <!-- Start Blog 
+    ============================================= -->
+    <div class="blog-area bg-gray default-padding bottom-less">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="site-heading text-center">
+                        <h4>wichtige Informationen</h4>
+                        <h2>aktuelle Informationen über das Thema Personalvermmitlung und Rekrutierung</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="blog-items">
+                <div class="row">
+                    {% for item in blog %}
+                    <div class="single-item col-lg-4 col-md-6">
+                        <div class="item">
+                            <div class="thumb">
+                                <img src="{{ item.img.url }}" alt="Thumb">
+                                <div class="date">{{item.date}}</div>
+                            </div>
+
+                            <div class="info">
+                                <div class="meta">
+                                    <ul>
+                                        <li>
+                                            <a>{{ item.writer }}</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <h4>
+                                    <a href="{% url 'blog-detail' item.pk %}">{{item.title}}</a>
+                                </h4>
+
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                                       
+                </div>
+            </div>
+        </div>
+    </div>
+    {%endif%}
+    <!-- End Blog Area --> 
+
+{% endblock %}
+{% block 'scripts' %}
+<script type="text/javascript">
+    $(window).on("load", function(e){
+        var window_param = window.location.search
+        if(window_param === "?cookieset=1"){
+            $("#popup").modal('hide');
+        }else{
+            $("#popup").modal('show');
+        }
+    });
+</script>
+{% endblock  %}

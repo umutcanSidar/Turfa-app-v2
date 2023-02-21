@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block 'content' %}
+<!-- Start Breadcrumb 
+============================================= -->
+<div class="breadcrumb-area text-center shadow dark text-light bg-cover" style="background-image: url({% static 'img/about-us.jpg' %});">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+                <h1>{% translate "Hakkımızda" %}</h1>
+                <ul class="breadcrumb">
+                    <li><a {% if "candidate" in request.path %} href="{% url 'candidate_home' %}?cookieset=1" {% else %}href="{% url 'home' %}?cookieset=1"{% endif %}><i class="fas fa-home"></i> {% translate "Ana sayfa" %})</a></li>
+                    <li class="active">{% translate "Hakkımızda" %}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Breadcrumb -->
+
+<!-- Start About 
+============================================= -->
+<div class="about-us-area default-padding bg-gray">
+    <div class="container">
+        <div class="about-items">
+            <div class="row align-center">
+                {% if about.img_url %}
+                <div class="col-lg-6">
+                    <div class="thumb">
+                        <img src="{{about.img_url.url}}" alt="{{about.title}}">
+                        {% comment %} <h2>İki ülke için tek çözüm</h2> {% endcomment %}
+                    </div>
+                </div>
+                {% endif %}
+                
+                <div class="col-lg-{% if about.img_url %}6{% else %}12{% endif %} info">
+                    {{about.about|safe}}
+                </div>
+                {% if about.about_alt %}
+                <div class="col-lg-12 info mt-5">
+                    {{about.about_alt|safe}}
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End About Area -->
+{% comment %} 
+<!-- Start Business Growth
+============================================= -->
+<div class="business-groth-area default-padding bg-gray">
+    <div class="container">
+        <div class="row">
+            {{about.redirect | safe}}
+        </div>
+    </div>
+</div>
+<!-- End Business Growth --> {% endcomment %}
+
+
+{% endblock %}

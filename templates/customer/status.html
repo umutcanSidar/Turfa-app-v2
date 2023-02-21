@@ -1,0 +1,87 @@
+{% extends 'customer/base.html' %} 
+{% load static %} 
+{% block 'content' %}
+<div
+  class="breadcrumb-area text-center shadow dark text-light bg-cover"
+  style="background-image: url(assets/img/2440x1578.png)"
+>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2">
+        <h1>Durum</h1>
+        <ul class="breadcrumb">
+          <li>
+            <a href="#"><i class="fas fa-home"></i> Ana sayfa</a>
+          </li>
+          <li class="active">Durum</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="login-area bg-gray default-padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 {% if not status %} text-center {% endif %}">
+        <form
+          action="#"
+          method="POST"
+          id="login-form"
+          class="white-popup-block"
+        >
+          {% csrf_token %}
+          {% if status %}
+          <div class="table-wrap">
+            <table class="table">
+              <thead class="thead-dark">
+                <tr>
+                  <th>Kurum Adı </th>
+                  <th>Başvuru Tarihi</th>
+                  <th>Yetkili İletişim Bilgisi</th>
+                  <th>İlgili Tanınırlık Kurumu</th>
+                  <th>Güncel Durum</th>
+                  <th>İş Sözleşmesi</th>
+                  <th>Denklik Belgesi</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="alert" role="alert">
+                  
+                  
+                      <td>{{status.company_name}}</td>
+                      <td>{{status.app_date}}</td>
+                      <td>{{status.authorized_contact_information}}</td>
+                      <td>{{status.relevant_recognition_authority}}</td>
+                      <td>{{status.status}}</td>
+                      <td>
+                        <a
+                          href="{{ status.work_agreement.url }}"
+                          class="__cf_email__"
+                          data-cfemail="92fff3e0f9fde6e6fdd2f7fff3fbfebcf1fdff"
+                          download
+                          >[indirmek için tıkla]</a
+                        >
+                      </td>
+                      <td>
+                        <a
+                          href="{{ status.equality_agreement.url }}"
+                          class="__cf_email__"
+                          data-cfemail="92fff3e0f9fde6e6fdd2f7fff3fbfebcf1fdff"
+                          download
+                          >[indirmek için tıkla]</a
+                        >
+                      </td>
+                    
+                </tr>
+              </tbody>
+            </table>
+            {% else %}
+                    <h2>Durum henüz mevcut değil</h2>
+                  {% endif %}
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock 'content' %}

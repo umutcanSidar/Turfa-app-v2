@@ -1,0 +1,385 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+{% block 'content' %}
+<!-- Start Banner 
+    ============================================= -->
+    <div class="banner-area inc-video top-pad-50">
+        
+        <div id="bootcarousel" class="carousel text-light slide carousel-fade animate_text" data-ride="carousel">
+
+            <!-- Indicators for slides -->
+            <!--<div class="carousel-indicator">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <ol class="carousel-indicators right">
+                                <li data-target="#bootcarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#bootcarousel" data-slide-to="1"></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>-->
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="carousel-item bg-cover active" style="background-image: url({% static 'img/promo.jpg' %}); background-position: left top !important;">
+                    <div class="box-table">
+                        <div class="box-cell shadow dark">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-8">
+                                        <div class="content">
+                                            <h2 data-animation="animated slideInRight">Sağlık Profesyonelleri için Almanya'da <span>Çalışma ve Yerleşme Hizmetleri</span></h2>
+                                            <br>
+                                            <h3><span>Ücretsiz danışmanlık</span></h3>
+                                            <a data-animation="animated zoomInUp" class="btn btn-theme effect btn-md" {% if "candidate" in request.path %}href="{% url 'candidate_contact' %}"{% else %}href="{% url 'contact' %}"{% endif %}>Bize Ulaşın</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Shape -->
+                        <!--<div class="shape-right-bottom"  data-animation="animated slideInUp" style="background-image: url(assets/img/shape/banner-right-shape.png);"></div>-->
+                        <!-- Shape -->
+                    </div>
+                </div>
+            </div>
+            <!-- End Wrapper for slides -->
+
+        </div>
+    </div>
+    <!-- End Banner -->
+
+    <!-- Star Features Area
+    ============================================= -->
+    <div class="features-area default-padding">
+        <div class="container-full">
+            <div class="features-content">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2">
+                        <div class="site-heading text-center">
+                            <h4>Avantajlarımız</h4>
+                            <h2>Türfa ile Çalışmak için 4 Büyük Sebep</h2>
+                            <div class="devider"></div>
+                        </div>
+                    </div>
+                    <!-- Single Item -->
+                    <!--<div class="single-item col-lg-3 col-md-6">
+                        <div class="item">
+                            <i class="flaticon-speech-bubble"></i>
+                            <div class="top">
+                                <span>01</span>
+                                <h4>IŞKUR Onaylı Istihdam Ofisi</h4>
+                            </div>
+                            <p>
+                                Türfa Iskur tarafindan sertifikalandirilmis yetkili bir Özel Istihdam Ofisidir ve bütün hizmetleri ISKUR`un 4904 sayili Kanunda belirtmis oldugu üzere is arayan icin ücretsizdir ve tamami ile is veren tarafindan finanse edilir.  
+                            </p>
+                            <a href="#"><i class="arrow_right"></i></a>
+                        </div>
+                    </div>-->
+                    <!-- Single Item -->
+                    <!-- Single Item -->
+                    <div class="single-item col-lg-4 col-md-6">
+                        <div class="item">
+                            <i class="flaticon-label"></i>
+                            <div class="top">
+                                <span>01</span>
+                                <h4>Nitelikli Dil Egitimi</h4>
+                            </div>
+                            <p>
+                                Türfa´nin düzenledigi bütün dil egitimleri TELC sertifikali ve alanindan mezun hocalar tarafindan düzenlenmektedir. Ders programi Alman Dil Egitim kurumlarininki baz alinarak hazirlanmistir. 
+                            </p>
+                            <a href="#"><i class="arrow_right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Single Item -->
+                    <!-- Single Item -->
+                    <div class="single-item col-lg-4 col-md-6">
+                        <div class="item">
+                            <i class="flaticon-file"></i>
+                            <div class="top">
+                                <span>02</span>
+                                <h4>Adil İş Politikası</h4>
+                            </div>
+                            <p>
+                                Türfa is veren ve is arayan arasindaki sözlesmelerin iki taraf adina da adil olup olmadigini yasalar ve market kosullarini göz önünde bulundurarak degerlendirir. Calisanlar arasinda ayrim calisma saatleri, maas ve mesai gibi konularda ayrim gözetilmesine izin vermez. 
+                            </p>
+                            <a href="#"><i class="arrow_right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Single Item -->
+                    <!-- Single Item -->
+                    <div class="single-item col-lg-4 col-md-6">
+                        <div class="item">
+                            <i class="flaticon-file"></i>
+                            <div class="top">
+                                <span>03</span>
+                                <h4>Genis Capli Is olanaklari</h4>
+                            </div>
+                            <p>
+                                Türfa Almanya´da Sachsen, Sachsen-Anhalt ve Berlin eyaletlerinde faaliyet göstermektedir ve faaliyet gösterdigi bütün eyaletlerde anlasmali is verenleri bulunur.
+                            </p>
+                            <a href="#"><i class="arrow_right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Single Item -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Features Area -->
+
+     <!-- Star Services Area
+    ============================================= -->
+    <div class="services-area bg-gray default-padding bottom-less">
+        <!-- Shape -->
+        <div class="right-shape">
+            <img src="{% static 'img/shape/9-red.png' %}" alt="Shape">
+        </div>
+        <!-- Shape -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="site-heading text-center">
+                        <h4>BİZİ tanıyın</h4>
+                        <h2>Türfa Hakkında</h2>
+                        <div class="devider"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-full">
+            <div class="services-items">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>
+                            Türfa Almanya´da yalnızca Berlin, Sachsen ve Sachsen-Anhalt eyaletlerindeki anlaşmalı olduğu hastane, klinik, hasta bakim kezleri için istihdam ofisi ve danismanlik hizmeti verir. Bu kapsamda iş veren için çalışan bulur ve buldugu çalışan ile ön görüşmeleri gerçekleştirir, çalışanın meslek doküman ve kabiliyetlerini kontrol eder bunun icin gerekirse dil ve mesleki beceri tespit sinavlari organize eder. Vize ve istihdam ile ilgili bürokratik ve yasal süreçleri vekaleten yürütür veya takip eder. Gerekli durumlarda mesleki egitimler ve konferanslar düzenler. Is arayanin ihtiyac duymasi halinde konut veya paylasimli yasam alani bulunmasi icin yardimci olur. 
+                        </p>
+                        <p>
+                            Türfa adil çalışma ortamı ve koşullarının sağlanması için güven kurumu olarak kendisinin yaptığı bütün iş bulma faaliyetlerinde iş sözleşmelerini denetler. Çalışma saati, ücret, mesai ücreti tatil günleri gibi konularda ilgili eyaletteki piyasa ortalamasının altına düşülmeyeceğini garanti eder.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <br>
+        
+    </div>
+    <!-- End Services Area -->
+
+    
+
+    <!-- Star About Area
+    ============================================= -->
+    <div class="about-area bg-dark overflow-hidden text-light relative">
+        <!-- Fixed Shape -->
+        <div class="fixed-shape" style="background-image: url({% static 'img/shape/8.png' %});"></div>
+        <!-- End Fixed Shape -->
+        <div class="container">
+            <div class="about-items">
+                <div class="row">
+                    <div class="col-lg-6 thumb order-lg-last" style="background-image: url({% static 'img/anasayfa-about.jpg' %});">
+                        <div class="successr-ate">
+                            <div class="icon">
+                                <i class="flaticon-target"></i>
+                            </div>
+                            <div class="content text-center">
+                                <span>Doğru işi</span>
+                                <h3 class="mb-0">bulmak</h3>
+                                <span>bizim işimiz</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 info">
+                        <h4>Çalışma koşulları</h4>
+                        <h2>Türfa ile çalışmak için neler gereklidir ?</h2>
+                        <p>
+                            Bizimle çalışmak için öncelikle bizimle bir ön iş görüşme yapmanız gerekir. Bunun haricinde Aşağıdaki belge, yetkinliklere sahip olmalısınız:  
+                        </p>
+                        <ul>
+                            <li>
+                              <p>
+                                Mesleki Diploma: Tip, Hemşirelik, Ameliyathane Teknikerliği, Hasta Bakıcılık  
+                              </p>
+                            </li>
+                            <li>
+                              <p>
+                                Adli sicil kaydı yoktur belgesi 
+                              </p>
+                            </li>
+                            <li>
+                              <p>Borcu yoktur belgesi</p>
+                            </li>
+                            <li>
+                              <p>
+                                Mezun olunan Üniversiteden alınmış saatlik açıklamalı ders programı(Cirriclum)
+                              </p>
+                            </li>
+                            <li>
+                              <p>
+                                Almanca A1 Dil Belgesi (Geothe Institut,ÖSD veya TELC) 
+                              </p>
+                            </li>
+                            <li>
+                              <p>
+                                Almanya´daki işlemlerinize başlamamız için Almanca Türkçe vekalet. (Vollmacht)  
+                              </p>
+                            </li>
+                            <li>
+                              <p>
+                                A2 Sigorta kayıt dökümü 
+                              </p>
+                            </li>
+                            <li>
+                                <p>
+                                    CV (çalıştığınız veya eğitim gördüğünüz kurumdan bir referans verilmesi zorunludur.) 
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Mesleki veya takım elbise ile çekilmiş 1 adet vesikalık fotoğraf. Dijital veya Hardcopy
+                                </p>
+                            </li>
+                        </ul>
+                        <a class="btn btn-light effect btn-md" href="about-us.html">Hakkımızda</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End About Area -->
+
+       <!-- Star Services Area
+    ============================================= -->
+    <div class="services-area bg-gray default-padding bottom-less">
+        <!-- Shape -->
+        <div class="right-shape">
+            <img src="{% static 'img/shape/9-red.png' %}" alt="Shape">
+        </div>
+        <!-- Shape -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="site-heading text-center">
+                        <h2>{% translate "Türfa hangi meslek gruplarına hizmet verir?" %}</h2>
+                        <div class="devider"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-full">
+            <div class="services-items">
+                <div class="row">
+                    <div class="col-md-12 mb-5">
+                        {% translate "Turfa sağlık sektörü çalışanlarına hizmet verir. Hizmet verdiği meslek grupları Almanya Federal Cumhuriyetinin belirlemiş olduğu vize prosedürüne göre ikiye ayrılmıştır. Kendi meslek grubunuz ile ilgili bilgi almak için lütfen aşağıdan kendi meslek grubunuzu bulunuz." %}    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-full">
+            <div class="services-items">
+                <div class="row">
+                    <!-- Single Item -->
+                    <div class="col-lg-6 col-md-6 single-item">
+                        {% for item in services %}
+                        <div class="item">
+                            <div class="info">
+                                <i class="flaticon-money"></i>
+                                <h4>
+                                    {% blocktrans with item.title as title %}
+                                        {{title}}
+                                    {% endblocktrans %}
+                                </h4>
+                                <p>
+                                    {% blocktrans with item.text|safe as text %}
+                                        {{text}}
+                                    {% endblocktrans %}
+                                </p>
+                                <div class="bottom">
+                                    <span>{{forloop.counter}}</span>
+                                    <a {% if candidate in request.path %}href="{% url 'candidate_services_detail' item.slug %}"{% else %}href="{% url 'services_detail' item.slug %}"{% endif %}>Daha fazlası</a>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    <!-- End Single Item -->
+                </div>
+            </div>
+        </div>
+        <br>
+        
+    </div>
+    <!-- End Services Area -->
+
+    {% if blog %}
+    <!-- Start Blog 
+    ============================================= -->
+    <div class="blog-area bg-gray default-padding bottom-less">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="site-heading text-center">
+                        <h4>Blog</h4>
+                        {% comment %} <h2>Latest News & Articles</h2> {% endcomment %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="blog-items">
+                <div class="row">
+                    {% for item in blog %}
+                        
+                        <!-- Single Item -->
+                        <div class="single-item col-lg-4 col-md-6">
+                            <div class="item">
+                                <div class="thumb">
+                                    <img src="{{item.img.url}}" alt="Thumb">
+                                    <div class="date">{{ item.date }}</div>
+                                </div>
+
+                                <div class="info">
+                                    <div class="meta">
+                                    <ul>
+                                        <li>
+                                            <a>{{item.writer}}</a>
+                                        </li>
+                                    </ul>
+                                    </div>
+                                    <h4>
+                                        <a href="#">{{item.title}}</a>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Item -->
+
+                        {% endfor %}    
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <!-- End Blog Area --> 
+    {% endif %}
+
+{% endblock %}
+{% block 'scripts' %}
+<script type="text/javascript">
+    $(window).on("load", function(e){
+        var window_param = window.location.search
+        if(window_param === "?cookieset=1"){
+            $("#popup").modal('hide');
+        }else{
+            $("#popup").modal('show');
+        }
+    });
+</script>
+{% endblock  %}

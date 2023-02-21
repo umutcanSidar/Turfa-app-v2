@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block 'content' %}
+
+<!-- Start Breadcrumb 
+============================================= -->
+<div class="breadcrumb-area text-center shadow dark text-light bg-cover" style="background-image: url({% static 'img/dienstleistungen.jpg' %});">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+                <h1>Blog</h1>
+                <ul class="breadcrumb">
+                    <li><a {% if "candidate" in request.path %} href="{% url 'candidate_home' %}?cookieset=1" {% else %}href="{% url 'home' %}?cookieset=1"{% endif %}><i class="fas fa-home"></i> Ana sayfa</a></li>
+                    <li class="active">Blog</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Breadcrumb -->
+
+<!-- Star Services Details Area
+============================================= -->
+{% if all_blog %}
+<div class="services-details-area default-padding">
+    <div class="container">
+        <div class="services-details-items">
+            <div class="row">
+                <div class="col-lg-8 services-single-content">
+                    <img src="{{ all_blog.img_url.url }}" alt="Thumb">
+                    {{ all_blog.text | safe }}
+                </div>
+
+                <div class="col-lg-4 services-sidebar">
+                    <!-- End Single Widget -->
+                    <div class="single-widget quick-contact text-light" style="background-image: url(assets/img/800x800.png);">
+                        <div class="content">
+                            <i class="fas fa-phone"></i>
+                            <h4>{% translate "Sorularnız için bize ulaşın" %}</h4>
+                            <p>
+                                {% translate "Ücretsiz danışmanlık" %}
+                            </p>
+                            <h2>{{setting_item.phone}}</h2>
+                        </div>
+                    </div>
+                    {% if all_blog.pdf %}
+                        <!-- Single Widget -->
+                        <div class="single-widget brochure">
+                            <h4 class="widget-title">{% translate "Broşür" %}</h4>
+                            <ul>
+                                <li><a href="{{ all_blog.pdf.url }}" download><i class="fas fa-file-pdf"></i> {% translate "Broşür indir" %} </a></li>
+                            </ul>
+                        </div>
+                        <!-- End Single Widget -->
+                    {%endif%}
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
+<!-- End Services Details Area -->
+{% endblock %}

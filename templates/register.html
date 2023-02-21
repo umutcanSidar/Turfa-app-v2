@@ -1,0 +1,62 @@
+{% extends 'base.html' %} 
+{% load static %} 
+{% block 'content' %}
+{% load i18n %}
+
+<div class="login-area bg-gray default-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+                <form method="POST" id="login-form" class="white-popup-block">
+                    {% csrf_token %}
+                    <div class="row align-center">
+                        <div class="col-lg-4 login-social">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="col-lg-8 login-custom">
+                            <h4>{% translate "Kayıt ol" %}</h4>
+                            {% if error %}
+                                <p class="colorRed">{{error}}</p>
+                            {% endif %}
+                            <div class="col-lg-12">
+                                <div class="row">
+                                    <div class="form-group">
+                                        <input class="form-control" placeholder="{% translate "E-Posta*" %}" type="text" name="email" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="row">
+                                    <div class="form-group">
+                                        <input class="form-control" placeholder="{% translate "Şifre*" %}" name="password" type="password" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="row">
+                                    <div class="form-group">
+                                        <select name="role">
+                                            <option value="0">{% translate "İş arayan" %}</option>
+                                            <option value="1">{% translate "İş veren" %}</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                    <p>{% translate "Şifrenizi mi unuttunuz? " %}<a href="{% url 'reset_password' %}"> {% translate "Lütfen buraya tıklayın." %}</a></p>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="row">
+                                    <button type="submit">
+                                        {% translate "Gönder" %}
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock 'content' %}

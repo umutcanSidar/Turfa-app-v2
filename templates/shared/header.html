@@ -1,0 +1,144 @@
+{% load static %}
+{% load i18n %}
+<!-- Start Header Top 
+    ============================================= -->
+<div class="top-bar-area inc-pad bg-dark text-light">
+  <div class="container-full">
+    <div class="row align-center">
+      <div class="col-lg-5 info">
+        <ul>
+          <li>
+            <i class="fas fa-map-marker-alt"></i> {{setting_item.address}}
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-7 text-right item-flex">
+        <div class="info">
+          <ul>
+            <li>
+              <i class="fas fa-clock"></i> {% translate "Çalışma saatleri: 9:00 AM – 17:30 PM" %}
+            </li>
+            <li>
+              <a href="#" id="popupOpen">{% translate "İşveren" %}</a>
+            </li>
+            {% if request.user.is_authenticated %}
+              <li>
+                <a href="{% url 'status' %}">{% translate "Durum" %}</a>
+              </li>
+              <li>
+                <a href="{% url 'logout' %}">{% translate "Oturumu Kapat" %}</a>
+              </li>
+            {% else %}
+            <li>
+              <a href="{% url 'login' %}">{% translate "Giriş" %}</a>
+            </li>
+            {% endif %}
+          </ul>
+        </div>
+        <div class="social">
+          <ul>
+              {% if setting_item.youtube_url %}
+              <li>
+                <a href="{{setting_item.youtube_url}}" target="_blank">
+                  <i class="fab fa-youtube-square"></i>
+                </a>
+              </li>
+              {% endif %}
+              {% if setting_item.linkedin_url %}
+              <li>
+                <a href="{{setting_item.linkedin_url}}" target="_blank">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+              {% endif %}
+          </ul>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Header Top -->
+
+<!-- Header 
+    ============================================= -->
+<header id="home">
+  <!-- Start Navigation -->
+  <nav
+    class="navbar navbar-default inc-top-bar navbar-fixed navbar-transparent white bootsnav"
+  >
+    <div class="container-full">
+      <!-- Start Atribute Navigation -->
+      <div class="attr-nav">
+        <div class="call">
+          <div class="icon">
+            <i class="fas fa-phone"></i>
+          </div>
+          <div class="info">
+            <span>{% translate "Bize Ulaşın" %}</span>
+            <h5>{{setting_item.phone}}</h5>
+          </div>
+        </div>
+      </div>
+      <!-- End Atribute Navigation -->
+
+      <!-- Start Header Navigation -->
+      <div class="navbar-header">
+        <button
+          type="button"
+          class="navbar-toggle"
+          data-toggle="collapse"
+          data-target="#navbar-menu"
+        >
+          <i class="fa fa-bars"></i>
+        </button>
+        <a class="navbar-brand" {% if "candidate" in request.path %} href="{% url 'candidate_home' %}?cookieset=1" {% else %}href="{% url 'home' %}?cookieset=1"{% endif %}>
+          <img src="{{setting_item.logo.url}}" class="logo logo-display" alt="Logo" />
+          <img
+            src="{{setting_item.logo.url}}"
+            class="logo logo-scrolled"
+            alt="Logo"
+          />
+        </a>
+      </div>
+      <!-- End Header Navigation -->
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="navbar-menu">
+        <ul class="nav navbar-nav navbar-center" data-in="#" data-out="#">
+          <li class="dropdown">
+            <a {% if "candidate" in request.path %} href="{% url 'candidate_home' %}?cookieset=1" {% else %}href="{% url 'home' %}?cookieset=1"{% endif %} class="active" >{% translate "Ana sayfa" %}</a>
+          </li>
+          <li>
+            <a {% if "candidate" in request.path %} href="{% url 'candidate_about' %}"  {% else %}href="{% url 'about' %}" {% endif %}>{% translate "Hakkımızda" %}</a>
+          </li>
+          <li>
+            <a {% if "candidate" in request.path %}href="{% url 'candidate_blog' %}" {% else %}href="{% url 'blog-list' %}"{% endif %}>{% translate "Blog" %}</a>
+          </li>
+          {% if service_items %}
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">{% translate "Hizmetlerimiz" %}</a>
+            <ul class="dropdown-menu" role="menu">
+              {% for item in service_items %}
+              <li>
+                <a href="{% url 'services_detail' item.slug %}">{% blocktrans with item.title as title%}{{title}}{% endblocktrans %}</a>
+              </li>
+              {% endfor %}
+            </ul>
+          </li>
+          {% endif %}
+          {% if "/candidate/" in request.path %}
+            <li class="dropdown">
+              <a href="{% url 'candidate_form' %}">{% translate "Başvuru" %}</a>
+            </li>
+          {% endif %}
+          <li class="dropdown">
+            <a {% if "candidate" in request.path %} href="{% url 'candidate_contact' %}" {% else %}href="{% url 'contact' %}"{% endif %}>{% translate "İletişim" %}</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+  </nav>
+  <!-- End Navigation -->
+</header>
+<!-- End Header -->
