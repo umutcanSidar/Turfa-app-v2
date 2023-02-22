@@ -57,6 +57,9 @@
                                             <h4>
                                                 <a {% if "candidate" in request.path %} href="{% url 'candidate_blog_detail' item.slug %}"{% else %} href="{% url 'blog_detail' item.slug %}"{% endif %}>{{item.title|safe}}</a>
                                             </h4>
+                                            <p>
+                                                {{item.text_short|safe}}
+                                            </p>
                                         </div>
                                     </div>
                                 </div>

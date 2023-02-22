@@ -12,13 +12,12 @@ class HomeView(View):
     context={}
 
     def get(self, request):
-
         if "candidate" in request.get_full_path(): 
             self.context['services'] = ServiceModel.objects.filter(role=False)
-            self.context['blog'] = BlogModel.objects.filter(role=False)
+            self.context['blog'] = BlogModel.objects.filter(role=True)
         else:
             self.context['services'] = ServiceModel.objects.filter(role=True)
-            self.context['blog'] = BlogModel.objects.filter(role=True)
+            self.context['blog'] = BlogModel.objects.filter(role=False)
 
         return render(request, self.template_name, self.context)
     
@@ -26,7 +25,7 @@ class CandidateServicesView(View):
     template_name="services-detail.html"
     model=ServiceModel
 
-    def get(self, request):
+    def get(self, request, *args, **kwargs):
         if "candidate" in request.get_full_path():
             services = self.model.objects.filter(role=False).first()
         else:
@@ -233,7 +232,7 @@ class CandidateFormView(View):
                 new_education2.save()
 
 
-            newStatus = StatusModel(candidates=new_candidate) 
+            newStatus = StatusModel(candidates=new_candidate)
             newStatus.save()
            
 

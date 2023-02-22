@@ -25,9 +25,8 @@ YES_NO_CHOICES=(
 )
 
 STATUS_CHOICES=(
-    ("0", "Aday"),
-    ("1", "Seçildi"),
-    ("2", "Tamamlandı")
+    (True, "Aday"),
+    (False, "Seçildi")
 )
 
 class Settings(models.Model):
@@ -116,7 +115,14 @@ class User(AbstractBaseUser, PermissionsMixin):
 class StatusModel(models.Model):
     candidates=models.ForeignKey(CandidateModel, on_delete=models.CASCADE, blank=True)
     user=models.ForeignKey(User, on_delete=models.CASCADE, blank=True, null=True)
-    status=models.CharField(_("Durumu"), max_length=200)
+    status=models.BooleanField(_("Durumu"), choices=STATUS_CHOICES)
+
+    class Meta:
+        verbose_name="Durum"
+        verbose_name_plural="Durumlar"
+
+    def __str__(self):
+        return "asd"
 
 class ServiceModel(models.Model):
     title=RichTextField(_("Başlık"))
@@ -139,9 +145,10 @@ class BlogModel(models.Model):
     img_url = models.FileField(_("Görsel"), upload_to="uploads/blog/", max_length=100, null=True, blank=True)
     pdf = models.FileField(_("PDF"), upload_to="blog/", max_length=100, validators=[FileExtensionValidator(['pdf'])])
     text = RichTextField(_("İçerik"), blank=True)
+    text_short = RichTextField(_("Kısa içerik"), blank=False)
     created_at = models.DateField(_("Yayın Tarihi"))
     slug=models.CharField(_("Slug"), max_length=200)
-    role = models.BooleanField(_("Kullanıcı Grubu"),choices=ROLE_CHOICES)
+    role = models.BooleanField(_("Kullanıcı Grubu"),choices=ROLE_CHOICES, default=True)
 
     class Meta:
         verbose_name = "Blog yazısı"

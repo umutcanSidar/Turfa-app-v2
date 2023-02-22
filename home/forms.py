@@ -1,6 +1,18 @@
 from django import forms
 from django.utils.translation import gettext as _
-from .models import User
+from .models import User, StatusModel
+
+STATUS_CHOICES=(
+    (True, "Aday"),
+    (False, "Seçildi")
+)
+
+class StatusForm(forms.ModelForm):
+    class Meta:
+        model=StatusModel
+        fields=("status",)
+
+        
 
 class ContactForm(forms.Form):
     name = forms.CharField(widget=forms.TextInput(attrs={"class":"form-control", "placeholder": _("İsim")}), label=_("İsim"))

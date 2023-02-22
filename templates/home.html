@@ -387,7 +387,6 @@
                 </div>
             </div>
         </div>
-        
         <div class="container">
             <div class="blog-items">
                 <div class="row">
@@ -395,8 +394,8 @@
                     <div class="single-item col-lg-4 col-md-6">
                         <div class="item">
                             <div class="thumb">
-                                <img src="{{ item.img.url }}" alt="Thumb">
-                                <div class="date">{{item.date}}</div>
+                                <img src="{{ item.img_url.url }}" alt="Thumb">
+                                <div class="date">{{item.created_at}}</div>
                             </div>
 
                             <div class="info">
@@ -408,9 +407,11 @@
                                     </ul>
                                 </div>
                                 <h4>
-                                    <a href="{% url 'blog-detail' item.pk %}">{{item.title}}</a>
+                                    <a {% if "candidate" in request.path %} href="{% url 'candidate_blog_detail' item.slug %}"{% else %} href="{% url 'blog_detail' item.slug %}"{% endif %}>{{item.title}}</a>
                                 </h4>
-
+                                <p>
+                                    {{item.text_short|safe}}
+                                </p>
                             </div>
                         </div>
                     </div>

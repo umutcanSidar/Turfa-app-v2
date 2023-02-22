@@ -11,7 +11,7 @@
             <div class="col-lg-8 offset-lg-2">
                 <h1>{% translate "Hizmetlerimiz" %}</h1>
                 <ul class="breadcrumb">
-                    <li><a href="{% url 'home' %}"><i class="fas fa-home"></i> {% translate "Ana Sayfa" %}</a></li>
+                    <li><a {% if "candidate" in request.path %} href="{% url 'candidate_home' %}"{% else %}href="{% url 'home' %}"{% endif %}><i class="fas fa-home"></i> {% translate "Ana Sayfa" %}</a></li>
                     <li class="active">{% translate "Hizmetlerimiz" %}</li>
                 </ul>
             </div>

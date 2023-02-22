@@ -1,11 +1,15 @@
 from django.contrib import admin
-from .models import ServiceModel, BlogModel, AboutModel, User, ContactModel, Settings
+from .models import ServiceModel, BlogModel, AboutModel, User, ContactModel, Settings, StatusModel
 
 
 # INLINES
 
 
 # MODELS
+@admin.register(StatusModel)
+class StatusAdmin(admin.ModelAdmin):
+    list_display=("user", "candidates", "status")
+
 
 @admin.register(Settings)
 class SettingsAdmin(admin.ModelAdmin):

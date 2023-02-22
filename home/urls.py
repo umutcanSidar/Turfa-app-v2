@@ -1,16 +1,17 @@
 from django.urls import path, include
 from .views import HomeView, BlogView, ContactView, LoginView, RegisterView, SuccesView, LogoutView, AboutView,ServiceDetailsView, BlogDetailView, StatusView
 from django.contrib.auth import views as auth_views
+from django.contrib.auth.decorators import login_required
 
 urlpatterns = [
     path("",HomeView.as_view(), name="home"),
     
-    path("status/",StatusView.as_view(), name="status"),
+    path("status/",login_required(StatusView.as_view()), name="status"),
 
     path("services/<slug:slug>/",ServiceDetailsView.as_view(), name="services_detail"),
 
     path("blog/",BlogView.as_view(), name="blog-list"),
-    path("blog/<slug:slug>",BlogDetailView.as_view(), name="blog_detail"),
+    path("blog/<slug:slug>/",BlogDetailView.as_view(), name="blog_detail"),
    
     path("contact/",ContactView.as_view(), name="contact"),
     path("about/",AboutView.as_view(), name="about"), 

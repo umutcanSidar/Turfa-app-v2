@@ -7,24 +7,38 @@ from django.contrib.auth import authenticate, logout, login
 from django.db import IntegrityError
 from .models import User, AboutModel, ContactModel, BlogModel, ServiceModel, StatusModel
 from candidate.models import CandidateModel 
+from .forms import StatusForm
+from django.contrib.auth.mixins import LoginRequiredMixin
+
+
 
 # Create your views here.
-
-class StatusView(View):
+class StatusView(View,LoginRequiredMixin):
     template_name="status.html"
     context={}
+    login_url="/login/"
 
-    def post(self, request):
 
-        if request.method == "POST":
-            if 'candidate_check' in request.POST:
-                StatusModel.objects.filter(candidates=request.POST['pk'])
+    def post(self, request):   
+        if request.method=="POST":
+            status_pk = request.POST["id"]
+            candidate_status = request.POST["status"]
+            user = request.user
+
+            if user.is_authenticated:
+                if candidate_status == "1":
+                    updateStatus = StatusModel.objects.filter(id=status_pk).update(user=None, status=candidate_status)
+                else:
+                    updateStatus = StatusModel.objects.filter(id=status_pk).update(status=candidate_status, user=user)
+                return HttpResponseRedirect("/status/")            
 
         return render(request, self.template_name, self.context)
 
     def get(self, request):
-        self.context["candidate_candidate"] = StatusModel.objects.filter(status="Adaylar")
-        self.context["candidate_choosen"] = StatusModel.objects.filter(status="Seçilenler")
+
+        self.context["candidate_candidate"] = StatusModel.objects.filter(status=True)
+        self.context["candidate_choosen"] = StatusModel.objects.filter(user=request.user, status=False)
+       
         return render(request, self.template_name, self.context)
     
 class ServiceDetailsView(View):
@@ -132,13 +146,12 @@ class HomeView(View):
     context={}
 
     def get(self, request):
-
         if "candidate" in request.get_full_path(): 
             self.context['services'] = ServiceModel.objects.filter(role=False)
-            self.context['blog'] = BlogModel.objects.filter(role=False)
+            self.context['blog'] = BlogModel.objects.filter(role=True)
         else:
             self.context['services'] = ServiceModel.objects.filter(role=True)
-            self.context['blog'] = BlogModel.objects.filter(role=True)
+            self.context['blog'] = BlogModel.objects.filter(role=False)
 
         return render(request, self.template_name, self.context)
     
@@ -165,9 +178,9 @@ class BlogView(View):
         role_url=request.get_full_path()
 
         if "candidate" in role_url:
-            all_blog = self.model.objects.all().filter(role=False)
-        else:
             all_blog = self.model.objects.all().filter(role=True)
+        else:
+            all_blog = self.model.objects.all().filter(role=False)
 
         return render(request, self.template_name, {'all_blog':all_blog})
     
@@ -177,10 +190,11 @@ class BlogDetailView(View):
 
     def get(self, request, *args, **kwargs):
         role_url=request.get_full_path()
+
         if "candidate" in role_url:
-            all_blog = self.model.objects.filter(role=False, slug=kwargs['slug']).first()
-        else:
             all_blog = self.model.objects.filter(role=True,slug=kwargs['slug']).first()
+        else:
+            all_blog = self.model.objects.filter(role=False,slug=kwargs['slug']).first()
 
         return render(request, self.template_name, {'all_blog':all_blog})
     

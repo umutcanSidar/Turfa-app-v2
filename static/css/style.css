@@ -6,7 +6,7 @@ input[type="radio"] { min-height: auto!important; }
 input[type="file"]  { border: 0!important }
 
 .colorRed { color: red!important }
-
+.usTabs { display: flex!important }
 
 /* ----------------------------------
 
