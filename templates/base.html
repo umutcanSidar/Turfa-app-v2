@@ -1,5 +1,5 @@
 {% load static %}
-
+{% load i18n %}
 <!DOCTYPE html>
 <html lang="tr">
 <head>
@@ -85,7 +85,7 @@
                 <div class="row">
                     <div class="col-lg-8 offset-lg-2">
                         <div class="site-heading text-center">
-                            <h2>Sie sind…?<br /> Ne ile ilgileniyorsunuz?</h2>
+                            <h2>{% translate "Ne ile ilgileniyorsunuz?" %}</h2>
                             <div class="devider"></div>
                         </div>
                     </div>
@@ -106,17 +106,6 @@
                                     <br />
                                     <div class="flex">
                                       <div>
-                                        <img src="{% static 'img/german.png' %}" />
-                                      </div>
-                                      <div>
-                                        <h4>ich bin ein/e Arbeitgeber/in</h4>
-                                      </div>
-                                    </div>
-                                    <div class="flex">
-                                      <div>
-                                        <img src="{% static 'img/turkish.png' %}" />
-                                      </div>
-                                      <div>
                                         <h4>Ben bir iş verenim</h4>
                                       </div>
                                     </div>
@@ -126,7 +115,7 @@
                         </div>
                         <!-- End Single Item -->
                         <!-- Single Item -->
-                        <div class="col-lg-6 col-md-6 single-item">
+                        <div class="col-lg-6 col-md-6 text-center single-item">
                             <div class="item">
                               <a href="{% url 'candidate_home' %}?cookieset=1">
                                 <div class="info">
@@ -136,29 +125,18 @@
                                     <br />
                                     <div class="flex">
                                       <div>
-                                        <img src="{% static 'img/german.png' %}" />
-                                      </div>
-                                      <div>
-                                        <h4>Ich bin eine Fachkraft</h4>
-                                      </div>
-                                    </div>
-                                    <div class="flex">
-                                      <div>
-                                        <img src="{% static 'img/turkish.png' %}" />
-                                      </div>
-                                      <div>
                                         <h4>Ben bir profesyonelim</h4>
                                       </div>
                                     </div>
                                     <!--<i class="flaticon-budget"></i>-->
                                    
-                                    <p>
+                                    {% comment %} <p>
                                       Ärzte / Doktorlar <br />
                                       Pflegefachkraft/Hemşire ve yaşlı bakıcılar<br />
                                       OTA /Ameliyathane Teknikerleri<br />
                                       ATA / Anestezi Asistanları<br />
                                       Physiotherapeut-in / Fizyoterapist<br />
-                                    </p>
+                                    </p> {% endcomment %}
                                 </div>
                               </a>
                             </div>

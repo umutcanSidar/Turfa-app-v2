@@ -1,14 +1,26 @@
 from django.contrib import admin
 from .models import ServiceModel, BlogModel, AboutModel, User, ContactModel, Settings, StatusModel
-
+from django.utils.translation import gettext as _
 
 # INLINES
-
+admin.site.site_header = "TÜRFA Admin"
+admin.site.site_title = "TÜRFA Admin Portal"
+admin.site.index_title = "Welcome to TÜRFA Portal"
 
 # MODELS
 @admin.register(StatusModel)
 class StatusAdmin(admin.ModelAdmin):
-    list_display=("user", "candidates", "status")
+    list_display=("get_user_name", "candidates_name", "status")
+
+    def get_user_name(self, obj):
+        return obj.user
+
+    def candidates_name(self, obj):
+        return obj.candidates.email
+    
+    candidates_name.short_description = _('E-Posta')
+    candidates_name.admin_order_field = 'candidates__name'
+    get_user_name.short_description = _('İşveren')
 
 
 @admin.register(Settings)

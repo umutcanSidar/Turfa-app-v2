@@ -24,9 +24,12 @@ YES_NO_CHOICES=(
     (1, "Evet")
 )
 
+
 STATUS_CHOICES=(
-    (True, "Aday"),
-    (False, "Seçildi")
+    ("0", "Onay Aşaması"),
+    ("1", "Aday"),
+    ("2", "Seçildi"),
+    ("3", "Tamamlandı")
 )
 
 class Settings(models.Model):
@@ -113,9 +116,9 @@ class User(AbstractBaseUser, PermissionsMixin):
         verbose_name_plural="Kullanıcılar"
 
 class StatusModel(models.Model):
-    candidates=models.ForeignKey(CandidateModel, on_delete=models.CASCADE, blank=True)
-    user=models.ForeignKey(User, on_delete=models.CASCADE, blank=True, null=True)
-    status=models.BooleanField(_("Durumu"), choices=STATUS_CHOICES)
+    candidates=models.ForeignKey(CandidateModel, on_delete=models.CASCADE, blank=True, verbose_name=_("Aday"))
+    user=models.ForeignKey(User, on_delete=models.CASCADE, blank=True, null=True, verbose_name=_("İşveren"))
+    status=models.CharField(_("Durum"), choices=STATUS_CHOICES, max_length=50)
 
     class Meta:
         verbose_name="Durum"
@@ -142,8 +145,8 @@ class ServiceModel(models.Model):
 class BlogModel(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, blank=True)
     title = RichTextField(_("Başlık"), blank=True)
-    img_url = models.FileField(_("Görsel"), upload_to="uploads/blog/", max_length=100, null=True, blank=True)
-    pdf = models.FileField(_("PDF"), upload_to="blog/", max_length=100, validators=[FileExtensionValidator(['pdf'])])
+    img_url = models.FileField(_("Görsel"), upload_to="blog/", max_length=100, null=True, blank=True)
+    pdf = models.FileField(_("PDF"), upload_to="blog/pdf/", max_length=100, validators=[FileExtensionValidator(['pdf'])])
     text = RichTextField(_("İçerik"), blank=True)
     text_short = RichTextField(_("Kısa içerik"), blank=False)
     created_at = models.DateField(_("Yayın Tarihi"))

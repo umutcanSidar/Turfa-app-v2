@@ -3,16 +3,16 @@ from django.utils.translation import gettext as _
 from .models import User, StatusModel
 
 STATUS_CHOICES=(
-    (True, "Aday"),
-    (False, "Seçildi")
+    ("0", "Onay Aşaması"),
+    ("1", "Aday"),
+    ("2", "Seçildi"),
+    ("3", "Tamamlandı")
 )
 
 class StatusForm(forms.ModelForm):
     class Meta:
         model=StatusModel
         fields=("status",)
-
-        
 
 class ContactForm(forms.Form):
     name = forms.CharField(widget=forms.TextInput(attrs={"class":"form-control", "placeholder": _("İsim")}), label=_("İsim"))

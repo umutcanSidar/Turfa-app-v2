@@ -23,7 +23,7 @@
             </li>
             {% if request.user.is_authenticated %}
               <li>
-                <a href="{% url 'status' %}">{% translate "Durum" %}</a>
+                <a {% if "candidate" in request.path %} href="{% url 'candidate_status' %}"{% else %} href="{% url 'status' %}"{% endif %}>{% translate "Durum" %}</a>
               </li>
               <li>
                 <a href="{% url 'logout' %}">{% translate "Oturumu Kapat" %}</a>

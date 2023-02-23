@@ -10,9 +10,10 @@ MARTIAL_CHOICES=(
 )
 
 STATUS_CHOICES=(
-    ("0", "Aday"),
-    ("1", "Seçildi"),
-    ("2", "Tamamlandı")
+    ("0", "Onay Aşaması"),
+    ("1", "Aday"),
+    ("2", "Seçildi"),
+    ("3", "Tamamlandı")
 )
 
 class CandidateModel(models.Model):
@@ -28,14 +29,14 @@ class CandidateModel(models.Model):
     postcode=models.CharField(_("Posta Kodu"), max_length=6)
     address=models.CharField(_("Adres"), max_length=200)
     photo=models.FileField(_("Fotoğraf"), upload_to="uploads/isarayan/", validators=[FileExtensionValidator(['jpg','svg','png'])], blank=True)
-    status=models.CharField(_("Durumu"), max_length=100, default=0, choices=STATUS_CHOICES)
+    status=models.CharField(_("Durumu"), choices=STATUS_CHOICES, max_length=50, default="0")
 
     class Meta:
         verbose_name="Aday Formu"
         verbose_name_plural="Aday Formları"
 
     def __str__(self):
-        return ""
+        return self.email
 
 
 class ExperienceModel(models.Model):

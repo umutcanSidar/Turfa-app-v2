@@ -20,7 +20,7 @@ from .models import CandidateModel, ExperienceModel, EducationModel
 class CandidateForm(forms.ModelForm):
     class Meta:
         model= CandidateModel
-        fields='__all__'
+        fields=('name','surname','email', 'phone', 'tc', 'children', 'birthday', 'martial_status', "city", "postcode", "photo","address")
         widgets= {
             'birthday': forms.SelectDateWidget(attrs={'class':'form-control'}, years=range(1970, 2001)),
             'children': forms.TextInput(attrs={'class':'form-control'}),

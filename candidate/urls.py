@@ -1,6 +1,6 @@
 from django.urls import path, include
 from .views import CandidateFormView, CandidateServiceDetailsView, HomeView
-from home.views import ContactView, AboutView, BlogView, BlogDetailView, ServiceDetailsView
+from home.views import ContactView, AboutView, BlogView, BlogDetailView, ServiceDetailsView, StatusView
 
 urlpatterns = [
     path("", HomeView.as_view(), name="candidate_home"),
@@ -9,6 +9,7 @@ urlpatterns = [
     path("contact/",ContactView.as_view(), name="candidate_contact"),
     path("about/",AboutView.as_view(), name="candidate_about"), 
 
+    path("status/",StatusView.as_view(), name="candidate_status"),
 
     path("blog/",BlogView.as_view(), name="candidate_blog"),
     path("blog/<slug:slug>/",BlogDetailView.as_view(), name="candidate_blog_detail"),

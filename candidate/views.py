@@ -5,6 +5,8 @@ from .forms import CandidateForm, ExperienceForm, EducationForm
 from django.forms import formset_factory
 from .models import CandidateModel, ExperienceModel, EducationModel
 from home.models import ServiceModel, BlogModel, StatusModel
+from django.core import mail
+from django.utils.translation import gettext as _
 
 # Create your views here.
 class HomeView(View):
@@ -83,8 +85,6 @@ class CandidateFormView(View):
             entry_date= request.POST['form-0-entry_date_year'] + "-" + request.POST['form-0-entry_date_month'] + "-" + request.POST['form-0-entry_date_day']
             quit_date= request.POST['form-0-quit_date_year'] + "-" + request.POST['form-0-quit_date_month'] + "-" + request.POST['form-0-quit_date_day']
 
-            print(martial_status)
-
             new_candidate = CandidateModel(
                 name=name,
                 surname=surname,
@@ -97,10 +97,9 @@ class CandidateFormView(View):
                 city=city,
                 postcode=postcode,
                 address=address,
-                photo=photo
+                photo=photo,
+                status=0
             )
-
-            
 
             new_experience = ExperienceModel(
                 institution_name=institution_name,
@@ -232,9 +231,12 @@ class CandidateFormView(View):
                 new_education2.save()
 
 
-            newStatus = StatusModel(candidates=new_candidate)
+            newStatus = StatusModel(candidates=new_candidate, status="0")
+
+            html="Yeni bir başvuru geldi!\nisim:"+name+"\neposta: "+email+"\nTelefon: "+phone+"\n<a href='https://türfa.de' target='_blank'>Buradan</a> düzenleyebilirsin."
             newStatus.save()
            
+            mail.send_mail(_("Başvuru"), html, 'postmaster-web@tuerfa.de', ['umutcansidar@gmail.com'], fail_silently=False)
 
             return HttpResponseRedirect(self.success_url)
 

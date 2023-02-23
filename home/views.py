@@ -18,26 +18,24 @@ class StatusView(View,LoginRequiredMixin):
     context={}
     login_url="/login/"
 
-
     def post(self, request):   
         if request.method=="POST":
             status_pk = request.POST["id"]
             candidate_status = request.POST["status"]
             user = request.user
-
             if user.is_authenticated:
                 if candidate_status == "1":
-                    updateStatus = StatusModel.objects.filter(id=status_pk).update(user=None, status=candidate_status)
+                    updateStatus = StatusModel.objects.filter(id=status_pk).update(user=user, status=str(candidate_status))
                 else:
-                    updateStatus = StatusModel.objects.filter(id=status_pk).update(status=candidate_status, user=user)
+                    updateStatus = StatusModel.objects.filter(id=status_pk).update(status=str(candidate_status), user=user)
                 return HttpResponseRedirect("/status/")            
 
         return render(request, self.template_name, self.context)
 
     def get(self, request):
 
-        self.context["candidate_candidate"] = StatusModel.objects.filter(status=True)
-        self.context["candidate_choosen"] = StatusModel.objects.filter(user=request.user, status=False)
+        self.context["candidate_candidate"] = StatusModel.objects.filter(status="1", user=request.user)
+        self.context["candidate_choosen"] = StatusModel.objects.filter(user=request.user, status="2")
        
         return render(request, self.template_name, self.context)
     
@@ -120,9 +118,7 @@ class LoginView(View):
     success_url="/"
     form_class=LoginForm
 
-
     def get(self, request):
-
         if request.user.is_authenticated:
             return HttpResponseRedirect(self.success_url)
 
@@ -212,10 +208,9 @@ class ContactView(View):
             message=request.POST['message']
 
 
-            html="isim:"+name+"\nemail: "+email+"\nphone: "+phone+"\nmessage: "+message
+            html="isim:"+name+"\neposta: "+email+"\nTelefon: "+phone+"\Mesaj: "+message
 
-            mail.send_mail(_("İletişim"), html, 'from@example.com', ['umutcansidar@gmail.com'], fail_silently=False)
-            assert len(mail.outbox) == 1
+            mail.send_mail(_("İletişim"), html, 'postmaster-web@tuerfa.de', ['umutcansidar@gmail.com'], fail_silently=False)
 
             return HttpResponseRedirect(self.success_url)
     

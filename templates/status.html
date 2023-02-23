@@ -45,6 +45,7 @@
                       <th>Status </th>
                       <th>Lebenslauf</th>
                       <th>Seç</th>
+                      <th>Seç</th>
                       <th></th>
                     </tr>
                   </thead>
@@ -59,9 +60,10 @@
                       {% csrf_token %}
                       <input type="hidden" name="id" value="{{s.pk}}">
                       
-                      <select name="status" id="id_status">
-                        <option value="1" {% if s.status == True %}selected{% endif %}>Aday</option>
-                        <option value="0">Seçildi</option>
+                      <select class="form-control" name="status" id="id_status">
+                        <option value="1" {% if s.status == "1" %}selected{% endif %}>Aday</option>
+                        <option value="2">Seçildi</option>
+                        <option value="3">Tamamlandı</option>
                       </select>
 
                     </form> 
@@ -74,7 +76,9 @@
                           >[herunterladen]</a
                         >
                       </td>
-                      
+                      <td>
+                        {{s.candidates.city}}
+                      </td>
                       <td>
                         <div class="form-group">
                           <button style="margin-top: 0; height: 30px; font-size: 12px; padding: 0 10px; line-height: 30px" type="submit" name="submit" id="submit">
@@ -113,12 +117,13 @@
                     <tr class="alert" role="alert">
                       <td>{{s.candidates.name}} {{s.candidates.surname}}</td>
                       <!--<th scope="row">001</th>-->
-                      <td>{{ s.candidates.birthday }}{{s.status}}</td>
+                      <td>{{ s.candidates.birthday }}</td>
                       <td> 
                         <input type="hidden" name="id" value="{{s.pk}}">
-                        <select name="status" id="id_status">
+                        <select class="form-control" name="status" id="id_status">
                           <option value="1">Aday</option>
-                          <option value="0" {% if s.status == False %}selected{% endif %}>Seçildi</option>
+                          <option value="2" {% if s.status == "2" %}selected{% endif %}>Seçildi</option>
+                          <option value="3">Tamamlandı</option>
                         </select>
                       </td>
                       <td>

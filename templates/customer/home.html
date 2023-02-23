@@ -31,10 +31,10 @@
                                 <div class="row">
                                     <div class="col-lg-8">
                                         <div class="content">
-                                            <h2 data-animation="animated slideInRight">Sağlık Profesyonelleri için Almanya'da <span>Çalışma ve Yerleşme Hizmetleri</span></h2>
+                                            <h2 data-animation="animated slideInRight">{% translate "Sağlık Profesyonelleri için Almanya'da <span>Çalışma ve Yerleşme Hizmetleri" %}</span></h2>
                                             <br>
-                                            <h3><span>Ücretsiz danışmanlık</span></h3>
-                                            <a data-animation="animated zoomInUp" class="btn btn-theme effect btn-md" {% if "candidate" in request.path %}href="{% url 'candidate_contact' %}"{% else %}href="{% url 'contact' %}"{% endif %}>Bize Ulaşın</a>
+                                            <h3><span>{% translate "Ücretsiz danışmanlık" %}</span></h3>
+                                            <a data-animation="animated zoomInUp" class="btn btn-theme effect btn-md" {% if "candidate" in request.path %}href="{% url 'candidate_contact' %}"{% else %}href="{% url 'contact' %}"{% endif %}>{% translate "Bize Ulaşın" %}</a>
                                         </div>
                                     </div>
                                 </div>
@@ -60,8 +60,8 @@
                 <div class="row">
                     <div class="col-lg-8 offset-lg-2">
                         <div class="site-heading text-center">
-                            <h4>Avantajlarımız</h4>
-                            <h2>Türfa ile Çalışmak için 4 Büyük Sebep</h2>
+                            <h4>{% translate "Avantajlarımız" %}</h4>
+                            <h2>{% translate "Türfa ile Çalışmak için 4 Büyük Sebep" %}</h2>
                             <div class="devider"></div>
                         </div>
                     </div>
@@ -86,10 +86,10 @@
                             <i class="flaticon-label"></i>
                             <div class="top">
                                 <span>01</span>
-                                <h4>Nitelikli Dil Egitimi</h4>
+                                <h4>{% translate "Nitelikli Dil Egitimi" %}</h4>
                             </div>
                             <p>
-                                Türfa´nin düzenledigi bütün dil egitimleri TELC sertifikali ve alanindan mezun hocalar tarafindan düzenlenmektedir. Ders programi Alman Dil Egitim kurumlarininki baz alinarak hazirlanmistir. 
+                                {% translate "Türfa´nin düzenledigi bütün dil egitimleri TELC sertifikali ve alanindan mezun hocalar tarafindan düzenlenmektedir. Ders programi Alman Dil Egitim kurumlarininki baz alinarak hazirlanmistir. " %}
                             </p>
                             <a href="#"><i class="arrow_right"></i></a>
                         </div>
@@ -101,10 +101,10 @@
                             <i class="flaticon-file"></i>
                             <div class="top">
                                 <span>02</span>
-                                <h4>Adil İş Politikası</h4>
+                                <h4>{% translate "Adil İş Politikası" %}</h4>
                             </div>
                             <p>
-                                Türfa is veren ve is arayan arasindaki sözlesmelerin iki taraf adina da adil olup olmadigini yasalar ve market kosullarini göz önünde bulundurarak degerlendirir. Calisanlar arasinda ayrim calisma saatleri, maas ve mesai gibi konularda ayrim gözetilmesine izin vermez. 
+                                {% translate "Türfa is veren ve is arayan arasindaki sözlesmelerin iki taraf adina da adil olup olmadigini yasalar ve market kosullarini göz önünde bulundurarak degerlendirir. Calisanlar arasinda ayrim calisma saatleri, maas ve mesai gibi konularda ayrim gözetilmesine izin vermez. " %}    
                             </p>
                             <a href="#"><i class="arrow_right"></i></a>
                         </div>
@@ -116,10 +116,10 @@
                             <i class="flaticon-file"></i>
                             <div class="top">
                                 <span>03</span>
-                                <h4>Genis Capli Is olanaklari</h4>
+                                <h4>{% translate "Genis Capli Is olanaklari" %}</h4>
                             </div>
                             <p>
-                                Türfa Almanya´da Sachsen, Sachsen-Anhalt ve Berlin eyaletlerinde faaliyet göstermektedir ve faaliyet gösterdigi bütün eyaletlerde anlasmali is verenleri bulunur.
+                                {% translate "Türfa Almanya´da Sachsen, Sachsen-Anhalt ve Berlin eyaletlerinde faaliyet göstermektedir ve faaliyet gösterdigi bütün eyaletlerde anlasmali is verenleri bulunur." %}    
                             </p>
                             <a href="#"><i class="arrow_right"></i></a>
                         </div>
@@ -143,8 +143,8 @@
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
                     <div class="site-heading text-center">
-                        <h4>BİZİ tanıyın</h4>
-                        <h2>Türfa Hakkında</h2>
+                        <h4>{% translate "BİZİ tanıyın" %}</h4>
+                        <h2>{% translate "Türfa Hakkında" %}</h2>
                         <div class="devider"></div>
                     </div>
                 </div>
@@ -155,10 +155,10 @@
                 <div class="row">
                     <div class="col-md-12">
                         <p>
-                            Türfa Almanya´da yalnızca Berlin, Sachsen ve Sachsen-Anhalt eyaletlerindeki anlaşmalı olduğu hastane, klinik, hasta bakim kezleri için istihdam ofisi ve danismanlik hizmeti verir. Bu kapsamda iş veren için çalışan bulur ve buldugu çalışan ile ön görüşmeleri gerçekleştirir, çalışanın meslek doküman ve kabiliyetlerini kontrol eder bunun icin gerekirse dil ve mesleki beceri tespit sinavlari organize eder. Vize ve istihdam ile ilgili bürokratik ve yasal süreçleri vekaleten yürütür veya takip eder. Gerekli durumlarda mesleki egitimler ve konferanslar düzenler. Is arayanin ihtiyac duymasi halinde konut veya paylasimli yasam alani bulunmasi icin yardimci olur. 
+                            {% translate "Türfa Almanya´da yalnızca Berlin, Sachsen ve Sachsen-Anhalt eyaletlerindeki anlaşmalı olduğu hastane, klinik, hasta bakim kezleri için istihdam ofisi ve danismanlik hizmeti verir. Bu kapsamda iş veren için çalışan bulur ve buldugu çalışan ile ön görüşmeleri gerçekleştirir, çalışanın meslek doküman ve kabiliyetlerini kontrol eder bunun icin gerekirse dil ve mesleki beceri tespit sinavlari organize eder. Vize ve istihdam ile ilgili bürokratik ve yasal süreçleri vekaleten yürütür veya takip eder. Gerekli durumlarda mesleki egitimler ve konferanslar düzenler. Is arayanin ihtiyac duymasi halinde konut veya paylasimli yasam alani bulunmasi icin yardimci olur. " %}    
                         </p>
                         <p>
-                            Türfa adil çalışma ortamı ve koşullarının sağlanması için güven kurumu olarak kendisinin yaptığı bütün iş bulma faaliyetlerinde iş sözleşmelerini denetler. Çalışma saati, ücret, mesai ücreti tatil günleri gibi konularda ilgili eyaletteki piyasa ortalamasının altına düşülmeyeceğini garanti eder.
+                            {% translate "Türfa adil çalışma ortamı ve koşullarının sağlanması için güven kurumu olarak kendisinin yaptığı bütün iş bulma faaliyetlerinde iş sözleşmelerini denetler. Çalışma saati, ücret, mesai ücreti tatil günleri gibi konularda ilgili eyaletteki piyasa ortalamasının altına düşülmeyeceğini garanti eder." %}    
                         </p>
                     </div>
                 </div>
@@ -187,65 +187,65 @@
                                 <i class="flaticon-target"></i>
                             </div>
                             <div class="content text-center">
-                                <span>Doğru işi</span>
-                                <h3 class="mb-0">bulmak</h3>
-                                <span>bizim işimiz</span>
+                                <span>{% translate "Doğru işi" %}</span>
+                                <h3 class="mb-0">{% translate "bulmak" %}</h3>
+                                <span>{% translate "bizim işimiz" %}</span>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-lg-6 info">
-                        <h4>Çalışma koşulları</h4>
-                        <h2>Türfa ile çalışmak için neler gereklidir ?</h2>
+                        <h4>{% translate "Çalışma koşulları" %}</h4>
+                        <h2>{% translate "Türfa ile çalışmak için neler gereklidir ?" %}</h2>
                         <p>
-                            Bizimle çalışmak için öncelikle bizimle bir ön iş görüşme yapmanız gerekir. Bunun haricinde Aşağıdaki belge, yetkinliklere sahip olmalısınız:  
+                            {% translate "Bizimle çalışmak için öncelikle bizimle bir ön iş görüşme yapmanız gerekir. Bunun haricinde Aşağıdaki belge, yetkinliklere sahip olmalısınız:  " %}    
                         </p>
                         <ul>
                             <li>
                               <p>
-                                Mesleki Diploma: Tip, Hemşirelik, Ameliyathane Teknikerliği, Hasta Bakıcılık  
+                               {% translate " Mesleki Diploma: Tip, Hemşirelik, Ameliyathane Teknikerliği, Hasta Bakıcılık  " %}
                               </p>
                             </li>
                             <li>
                               <p>
-                                Adli sicil kaydı yoktur belgesi 
+                                {% translate "Adli sicil kaydı yoktur belgesi" %}
                               </p>
                             </li>
                             <li>
-                              <p>Borcu yoktur belgesi</p>
+                              <p>{% translate "Borcu yoktur belgesi" %}</p>
                             </li>
                             <li>
                               <p>
-                                Mezun olunan Üniversiteden alınmış saatlik açıklamalı ders programı(Cirriclum)
-                              </p>
-                            </li>
-                            <li>
-                              <p>
-                                Almanca A1 Dil Belgesi (Geothe Institut,ÖSD veya TELC) 
+                                {% translate "Mezun olunan Üniversiteden alınmış saatlik açıklamalı ders programı(Cirriclum)" %}
                               </p>
                             </li>
                             <li>
                               <p>
-                                Almanya´daki işlemlerinize başlamamız için Almanca Türkçe vekalet. (Vollmacht)  
+                                {% translate "Almanca A1 Dil Belgesi (Geothe Institut,ÖSD veya TELC) " %}
                               </p>
                             </li>
                             <li>
                               <p>
-                                A2 Sigorta kayıt dökümü 
+                                {% translate "Almanya´daki işlemlerinize başlamamız için Almanca Türkçe vekalet. (Vollmacht)" %}
+                              </p>
+                            </li>
+                            <li>
+                              <p>
+                                {% translate "A2 Sigorta kayıt dökümü" %}
                               </p>
                             </li>
                             <li>
                                 <p>
-                                    CV (çalıştığınız veya eğitim gördüğünüz kurumdan bir referans verilmesi zorunludur.) 
+                                    {% translate "CV (çalıştığınız veya eğitim gördüğünüz kurumdan bir referans verilmesi zorunludur.) " %}
                                 </p>
                             </li>
                             <li>
                                 <p>
-                                    Mesleki veya takım elbise ile çekilmiş 1 adet vesikalık fotoğraf. Dijital veya Hardcopy
+                                    {% translate "Mesleki veya takım elbise ile çekilmiş 1 adet vesikalık fotoğraf. Dijital veya Hardcopy" %}
                                 </p>
                             </li>
                         </ul>
-                        <a class="btn btn-light effect btn-md" href="about-us.html">Hakkımızda</a>
+                        <a class="btn btn-light effect btn-md" href="about-us.html">{% translate "Hakkımızda" %}</a>
                     </div>
                     
                 </div>
@@ -325,7 +325,7 @@
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
                     <div class="site-heading text-center">
-                        <h4>Blog</h4>
+                        <h4>{% translate "Blog" %}</h4>
                         {% comment %} <h2>Latest News & Articles</h2> {% endcomment %}
                     </div>
                 </div>
@@ -354,10 +354,12 @@
                                     </ul>
                                     </div>
                                     <h4>
-                                        <a {% if "candidate" in request.path %} href="{% url 'candidate_blog_detail' item.slug %}"{% else %} href="{% url 'blog_detail' item.slug %}"{% endif %}>{{item.title}}</a>
+                                        <a {% if "candidate" in request.path %} href="{% url 'candidate_blog_detail' item.slug %}"{% else %} href="{% url 'blog_detail' item.slug %}"{% endif %}>
+                                            {% blocktrans with item.title|safe as title %}{{title}}{% endblocktrans %}
+                                        </a>
                                     </h4>
                                     <p>
-                                        {{item.text_short|safe}}
+                                        {% blocktrans with item.text_short|safe as text_short %}{{text_short}}{% endblocktrans %}
                                     </p>
                                 </div>
                             </div>
