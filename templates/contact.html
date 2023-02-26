@@ -32,7 +32,11 @@
                 <div class="col-lg-5 info">
                     <div class="content">
                         {% if contact %}
-                            {% blocktrans with contact.content|safe as content %} {{content}} {% endblocktrans %}
+                            {% if "tr" in request.path %}
+                            {{contact.content|safe}}
+                            {% else %}
+                            {{contact.content_de|safe}}
+                            {% endif %}
                         {% endif %}
                     </div>
                 </div>
@@ -57,7 +61,14 @@
                                             {{field}}
                                         </div>
                                     </div>
-                                
+                                {% elif forloop.counter == 5 %}
+                                    <div class="col-lg-12">
+                                        
+                                        <div class="form-check form-check-inline form-group comments">
+                                            {{field}}
+                                            {{field.label_tag}}
+                                        </div>
+                                    </div>
                                 {% else %}
                                     <div class="col-lg-12">
                                         <div class="form-group comments">

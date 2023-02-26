@@ -52,6 +52,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
 ]
 
 ROOT_URLCONF = 'turfa.urls'
@@ -115,8 +116,6 @@ AUTH_USER_MODEL="home.User"
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
 
-
-
 LANGUAGE_CODE = 'tr-tr'
 
 LANGUAGES = [
@@ -126,7 +125,7 @@ LANGUAGES = [
 ]
 
 TIME_ZONE = 'UTC'
-
+LOCALE_PATHS = [os.path.join(BASE_DIR, 'locale')]
 USE_I18N = True
 
 USE_TZ = True

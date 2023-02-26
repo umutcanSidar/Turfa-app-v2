@@ -1,0 +1,2391 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#: .\templates\status.html:44 .\templates\status.html:104
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-02-26 21:24+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\candidate\models.py:28
+msgid "Ad"
+msgstr "Name"
+
+#: .\candidate\models.py:29
+msgid "Soyad"
+msgstr "Nachname"
+
+#: .\candidate\models.py:30 .\home\admin.py:21 .\home\forms.py:21
+#: .\home\models.py:36 .\templates\shared\footer.html:63
+msgid "E-Posta"
+msgstr "E-Mail"
+
+#: .\candidate\models.py:31 .\home\forms.py:22 .\home\models.py:37
+#: .\templates\shared\footer.html:72
+msgid "Telefon"
+msgstr "Mobil"
+
+#: .\candidate\models.py:32
+msgid "TC Kimlik Numarası"
+msgstr "TC NO"
+
+#: .\candidate\models.py:33 .\templates\admin\cv.html:92
+msgid "Çocuk Sayısı"
+msgstr "Anzahl der Kinder"
+
+#: .\candidate\models.py:34 .\templates\admin\cv.html:80
+#: .\templates\status.html:46 .\templates\status.html:106
+msgid "Doğum Tarihi"
+msgstr "Geburtsdatum"
+
+#: .\candidate\models.py:35
+msgid "Medeni Durumu"
+msgstr "Familienstand"
+
+#: .\candidate\models.py:36
+msgid "Şehir"
+msgstr "Stadt"
+
+#: .\candidate\models.py:37
+msgid "Posta Kodu"
+msgstr "Postzahl"
+
+#: .\candidate\models.py:38 .\home\models.py:38
+#: .\templates\shared\footer.html:54
+msgid "Adres"
+msgstr "Adresse"
+
+#: .\candidate\models.py:39
+msgid "Fotoğraf"
+msgstr "Photo"
+
+#: .\candidate\models.py:40 .\templates\status.html:47
+#: .\templates\status.html:107
+msgid "Almanca"
+msgstr "Deutsch"
+
+#: .\candidate\models.py:41
+msgid "Durumu"
+msgstr "Status"
+
+#: .\candidate\models.py:52
+msgid "Kurum Adı"
+msgstr "Name der Einrichtung"
+
+#: .\candidate\models.py:53
+msgid "Mevki"
+msgstr "Position"
+
+#: .\candidate\models.py:54
+msgid "İş Adresi"
+msgstr "Adresse der Einrichtung"
+
+#: .\candidate\models.py:55
+msgid "Referans Adı"
+msgstr "Referenzname"
+
+#: .\candidate\models.py:56
+msgid "Kurum Email"
+msgstr "E-Mail des Unternehmens"
+
+#: .\candidate\models.py:57
+msgid "Kurum Telefonu"
+msgstr "Rufnummer des Unternehmens"
+
+#: .\candidate\models.py:58
+msgid "Giriş Tarihi"
+msgstr "Eintrittsdatum"
+
+#: .\candidate\models.py:59
+msgid "Çıkış Tarihi"
+msgstr "Enddatum"
+
+#: .\candidate\models.py:70
+msgid "Üniversite Adı"
+msgstr "Name der Universität"
+
+#: .\candidate\models.py:71
+msgid "Mezun Olunan Bölüm"
+msgstr "graduiertes Studium"
+
+#: .\candidate\models.py:72
+msgid "Doktora Yaptınız Mı?"
+msgstr "Haben Sie einen Doktortitel erworben?"
+
+#: .\candidate\models.py:73
+msgid "Yüksek Lisans Yaptınız Mı?"
+msgstr "Haben Sie einen Master-Abschluss gemacht?"
+
+#: .\candidate\models.py:74
+msgid "Doktorlar İçin Uzmanlık Alanı"
+msgstr "Fachgebiet für Ärzte"
+
+#: .\candidate\models.py:75
+msgid "Üniversiteye Giriş Tarihi"
+msgstr "Datum für den Eintritt in die Universität"
+
+#: .\candidate\models.py:76
+msgid "Mezuniyet Tarihi"
+msgstr "Abschlussdatum"
+
+#: .\candidate\views.py:251 .\templates\customer\home.html:63
+#: .\templates\shared\header.html:131
+msgid "Başvuru"
+msgstr "Bewerbung"
+
+#: .\home\admin.py:23 .\home\models.py:120 .\templates\shared\header.html:22
+msgid "İşveren"
+msgstr "Arbeitgeber"
+
+#: .\home\forms.py:20
+msgid "İsim"
+msgstr "Name"
+
+#: .\home\forms.py:23
+msgid "Mesajınız"
+msgstr "Ihre Nachricht"
+
+#: .\home\forms.py:24
+msgid "KVKK Metnini okudum ,anladım ve onaylıyorum."
+msgstr "Ich habe den Text der AGB gelesen, verstanden und akzeptiere ihn."
+
+#: .\home\models.py:39
+msgid "YouTube"
+msgstr ""
+
+#: .\home\models.py:40
+msgid "Linkedin"
+msgstr ""
+
+#: .\home\models.py:41
+msgid "Logo"
+msgstr ""
+
+#: .\home\models.py:42
+msgid "Logo genişliği"
+msgstr ""
+
+#: .\home\models.py:43
+msgid "Kvkk Metni"
+msgstr ""
+
+#: .\home\models.py:44
+msgid "Çerez Politikası Metni"
+msgstr ""
+
+#: .\home\models.py:45 .\home\models.py:59 .\home\models.py:106
+#: .\home\models.py:140 .\home\models.py:162 .\home\models.py:180
+msgid "Kullanıcı Grubu"
+msgstr ""
+
+#: .\home\models.py:53 .\home\models.py:67 .\templates\register.html:39
+msgid "İş arayan"
+msgstr "Arbeitnehmer"
+
+#: .\home\models.py:55 .\home\models.py:69 .\templates\register.html:40
+msgid "İş veren"
+msgstr "Arbeitgeber"
+
+#: .\home\models.py:58 .\home\models.py:133 .\home\models.py:155
+msgid "İçerik"
+msgstr ""
+
+#: .\home\models.py:78
+msgid "The Email must be set"
+msgstr ""
+
+#: .\home\models.py:94
+msgid "Superuser must have is_staff=True."
+msgstr ""
+
+#: .\home\models.py:96
+msgid "Superuser must have is_superuser=True."
+msgstr ""
+
+#: .\home\models.py:100
+msgid "email address"
+msgstr ""
+
+#: .\home\models.py:119
+msgid "Aday"
+msgstr "Arbeitnehmer"
+
+#: .\home\models.py:121 .\templates\shared\header.html:26
+#: .\templates\status.html:49 .\templates\status.html:109
+msgid "Durum"
+msgstr "Applikationen"
+
+#: .\home\models.py:131 .\home\models.py:151 .\home\models.py:172
+msgid "Başlık"
+msgstr ""
+
+#: .\home\models.py:132 .\home\models.py:173
+#, fuzzy
+#| msgid "Almanca"
+msgid "Başlık Almanca"
+msgstr "Deutsch"
+
+#: .\home\models.py:134 .\home\models.py:156
+#, fuzzy
+#| msgid "Almanca"
+msgid "İçerik Almanca"
+msgstr "Deutsch"
+
+#: .\home\models.py:135
+msgid "Kısa Metin"
+msgstr ""
+
+#: .\home\models.py:136
+msgid "Kısa Metin Almanca"
+msgstr ""
+
+#: .\home\models.py:137 .\home\models.py:160
+msgid "Slug"
+msgstr ""
+
+#: .\home\models.py:138 .\home\models.py:153 .\home\models.py:179
+msgid "Görsel"
+msgstr ""
+
+#: .\home\models.py:139 .\home\models.py:154
+msgid "PDF"
+msgstr ""
+
+#: .\home\models.py:157
+msgid "Kısa içerik"
+msgstr ""
+
+#: .\home\models.py:158
+msgid "Kısa içerik Almanca"
+msgstr ""
+
+#: .\home\models.py:159
+msgid "Yayın Tarihi"
+msgstr ""
+
+#: .\home\models.py:161
+#, fuzzy
+#| msgid "Almanca"
+msgid "Slug Almanca"
+msgstr "Deutsch"
+
+#: .\home\models.py:174
+msgid "Hakkında"
+msgstr ""
+
+#: .\home\models.py:175
+msgid "Hakkında Almanca"
+msgstr ""
+
+#: .\home\models.py:176
+msgid "Hakkında(tam genişlik)"
+msgstr ""
+
+#: .\home\models.py:177
+msgid "Hakkında(tam genişlik) Almanca"
+msgstr ""
+
+#: .\home\models.py:178
+msgid "İmza"
+msgstr ""
+
+#: .\home\models.py:181
+msgid "Yayın Durumu"
+msgstr ""
+
+#: .\home\views.py:99 .\home\views.py:109
+msgid "Kullanıcı mevcut"
+msgstr "Benutzer ıst vorhanden"
+
+#: .\home\views.py:137
+msgid "Kullanıcı adı veya Parolayı kontrol ediniz!"
+msgstr "Überprüfen Sie den Benutzernamen oder das Passwort"
+
+#: .\home\views.py:223 .\templates\contact.html:17 .\templates\contact.html:20
+#: .\templates\shared\footer.html:46 .\templates\shared\header.html:135
+msgid "İletişim"
+msgstr "Impressium"
+
+#: .\myvenv\Lib\site-packages\ckeditor_uploader\forms.py:6
+msgid "Search files"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:5
+msgid "Select an image to embed"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:27
+msgid "Browse for the image you want, then click 'Embed Image' to continue..."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:29
+msgid ""
+"No images found. Upload images using the 'Image Button' dialog's 'Upload' "
+"tab."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:50
+msgid "Images in: "
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:62
+#: .\myvenv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:80
+msgid "Embed Image"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:146
+msgid "Play Slideshow"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:147
+msgid "Pause Slideshow"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:148
+msgid "&lsaquo; Previous Photo"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:149
+msgid "Next Photo &rsaquo;"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:150
+msgid "Next &rsaquo;"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:151
+msgid "&lsaquo; Prev"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\contrib\messages\apps.py:15
+msgid "Messages"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\contrib\sitemaps\apps.py:8
+msgid "Site Maps"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\contrib\staticfiles\apps.py:9
+msgid "Static Files"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\contrib\syndication\apps.py:7
+msgid "Syndication"
+msgstr ""
+
+#. Translators: String used to replace omitted page numbers in elided page
+#. range generated by paginators, e.g. [1, 2, '…', 5, 6, 7, '…', 9, 10].
+#: .\myvenv\Lib\site-packages\django\core\paginator.py:30
+msgid "…"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\core\paginator.py:50
+msgid "That page number is not an integer"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\core\paginator.py:52
+msgid "That page number is less than 1"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\core\paginator.py:57
+msgid "That page contains no results"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\core\validators.py:22
+msgid "Enter a valid value."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\core\validators.py:104
+#: .\myvenv\Lib\site-packages\django\forms\fields.py:751
+msgid "Enter a valid URL."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\core\validators.py:164
+msgid "Enter a valid integer."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\core\validators.py:175
+msgid "Enter a valid email address."
+msgstr ""
+
+#. Translators: "letters" means latin letters: a-z and A-Z.
+#: .\myvenv\Lib\site-packages\django\core\validators.py:256
+msgid ""
+"Enter a valid “slug” consisting of letters, numbers, underscores or hyphens."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\core\validators.py:264
+msgid ""
+"Enter a valid “slug” consisting of Unicode letters, numbers, underscores, or "
+"hyphens."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\core\validators.py:276
+#: .\myvenv\Lib\site-packages\django\core\validators.py:284
+#: .\myvenv\Lib\site-packages\django\core\validators.py:313
+msgid "Enter a valid IPv4 address."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\core\validators.py:293
+#: .\myvenv\Lib\site-packages\django\core\validators.py:314
+msgid "Enter a valid IPv6 address."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\core\validators.py:305
+#: .\myvenv\Lib\site-packages\django\core\validators.py:312
+msgid "Enter a valid IPv4 or IPv6 address."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\core\validators.py:348
+msgid "Enter only digits separated by commas."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\core\validators.py:354
+#, python-format
+msgid "Ensure this value is %(limit_value)s (it is %(show_value)s)."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\core\validators.py:389
+#, python-format
+msgid "Ensure this value is less than or equal to %(limit_value)s."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\core\validators.py:398
+#, python-format
+msgid "Ensure this value is greater than or equal to %(limit_value)s."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\core\validators.py:407
+#, python-format
+msgid "Ensure this value is a multiple of step size %(limit_value)s."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\core\validators.py:417
+#, python-format
+msgid ""
+"Ensure this value has at least %(limit_value)d character (it has "
+"%(show_value)d)."
+msgid_plural ""
+"Ensure this value has at least %(limit_value)d characters (it has "
+"%(show_value)d)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\myvenv\Lib\site-packages\django\core\validators.py:435
+#, python-format
+msgid ""
+"Ensure this value has at most %(limit_value)d character (it has "
+"%(show_value)d)."
+msgid_plural ""
+"Ensure this value has at most %(limit_value)d characters (it has "
+"%(show_value)d)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\myvenv\Lib\site-packages\django\core\validators.py:458
+#: .\myvenv\Lib\site-packages\django\forms\fields.py:347
+#: .\myvenv\Lib\site-packages\django\forms\fields.py:386
+msgid "Enter a number."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\core\validators.py:460
+#, python-format
+msgid "Ensure that there are no more than %(max)s digit in total."
+msgid_plural "Ensure that there are no more than %(max)s digits in total."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\myvenv\Lib\site-packages\django\core\validators.py:465
+#, python-format
+msgid "Ensure that there are no more than %(max)s decimal place."
+msgid_plural "Ensure that there are no more than %(max)s decimal places."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\myvenv\Lib\site-packages\django\core\validators.py:470
+#, python-format
+msgid ""
+"Ensure that there are no more than %(max)s digit before the decimal point."
+msgid_plural ""
+"Ensure that there are no more than %(max)s digits before the decimal point."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\myvenv\Lib\site-packages\django\core\validators.py:539
+#, python-format
+msgid ""
+"File extension “%(extension)s” is not allowed. Allowed extensions are: "
+"%(allowed_extensions)s."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\core\validators.py:600
+msgid "Null characters are not allowed."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\db\models\base.py:1401
+#: .\myvenv\Lib\site-packages\django\forms\models.py:899
+msgid "and"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\db\models\base.py:1403
+#, python-format
+msgid "%(model_name)s with this %(field_labels)s already exists."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\db\models\constraints.py:17
+#, python-format
+msgid "Constraint “%(name)s” is violated."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\db\models\fields\__init__.py:129
+#, python-format
+msgid "Value %(value)r is not a valid choice."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\db\models\fields\__init__.py:130
+msgid "This field cannot be null."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\db\models\fields\__init__.py:131
+msgid "This field cannot be blank."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\db\models\fields\__init__.py:132
+#, python-format
+msgid "%(model_name)s with this %(field_label)s already exists."
+msgstr ""
+
+#. Translators: The 'lookup_type' is one of 'date', 'year' or
+#. 'month'. Eg: "Title must be unique for pub_date year"
+#: .\myvenv\Lib\site-packages\django\db\models\fields\__init__.py:136
+#, python-format
+msgid ""
+"%(field_label)s must be unique for %(date_field_label)s %(lookup_type)s."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\db\models\fields\__init__.py:174
+#, python-format
+msgid "Field of type: %(field_type)s"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\db\models\fields\__init__.py:1065
+#, python-format
+msgid "“%(value)s” value must be either True or False."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\db\models\fields\__init__.py:1066
+#, python-format
+msgid "“%(value)s” value must be either True, False, or None."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\db\models\fields\__init__.py:1068
+msgid "Boolean (Either True or False)"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\db\models\fields\__init__.py:1118
+#, python-format
+msgid "String (up to %(max_length)s)"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\db\models\fields\__init__.py:1222
+msgid "Comma-separated integers"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\db\models\fields\__init__.py:1323
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid date format. It must be in YYYY-MM-DD "
+"format."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\db\models\fields\__init__.py:1327
+#: .\myvenv\Lib\site-packages\django\db\models\fields\__init__.py:1462
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (YYYY-MM-DD) but it is an invalid "
+"date."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\db\models\fields\__init__.py:1331
+msgid "Date (without time)"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\db\models\fields\__init__.py:1458
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[."
+"uuuuuu]][TZ] format."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\db\models\fields\__init__.py:1466
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]]"
+"[TZ]) but it is an invalid date/time."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\db\models\fields\__init__.py:1471
+msgid "Date (with time)"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\db\models\fields\__init__.py:1595
+#, python-format
+msgid "“%(value)s” value must be a decimal number."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\db\models\fields\__init__.py:1597
+msgid "Decimal number"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\db\models\fields\__init__.py:1754
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in [DD] [[HH:]MM:]ss[."
+"uuuuuu] format."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\db\models\fields\__init__.py:1758
+msgid "Duration"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\db\models\fields\__init__.py:1810
+msgid "Email address"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\db\models\fields\__init__.py:1835
+msgid "File path"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\db\models\fields\__init__.py:1913
+#, python-format
+msgid "“%(value)s” value must be a float."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\db\models\fields\__init__.py:1915
+msgid "Floating point number"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\db\models\fields\__init__.py:1955
+#, python-format
+msgid "“%(value)s” value must be an integer."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\db\models\fields\__init__.py:1957
+msgid "Integer"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\db\models\fields\__init__.py:2049
+msgid "Big (8 byte) integer"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\db\models\fields\__init__.py:2066
+msgid "Small integer"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\db\models\fields\__init__.py:2074
+msgid "IPv4 address"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\db\models\fields\__init__.py:2105
+msgid "IP address"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\db\models\fields\__init__.py:2198
+#: .\myvenv\Lib\site-packages\django\db\models\fields\__init__.py:2199
+#, python-format
+msgid "“%(value)s” value must be either None, True or False."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\db\models\fields\__init__.py:2201
+msgid "Boolean (Either True, False or None)"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\db\models\fields\__init__.py:2252
+msgid "Positive big integer"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\db\models\fields\__init__.py:2267
+msgid "Positive integer"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\db\models\fields\__init__.py:2282
+msgid "Positive small integer"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\db\models\fields\__init__.py:2298
+#, python-format
+msgid "Slug (up to %(max_length)s)"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\db\models\fields\__init__.py:2334
+msgid "Text"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\db\models\fields\__init__.py:2409
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in HH:MM[:ss[.uuuuuu]] "
+"format."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\db\models\fields\__init__.py:2413
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (HH:MM[:ss[.uuuuuu]]) but it is an "
+"invalid time."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\db\models\fields\__init__.py:2417
+msgid "Time"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\db\models\fields\__init__.py:2525
+msgid "URL"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\db\models\fields\__init__.py:2549
+msgid "Raw binary data"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\db\models\fields\__init__.py:2614
+#, python-format
+msgid "“%(value)s” is not a valid UUID."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\db\models\fields\__init__.py:2616
+msgid "Universally unique identifier"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\db\models\fields\files.py:231
+msgid "File"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\db\models\fields\files.py:391
+msgid "Image"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\db\models\fields\json.py:18
+msgid "A JSON object"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\db\models\fields\json.py:20
+msgid "Value must be valid JSON."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\db\models\fields\related.py:918
+#, python-format
+msgid "%(model)s instance with %(field)s %(value)r does not exist."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\db\models\fields\related.py:920
+msgid "Foreign Key (type determined by related field)"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\db\models\fields\related.py:1227
+msgid "One-to-one relationship"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\db\models\fields\related.py:1284
+#, python-format
+msgid "%(from)s-%(to)s relationship"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\db\models\fields\related.py:1286
+#, python-format
+msgid "%(from)s-%(to)s relationships"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\db\models\fields\related.py:1334
+msgid "Many-to-many relationship"
+msgstr ""
+
+#. Translators: If found as last label character, these punctuation
+#. characters will prevent the default label_suffix to be appended to the label
+#: .\myvenv\Lib\site-packages\django\forms\boundfield.py:176
+msgid ":?.!"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\forms\fields.py:91
+msgid "This field is required."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\forms\fields.py:298
+msgid "Enter a whole number."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\forms\fields.py:467
+#: .\myvenv\Lib\site-packages\django\forms\fields.py:1240
+msgid "Enter a valid date."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\forms\fields.py:490
+#: .\myvenv\Lib\site-packages\django\forms\fields.py:1241
+msgid "Enter a valid time."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\forms\fields.py:517
+msgid "Enter a valid date/time."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\forms\fields.py:551
+msgid "Enter a valid duration."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\forms\fields.py:552
+#, python-brace-format
+msgid "The number of days must be between {min_days} and {max_days}."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\forms\fields.py:618
+msgid "No file was submitted. Check the encoding type on the form."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\forms\fields.py:619
+msgid "No file was submitted."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\forms\fields.py:620
+msgid "The submitted file is empty."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\forms\fields.py:622
+#, python-format
+msgid "Ensure this filename has at most %(max)d character (it has %(length)d)."
+msgid_plural ""
+"Ensure this filename has at most %(max)d characters (it has %(length)d)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\myvenv\Lib\site-packages\django\forms\fields.py:627
+msgid "Please either submit a file or check the clear checkbox, not both."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\forms\fields.py:693
+msgid ""
+"Upload a valid image. The file you uploaded was either not an image or a "
+"corrupted image."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\forms\fields.py:856
+#: .\myvenv\Lib\site-packages\django\forms\fields.py:948
+#: .\myvenv\Lib\site-packages\django\forms\models.py:1572
+#, python-format
+msgid "Select a valid choice. %(value)s is not one of the available choices."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\forms\fields.py:950
+#: .\myvenv\Lib\site-packages\django\forms\fields.py:1069
+#: .\myvenv\Lib\site-packages\django\forms\models.py:1570
+msgid "Enter a list of values."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\forms\fields.py:1070
+msgid "Enter a complete value."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\forms\fields.py:1309
+msgid "Enter a valid UUID."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\forms\fields.py:1339
+msgid "Enter a valid JSON."
+msgstr ""
+
+#. Translators: This is the default suffix added to form field labels
+#: .\myvenv\Lib\site-packages\django\forms\forms.py:98
+msgid ":"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\forms\forms.py:248
+#: .\myvenv\Lib\site-packages\django\forms\forms.py:332
+#, python-format
+msgid "(Hidden field %(name)s) %(error)s"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\forms\formsets.py:63
+#, python-format
+msgid ""
+"ManagementForm data is missing or has been tampered with. Missing fields: "
+"%(field_names)s. You may need to file a bug report if the issue persists."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\forms\formsets.py:67
+#, python-format
+msgid "Please submit at most %(num)d form."
+msgid_plural "Please submit at most %(num)d forms."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\myvenv\Lib\site-packages\django\forms\formsets.py:72
+#, python-format
+msgid "Please submit at least %(num)d form."
+msgid_plural "Please submit at least %(num)d forms."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\myvenv\Lib\site-packages\django\forms\formsets.py:483
+#: .\myvenv\Lib\site-packages\django\forms\formsets.py:490
+msgid "Order"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\forms\formsets.py:496
+msgid "Delete"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\forms\models.py:892
+#, python-format
+msgid "Please correct the duplicate data for %(field)s."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\forms\models.py:897
+#, python-format
+msgid "Please correct the duplicate data for %(field)s, which must be unique."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\forms\models.py:904
+#, python-format
+msgid ""
+"Please correct the duplicate data for %(field_name)s which must be unique "
+"for the %(lookup)s in %(date_field)s."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\forms\models.py:913
+msgid "Please correct the duplicate values below."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\forms\models.py:1344
+msgid "The inline value did not match the parent instance."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\forms\models.py:1435
+msgid "Select a valid choice. That choice is not one of the available choices."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\forms\models.py:1574
+#, python-format
+msgid "“%(pk)s” is not a valid value."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\forms\utils.py:226
+#, python-format
+msgid ""
+"%(datetime)s couldn’t be interpreted in time zone %(current_timezone)s; it "
+"may be ambiguous or it may not exist."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\forms\widgets.py:439
+msgid "Clear"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\forms\widgets.py:440
+msgid "Currently"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\forms\widgets.py:441
+msgid "Change"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\forms\widgets.py:769
+msgid "Unknown"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\forms\widgets.py:770
+msgid "Yes"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\forms\widgets.py:771
+msgid "No"
+msgstr ""
+
+#. Translators: Please do not add spaces around commas.
+#: .\myvenv\Lib\site-packages\django\template\defaultfilters.py:853
+msgid "yes,no,maybe"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\template\defaultfilters.py:883
+#: .\myvenv\Lib\site-packages\django\template\defaultfilters.py:900
+#, python-format
+msgid "%(size)d byte"
+msgid_plural "%(size)d bytes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\myvenv\Lib\site-packages\django\template\defaultfilters.py:902
+#, python-format
+msgid "%s KB"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\template\defaultfilters.py:904
+#, python-format
+msgid "%s MB"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\template\defaultfilters.py:906
+#, python-format
+msgid "%s GB"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\template\defaultfilters.py:908
+#, python-format
+msgid "%s TB"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\template\defaultfilters.py:910
+#, python-format
+msgid "%s PB"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\utils\dateformat.py:77
+msgid "p.m."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\utils\dateformat.py:78
+msgid "a.m."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\utils\dateformat.py:83
+msgid "PM"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\utils\dateformat.py:84
+msgid "AM"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\utils\dateformat.py:155
+msgid "midnight"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\utils\dateformat.py:157
+msgid "noon"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\utils\dates.py:7
+msgid "Monday"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\utils\dates.py:8
+msgid "Tuesday"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\utils\dates.py:9
+msgid "Wednesday"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\utils\dates.py:10
+msgid "Thursday"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\utils\dates.py:11
+msgid "Friday"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\utils\dates.py:12
+msgid "Saturday"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\utils\dates.py:13
+msgid "Sunday"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\utils\dates.py:16
+msgid "Mon"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\utils\dates.py:17
+msgid "Tue"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\utils\dates.py:18
+msgid "Wed"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\utils\dates.py:19
+msgid "Thu"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\utils\dates.py:20
+msgid "Fri"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\utils\dates.py:21
+msgid "Sat"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\utils\dates.py:22
+msgid "Sun"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\utils\dates.py:25
+msgid "January"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\utils\dates.py:26
+msgid "February"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\utils\dates.py:27
+msgid "March"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\utils\dates.py:28
+msgid "April"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\utils\dates.py:29
+msgid "May"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\utils\dates.py:30
+msgid "June"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\utils\dates.py:31
+msgid "July"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\utils\dates.py:32
+msgid "August"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\utils\dates.py:33
+msgid "September"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\utils\dates.py:34
+msgid "October"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\utils\dates.py:35
+msgid "November"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\utils\dates.py:36
+msgid "December"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\utils\dates.py:39
+msgid "jan"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\utils\dates.py:40
+msgid "feb"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\utils\dates.py:41
+msgid "mar"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\utils\dates.py:42
+msgid "apr"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\utils\dates.py:43
+msgid "may"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\utils\dates.py:44
+msgid "jun"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\utils\dates.py:45
+msgid "jul"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\utils\dates.py:46
+msgid "aug"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\utils\dates.py:47
+msgid "sep"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\utils\dates.py:48
+msgid "oct"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\utils\dates.py:49
+msgid "nov"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\utils\dates.py:50
+msgid "dec"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\utils\dates.py:53
+msgctxt "abbrev. month"
+msgid "Jan."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\utils\dates.py:54
+msgctxt "abbrev. month"
+msgid "Feb."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\utils\dates.py:55
+msgctxt "abbrev. month"
+msgid "March"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\utils\dates.py:56
+msgctxt "abbrev. month"
+msgid "April"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\utils\dates.py:57
+msgctxt "abbrev. month"
+msgid "May"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\utils\dates.py:58
+msgctxt "abbrev. month"
+msgid "June"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\utils\dates.py:59
+msgctxt "abbrev. month"
+msgid "July"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\utils\dates.py:60
+msgctxt "abbrev. month"
+msgid "Aug."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\utils\dates.py:61
+msgctxt "abbrev. month"
+msgid "Sept."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\utils\dates.py:62
+msgctxt "abbrev. month"
+msgid "Oct."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\utils\dates.py:63
+msgctxt "abbrev. month"
+msgid "Nov."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\utils\dates.py:64
+msgctxt "abbrev. month"
+msgid "Dec."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\utils\dates.py:67
+msgctxt "alt. month"
+msgid "January"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\utils\dates.py:68
+msgctxt "alt. month"
+msgid "February"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\utils\dates.py:69
+msgctxt "alt. month"
+msgid "March"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\utils\dates.py:70
+msgctxt "alt. month"
+msgid "April"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\utils\dates.py:71
+msgctxt "alt. month"
+msgid "May"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\utils\dates.py:72
+msgctxt "alt. month"
+msgid "June"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\utils\dates.py:73
+msgctxt "alt. month"
+msgid "July"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\utils\dates.py:74
+msgctxt "alt. month"
+msgid "August"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\utils\dates.py:75
+msgctxt "alt. month"
+msgid "September"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\utils\dates.py:76
+msgctxt "alt. month"
+msgid "October"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\utils\dates.py:77
+msgctxt "alt. month"
+msgid "November"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\utils\dates.py:78
+msgctxt "alt. month"
+msgid "December"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\utils\ipv6.py:8
+msgid "This is not a valid IPv6 address."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\utils\text.py:76
+#, python-format
+msgctxt "String to return when truncating text"
+msgid "%(truncated_text)s…"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\utils\text.py:252
+msgid "or"
+msgstr ""
+
+#. Translators: This string is used as a separator between list elements
+#: .\myvenv\Lib\site-packages\django\utils\text.py:271
+#: .\myvenv\Lib\site-packages\django\utils\timesince.py:94
+msgid ", "
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\utils\timesince.py:9
+#, python-format
+msgid "%(num)d year"
+msgid_plural "%(num)d years"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\myvenv\Lib\site-packages\django\utils\timesince.py:10
+#, python-format
+msgid "%(num)d month"
+msgid_plural "%(num)d months"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\myvenv\Lib\site-packages\django\utils\timesince.py:11
+#, python-format
+msgid "%(num)d week"
+msgid_plural "%(num)d weeks"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\myvenv\Lib\site-packages\django\utils\timesince.py:12
+#, python-format
+msgid "%(num)d day"
+msgid_plural "%(num)d days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\myvenv\Lib\site-packages\django\utils\timesince.py:13
+#, python-format
+msgid "%(num)d hour"
+msgid_plural "%(num)d hours"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\myvenv\Lib\site-packages\django\utils\timesince.py:14
+#, python-format
+msgid "%(num)d minute"
+msgid_plural "%(num)d minutes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\myvenv\Lib\site-packages\django\views\csrf.py:111
+msgid "Forbidden"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\views\csrf.py:112
+msgid "CSRF verification failed. Request aborted."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\views\csrf.py:116
+msgid ""
+"You are seeing this message because this HTTPS site requires a “Referer "
+"header” to be sent by your web browser, but none was sent. This header is "
+"required for security reasons, to ensure that your browser is not being "
+"hijacked by third parties."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\views\csrf.py:122
+msgid ""
+"If you have configured your browser to disable “Referer” headers, please re-"
+"enable them, at least for this site, or for HTTPS connections, or for “same-"
+"origin” requests."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\views\csrf.py:127
+msgid ""
+"If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or "
+"including the “Referrer-Policy: no-referrer” header, please remove them. The "
+"CSRF protection requires the “Referer” header to do strict referer checking. "
+"If you’re concerned about privacy, use alternatives like <a rel=\"noreferrer"
+"\" …> for links to third-party sites."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\views\csrf.py:136
+msgid ""
+"You are seeing this message because this site requires a CSRF cookie when "
+"submitting forms. This cookie is required for security reasons, to ensure "
+"that your browser is not being hijacked by third parties."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\views\csrf.py:142
+msgid ""
+"If you have configured your browser to disable cookies, please re-enable "
+"them, at least for this site, or for “same-origin” requests."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\views\csrf.py:148
+msgid "More information is available with DEBUG=True."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\views\generic\dates.py:44
+msgid "No year specified"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\views\generic\dates.py:64
+#: .\myvenv\Lib\site-packages\django\views\generic\dates.py:115
+#: .\myvenv\Lib\site-packages\django\views\generic\dates.py:214
+msgid "Date out of range"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\views\generic\dates.py:94
+msgid "No month specified"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\views\generic\dates.py:147
+msgid "No day specified"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\views\generic\dates.py:194
+msgid "No week specified"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\views\generic\dates.py:349
+#: .\myvenv\Lib\site-packages\django\views\generic\dates.py:380
+#, python-format
+msgid "No %(verbose_name_plural)s available"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\views\generic\dates.py:652
+#, python-format
+msgid ""
+"Future %(verbose_name_plural)s not available because %(class_name)s."
+"allow_future is False."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\views\generic\dates.py:692
+#, python-format
+msgid "Invalid date string “%(datestr)s” given format “%(format)s”"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\views\generic\detail.py:56
+#, python-format
+msgid "No %(verbose_name)s found matching the query"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\views\generic\list.py:70
+msgid "Page is not “last”, nor can it be converted to an int."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\views\generic\list.py:77
+#, python-format
+msgid "Invalid page (%(page_number)s): %(message)s"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\views\generic\list.py:169
+#, python-format
+msgid "Empty list and “%(class_name)s.allow_empty” is False."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\views\static.py:38
+msgid "Directory indexes are not allowed here."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\views\static.py:40
+#, python-format
+msgid "“%(path)s” does not exist"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\views\static.py:79
+#, python-format
+msgid "Index of %(directory)s"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\views\templates\default_urlconf.html:7
+#: .\myvenv\Lib\site-packages\django\views\templates\default_urlconf.html:221
+msgid "The install worked successfully! Congratulations!"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\views\templates\default_urlconf.html:207
+#, python-format
+msgid ""
+"View <a href=\"https://docs.djangoproject.com/en/%(version)s/releases/\" "
+"target=\"_blank\" rel=\"noopener\">release notes</a> for Django %(version)s"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\views\templates\default_urlconf.html:222
+#, python-format
+msgid ""
+"You are seeing this page because <a href=\"https://docs.djangoproject.com/en/"
+"%(version)s/ref/settings/#debug\" target=\"_blank\" rel=\"noopener"
+"\">DEBUG=True</a> is in your settings file and you have not configured any "
+"URLs."
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\views\templates\default_urlconf.html:230
+msgid "Django Documentation"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\views\templates\default_urlconf.html:231
+msgid "Topics, references, &amp; how-to’s"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\views\templates\default_urlconf.html:239
+msgid "Tutorial: A Polling App"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\views\templates\default_urlconf.html:240
+msgid "Get started with Django"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\views\templates\default_urlconf.html:248
+msgid "Django Community"
+msgstr ""
+
+#: .\myvenv\Lib\site-packages\django\views\templates\default_urlconf.html:249
+msgid "Connect, get help, or contribute"
+msgstr ""
+
+#: .\templates\about.html:12 .\templates\about.html:15
+#: .\templates\customer\home.html:234 .\templates\shared\footer.html:33
+#: .\templates\shared\header.html:112
+msgid "Hakkımızda"
+msgstr "Über Uns"
+
+#: .\templates\about.html:14 .\templates\blog-list.html:13
+#: .\templates\shared\footer.html:30 .\templates\shared\header.html:109
+msgid "Ana sayfa"
+msgstr "Home"
+
+#: .\templates\admin\cv.html:84
+msgid "Meslek"
+msgstr "Beruf"
+
+#: .\templates\admin\cv.html:88
+msgid "Medeni Durum"
+msgstr "familienstand"
+
+#: .\templates\admin\cv.html:89
+msgid "Evli"
+msgstr "verheiratet"
+
+#: .\templates\admin\cv.html:89
+msgid "Bekar"
+msgstr "ledig"
+
+#: .\templates\admin\cv.html:104
+msgid "Motivasyon Mektubu"
+msgstr "Motivationsschreiben"
+
+#: .\templates\admin\cv.html:110 .\templates\customer\form.html:74
+msgid "Çalışma Geçmişi"
+msgstr "Berufslaufbahn"
+
+#: .\templates\admin\cv.html:135
+msgid "Eğitim Geçmişi"
+msgstr "Bildungshintergrund"
+
+#: .\templates\base.html:90
+msgid "Ne ile ilgileniyorsunuz?"
+msgstr "Sie sind…?"
+
+#: .\templates\base.html:111
+msgid "Ben bir iş verenim"
+msgstr "ich bin ein/e Arbeitgeber/in"
+
+#: .\templates\base.html:130
+msgid "Ben bir profesyonelim"
+msgstr "Ich bin eine Fachkraft"
+
+#: .\templates\blog-detail.html:45 .\templates\services-detail.html:41
+msgid "Sorularnız için bize ulaşın"
+msgstr "Kontaktieren Sie uns für Ihre Fragen"
+
+#: .\templates\blog-detail.html:47 .\templates\customer\home.html:36
+#: .\templates\home.html:36 .\templates\services-detail.html:43
+msgid "Ücretsiz danışmanlık"
+msgstr "Kostenloses Beratungsgespräch"
+
+#: .\templates\blog-detail.html:55 .\templates\services-detail.html:51
+msgid "Broşür"
+msgstr "Broschure"
+
+#: .\templates\blog-detail.html:57
+msgid "Broşür indir"
+msgstr "Betriebsplan"
+
+#: .\templates\blog-list.html:11 .\templates\blog-list.html:14
+#: .\templates\blog-list.html:28 .\templates\customer\home.html:307
+#: .\templates\shared\footer.html:36 .\templates\shared\header.html:115
+msgid "Blog"
+msgstr "Blog"
+
+#: .\templates\blog-list.html:91
+msgid "Blog bulunamadı..."
+msgstr "Es gibt keinen Blogeintrag"
+
+#: .\templates\commons\forgot-password.html:19
+#: .\templates\commons\password_change.html:5
+#: .\templates\commons\password_change.html:8
+#: .\templates\commons\password_reset_confirm.html:5
+#: .\templates\commons\password_reset_confirm.html:8
+msgid "Şifremi unuttum"
+msgstr "Ich habe meinem Passwort vergessen"
+
+#: .\templates\commons\forgot-password.html:26
+msgid "Kullanıcı Adı(E-posta)*"
+msgstr "Benutzername(E-Mail)*"
+
+#: .\templates\commons\forgot-password.html:33 .\templates\contact.html:90
+#: .\templates\customer\form.html:111 .\templates\login.html:41
+#: .\templates\register.html:51
+msgid "Gönder"
+msgstr "Ansenden"
+
+#: .\templates\commons\password_reset_complete.html:14
+msgid "Başarılı"
+msgstr "Erfolgreich"
+
+#: .\templates\commons\password_reset_complete.html:16
+msgid "Şifreniz değiştirilmiştir."
+msgstr "Ihr Passwort wurde geändert"
+
+#: .\templates\commons\password_reset_done.html:14
+msgid "Şifre sıfırlama isteği"
+msgstr "Antrag auf Zurücksetzung des Passworts"
+
+#: .\templates\commons\password_reset_done.html:16
+msgid ""
+"İsteğiniz tarafımızca gerçekleştirilmiştir. Sistemimizde kayıtlı e-posta "
+"adresinize bakmanızı öneririz. Bu tür e-postalar spam klasörüne düşebilir."
+msgstr ""
+"Ihre Anfrage wurde von uns erfüllt. Wir empfehlen Ihnen, Ihre in unserem "
+"System registrierte E-Mail-Adresse zu überprüfen. Solche E-Mails können im "
+"Spam-Ordner landen."
+
+#: .\templates\contact.html:19 .\templates\services-detail.html:14
+msgid "Ana Sayfa"
+msgstr "Home"
+
+#: .\templates\contact.html:35
+#, python-format
+msgid " %(content)s "
+msgstr ""
+
+#: .\templates\customer\form.html:14 .\templates\customer\form.html:20
+msgid "Başvuru Formu"
+msgstr "Bewerbungsformullar"
+
+#: .\templates\customer\form.html:50
+msgid "Eğitim Durumu"
+msgstr "Bildungsstatus"
+
+#: .\templates\customer\form.html:69
+msgid "Eğitim Bilgisi Ekle"
+msgstr "hinzufügen"
+
+#: .\templates\customer\form.html:96
+msgid "Deneyim Ekle"
+msgstr "hinzufügen"
+
+#: .\templates\customer\home.html:34
+msgid "Sağlık Profesyonelleri için <span>Almanya"
+msgstr "Karrieren in Deutschland für <span>Gesundheitsberufe"
+
+#: .\templates\customer\home.html:37 .\templates\shared\header.html:77
+msgid "Bize Ulaşın"
+msgstr "Haben Sie Fragen?"
+
+#: .\templates\customer\home.html:64
+msgid "5 Adımda Almanya'da çalışmaya başlayın"
+msgstr "Arbeiten in Deutschland in 5 Schritten"
+
+#: .\templates\customer\home.html:74
+msgid "Başvuru formunun iletilmesi ve Mülakat"
+msgstr "Einreichung des Bewerbungsformulars und Vorstellungsgespräch"
+
+#: .\templates\customer\home.html:77
+msgid ""
+"Web sitemiz üzerinden başvuru formunu doldurun ve bizimle iletişim "
+"bilgilerinizi paylaşın. Ardından, sizinle mail veya telefon yolu ile "
+"iletişime geçen sorumlumuzun yönlendirmesiyle bir ön mülakat tarihi "
+"belirleyin. İnsan Kaynakları sorumlumuz ile yüz yüze veya video konferans "
+"yolu ile bir ön mülakat gerçekleştirin. "
+msgstr ""
+"Füllen Sie das Bewerbungsformular auf unserer Website aus und teilen Sie uns "
+"Ihre Kontaktdaten mit. Dann vereinbaren Sie einen Vorgesprächstermin mit "
+"unserer zuständigen Person, die mit Ihnen per E-Mail oder Telefon Kontakt "
+"aufnimmt. Führen Sie ein Vorgespräch mit unserem HR- Managerin. "
+
+#: .\templates\customer\home.html:89
+msgid "Evrakların Teslimi, Çeviri ve Kontrol"
+msgstr "Einreichung von Dokumenten, Übersetzung und Kontrolle"
+
+#: .\templates\customer\home.html:92
+msgid ""
+"İş veren ile ilk etkileşiminiz başlıyor! Mesleki geçmişinizi ve çalışma "
+"vizenizin Almaya’da işe başlamak için uygunluğunu kontrol ediyoruz. Bunun "
+"için, size iletmiş olduğumuz listede yer alan evrakları web sitemiz "
+"üzerinden veya mail yolu ile bize göndermeniz gerekiyor. Mesleki geçmişinizi "
+"kontrol edebilmek adına, sigorta dökümünüze ve geçmiş işyerinizden verilen "
+"bir referansa ihtiyaç duyuyoruz."
+msgstr ""
+"In diesem Schritt prüfen wir im Auftrag des Arbeitgebers Ihren beruflichen "
+"Werdegang und die Berechtigung für ein Arbeitsvisum. Dazu müssen Sie uns die "
+"Dokumente aus der von uns bereitgestellten Dokumentenliste über unsere "
+"Website oder per E-Mail zusenden. Zur Prüfung Ihres beruflichen Werdegangs "
+"benötigen wir Ihren Versicherungsverlauf und ein Referenzschreiben aus Ihrer "
+"Arbeitsstelle.  "
+
+#: .\templates\customer\home.html:104
+msgid "Özlük Dosyasının teslimi ve İş görüşmesi"
+msgstr "Einreichung der Personalakte und Vorstellungsgespräch"
+
+#: .\templates\customer\home.html:107
+msgid ""
+"Bütün evraklarınızı kontrol ettikten sonra ,sizinle olan görüşmelerimizin "
+"içeriğini Almanca bir rapor ve onaylanmış CV’niz ile birlikte işeren ile "
+"paylaşıyoruz. İş verenin ihtiyaçlarının karşılandığını düşünmesi durumunda "
+"sıradaki mülakata geçiyorsunuz! Bu aşamada görüşmeler video konferans yolu "
+"ile veya yüz yüze gerçekleşiyor."
+msgstr ""
+"Nachdem wir alle Ihre Unterlagen geprüft haben, teilen wir Ihnen den Inhalt "
+"unserer Gespräche zusammen mit einem Bericht in deutscher Sprache und Ihrem "
+"genehmigten Lebenslauf mit. Wenn der Arbeitgeber der Meinung ist, dass Ihre "
+"Anforderungen erfüllt sind, kommen Sie zum nächsten Vorstellungsgespräch! In "
+"dieser Phase werden die Vorstellungsgespräche per Videokonferenz oder von "
+"Angesicht zu Angesicht geführt."
+
+#: .\templates\customer\home.html:110
+msgid ""
+"Önemli Not: Almanca seviyenizin B2’nın altında olması durumunda görüşmede "
+"çevirmen hizmeti Türfa tarafından verilmektedir. "
+msgstr ""
+"Wichtiger Hinweis: Für den Fall, dass Ihr Deutschniveau unter B2 liegt, "
+"bietet Türfa einen Dolmetscherdienst während des Vorstellungsgesprächs an."
+
+#: .\templates\customer\home.html:122
+msgid "Adım Tanınırlık, Dil Eğitimi ve Vize Başvurusu"
+msgstr "Anerkennung, Sprachkurse und Visumantrag"
+
+#: .\templates\customer\home.html:125
+msgid ""
+"İşverenin sizinle çalışmak istemesi durumunda gerekli bütün bürokratik "
+"işlemleri yürütüyor ve gerekli olması durumunda ücretsiz, hızlandırılmış "
+"almanca dil ve entegrasyon kursları düzenliyoruz. Ayrıca, işverenin teklif "
+"etmemesi ve sizin ihtiyaç duymanız durumunda, Almanya´da bir konut bulmanıza "
+"yardımcı oluyor veya paylaşımlı ev öneriyoruz!"
+msgstr ""
+"Wenn der Arbeitgeber mit Ihnen arbeiten möchte, kümmern wir uns um alle "
+"notwendigen bürokratischen Formalitäten und organisieren bei Bedarf "
+"kostenlose, beschleunigte Deutsch- und Integrationskurse. Wir helfen Ihnen "
+"auch bei der Wohnungssuche in Deutschland oder bieten Ihnen eine "
+"Wohngemeinschaft an, wenn der Arbeitgeber Ihnen keine anbietet und Sie eine "
+"brauchen!"
+
+#: .\templates\customer\home.html:128
+msgid ""
+"Not: Konaklayacağınız yere dair kira kontratı vize için zorunlu bir evraktır."
+msgstr ""
+"Hinweis Der Mietvertrag für Ihre Unterkunft ist ein obligatorisches Dokument "
+"für das Visum."
+
+#: .\templates\customer\home.html:140
+msgid "Destekleme ve Yönlendirme"
+msgstr "Unterstützung und Anleitung"
+
+#: .\templates\customer\home.html:143
+msgid ""
+"Almanya’ya gelişiniz sonrası vizenizi oturum izni ile değiştirmenize "
+"yardımcı oluyor ve iş yerinizde sizi yönlendiriyor; dil bariyeri ve "
+"adaptasyon konularında sizi destekliyoruz!"
+msgstr ""
+"Wir helfen Ihnen, Ihr Visum nach Ihrer Ankunft in Deutschland in eine "
+"Aufenthaltserlaubnis umzutauschen, begleiten Sie an Ihrem Arbeitsplatz und "
+"unterstützen Sie bei Sprachbarrieren und Anpassungen!"
+
+#: .\templates\customer\home.html:170
+msgid "Doğru işi"
+msgstr "Es ist unser Job"
+
+#: .\templates\customer\home.html:171
+msgid "bulmak"
+msgstr "den richtigen Job"
+
+#: .\templates\customer\home.html:172
+msgid "bizim işimiz"
+msgstr "zu finden"
+
+#: .\templates\customer\home.html:178 .\templates\home.html:145
+msgid "Avantajlarımız"
+msgstr "ÜBERBLICK"
+
+#: .\templates\customer\home.html:179
+msgid "Neden Türfa’yı Tercih Etmelisiniz?"
+msgstr "Warum sollten Sie Türfa bevorzugen?"
+
+#: .\templates\customer\home.html:187
+msgid "Profesyonel Vize Danışmanlığı ve Mesleki tanınırlık hizmeti:"
+msgstr "Beratung zu Berufsvisa und Berufsanerkennung:"
+
+#: .\templates\customer\home.html:190
+msgid ""
+"Mesleki Diploma: Tip, Hemşirelik, Ameliyathane Teknikerliği, Hasta "
+"Bakıcılık  "
+msgstr ""
+"Wir beraten Sie in Fragen der beruflichen Anerkennung und des Arbeitsvisums "
+"und helfen Ihnen bei der Kontaktaufnahme mit einem Arbeitgeber. Die gesamte "
+"Finanzierung dieses Prozesses wird vom Arbeitgeber übernommen."
+
+#: .\templates\customer\home.html:195
+msgid "Tam Kapsamlı Mesleki Eğitim ve Hazırlık: "
+msgstr "Umfassende Berufsausbildung und -vorbereitung:"
+
+#: .\templates\customer\home.html:198
+msgid ""
+"Sizi gelecekteki mesleğinize hazırlıyoruz. Tıbbi Almanca kursları, meslek "
+"seminerleri ve entegrasyon kursları düzenliyoruz. Almanya’daki "
+"meslektaşlarınız ve gelecekte çalışma ihtimaliniz bulunan firmalar ile işe "
+"başlamanız için gerekli görüşmeleri organize ediyoruz. "
+msgstr ""
+"Wir bereiten Sie auf Ihren zukünftigen Beruf vor. Wir organisieren "
+"medizinische Deutschkurse, berufliche Seminare und Integrationskurse. Wir "
+"organisieren Vorstellungsgespräche mit Kollegen und potenziellen "
+"Arbeitgebern in Deutschland, um Sie auf Ihre zukünftige Beschäftigung "
+"vorzubereiten."
+
+#: .\templates\customer\home.html:203
+msgid "Nitelikli Dil Eğitimi: "
+msgstr "Qualifizierter Sprachunterricht:"
+
+#: .\templates\customer\home.html:206
+msgid ""
+"Alanlarında son derece deneyimli Almanca öğretmenlerimiz, Telc veya Geothe "
+"Institut tarafından verilmiş sertifikalara sahiptir. "
+msgstr ""
+"Unsere erfahrenen Deutschlehrer sind von Telc oder dem Geothe Institut "
+"zertifiziert."
+
+#: .\templates\customer\home.html:211
+msgid "Online Takip ve Süreç yönetimi:"
+msgstr "Online-Tracking und Prozessmanagement:"
+
+#: .\templates\customer\home.html:214
+msgid ""
+"İşlemleriniz esnasında tüm süreçleri web sitemiz üzerinden online olarak "
+"takip edebilir; gerekli belgeleri sisteme yükleyebilir, dilediğinizde "
+"görüntüleyebilir ve indirebilirsiniz. İşlemlerinizi bu şekilde yürütmek, "
+"sürecin sizin açınızdan daha sağlıklı, daha hızlı ve daha güvenli "
+"ilerlemesini sağlar! "
+msgstr ""
+"Während Ihrer Transaktionen können Sie alle Vorgänge online über unsere "
+"Website verfolgen; Sie können die erforderlichen Dokumente in das System "
+"hochladen, ansehen und herunterladen, wann immer Sie wollen. Diese Art der "
+"Abwicklung gewährleistet, dass der Prozess für Sie gesünder, schneller und "
+"sicherer abläuft!"
+
+#: .\templates\customer\home.html:219
+msgid "Ulaşılabilirlik:"
+msgstr "Zugänglichkeit:"
+
+#: .\templates\customer\home.html:222
+msgid ""
+"Mesleki denklik süreciniz ve Dil Eğitiminiz boyunca uzman kadromuz ile "
+"yanınızda oluyor ve sizi ihtiyacınız olan tüm noktalarda destekliyoruz. "
+msgstr ""
+"Wir stehen Ihnen während des gesamten Prozesses der beruflichen Anerkennung "
+"und der sprachlichen Bildung mit unserem Fachpersonal zur Seite und "
+"unterstützen Sie in allen Punkten, die Sie benötigen."
+
+#: .\templates\customer\home.html:227
+msgid "Deneyim:"
+msgstr "Erfahrung"
+
+#: .\templates\customer\home.html:230
+msgid ""
+"Yurtdışında yaşamaya ve çalışmaya başlamak herkes için karmaşık bir "
+"durumdur. Alman bürokrasisine ve yeni bir yaşam tarzına adapte olmak, "
+"başlangıçta sanıldığı kadar kolay olmayabilir. Deneyimli ekibimiz, önünüze "
+"çıkan zorlukların üstesinden gelmenizi sağlar ve vergi beyannamenizden, "
+"ulaşım ve konaklama ihtiyacınıza, hatta oturum kaydınızın tamamlanmasına "
+"kadar her anlamda size yardımcı olur.  "
+msgstr ""
+"Der Einstieg in das Leben und Arbeiten im Ausland ist für jeden eine "
+"komplexe Situation. Die Anpassung an die deutsche Bürokratie und an einen "
+"neuen Lebensstil ist nicht immer so einfach, wie es anfangs scheint. Unser "
+"erfahrenes Team hilft Ihnen bei der Bewältigung der Herausforderungen und "
+"unterstützt Sie bei allem, von der Steuererklärung über Ihre Transport- und "
+"Unterkunftsbedürfnisse bis hin zum Abschluss Ihrer Aufenthaltsanmeldung."
+
+#: .\templates\customer\home.html:254
+msgid "Türfa‘nın hizmet verdiği meslek grupları"
+msgstr "Von Türfa bediente Berufsgruppen"
+
+#: .\templates\customer\home.html:264
+msgid ""
+"Türfa, Almanya Federal Cumhuriyeti’nin vize koşullarını baz alarak çalıştığı "
+"grupları ikiye ayırmıştır.  Lütfen aşağıdaki seçenekler arasından kendi "
+"çalışma grubunuzu seçiniz."
+msgstr ""
+"Die Türfa hat ihre Arbeitsgruppen in Anlehnung an die Visabestimmungen der "
+"Bundesrepublik Deutschland in zwei Gruppen aufgeteilt.  Bitte wählen Sie "
+"Ihre Arbeitsgruppe aus den unten stehenden Optionen aus."
+
+#: .\templates\error.html:12 .\templates\error.html:25
+msgid "Hata!"
+msgstr "Fehler!"
+
+#: .\templates\error.html:27
+msgid "Bir hata ile karşılaştık!"
+msgstr "Entschuldigung, da ist etwas schief gelaufen."
+
+#: .\templates\home.html:34
+msgid "Şirketiniz için <span>Türk profesyoneller</span> buluyoruz"
+msgstr "Wir finden türkische Fachkräfte für Ihr <span>Unternehmen</span>"
+
+#: .\templates\home.html:37
+msgid "Bize ulaşın"
+msgstr "Haben Sie Fragen?"
+
+#: .\templates\home.html:63
+msgid "Genel Bakış"
+msgstr "Übersicht"
+
+#: .\templates\home.html:64 .\templates\home.html:253
+msgid "Yurtdışından işçi alımında en önemli üç köşe taşı"
+msgstr ""
+"Die drei wichtigsten Eckpfeiler bei der Anwerbung von Arbeitskräften aus dem "
+"Ausland"
+
+#: .\templates\home.html:74 .\templates\home.html:259
+msgid "Yurtdışından adayları işe almayı bu kadar cazip kılan nedir?"
+msgstr "ie Anwerbung von Kandidaten aus dem Ausland so attraktiv?"
+
+#: .\templates\home.html:77 .\templates\home.html:260
+msgid ""
+" Almanya'daki kalifiye eleman açığı yurtiçinde çözülemiyor. Avusturya ya da "
+"İsviçre gibi Almanca konuşulan diğer ülkelerde de durum pek iyi değil. Bu "
+"ülkelerde halihazırda 86.000'den fazla hemşirelik personeli açığı var. Bu "
+"nedenle talebi karşılamak için kendi arka bahçemizin ötesine bakmalıyız. "
+msgstr ""
+"Der Fachkräftemangel in Deutschland kann nicht im Inland gelöst werden. Die "
+"Situation in anderen deutschsprachigen Ländern wie Österreich und der "
+"Schweiz ist nicht viel besser. In diesen Ländern fehlen bereits mehr als "
+"86.000 Pflegekräfte. Wir müssen also über den eigenen Tellerrand "
+"hinausschauen, um den Bedarf zu decken."
+
+#: .\templates\home.html:80
+msgid ""
+"  Türkiye'den iyi eğitimli doktorlar, personel açığını kapatmak için "
+"özellikle uygundur. Genç yaştalar ve genellikle aileleri ya da arkadaşları "
+"aracılığıyla Almanya ile bir bağları var. Öngörülebilir bir yaşam ve uzun "
+"vadeli bir iş ilişkisi istiyorlar. Bunun için Almanya'ya gelmeye motive "
+"oluyorlar."
+msgstr ""
+"Gerade gut ausgebildete Mediziner aus der Türkei eignen sich "
+"überdurchschnittlich, um die Personallücke zu schließen. Sie sind jung und "
+"haben häufig über die Familie oder Freunde bereits einen Bezug zu "
+"Deutschland. Sie wünschen sich ein planbares Leben und ein langfristiges "
+"Arbeitsverhältnis. Dafür sind sie motiviert nach Deutschland zu kommen."
+
+#: .\templates\home.html:92 .\templates\home.html:268
+msgid "Bürokrasi çok karmaşık değil mi?"
+msgstr "Ist die ganze Bürokratie nicht viel zu kompliziert?"
+
+#: .\templates\home.html:95
+msgid ""
+" Üçüncü bir ülkeden gelen vasıflı bir işçi olarak Almanya'da çalışmak için "
+"aşılması gereken bir dizi bürokratik engel var. Alman devleti bu süreçte "
+"eğitimin karşılaştırılabilirliğini sağlamaya çalışıyor. İlk bakışta bu süreç "
+"bunaltıcı görünüyor ve birçok işvereni korkutuyor. Türfa, sürecin sorunsuz "
+"işlemesini sağlayarak hayatınızı kolaylaştırıyor. Temel yetkinliklerimizden "
+"biri, Türk tıp uzmanlarının istihdamı için bürokratik prosedürleri ele alma "
+"konusundaki uzmanlığımızla sizi baştan sona desteklemektir. Prosedürler "
+"ortalama 6 ay sürmektedir. "
+msgstr ""
+"Um in Deutschland als Fachkraft aus einem Drittstaat zu arbeiten, gilt es "
+"einige bürokratische Hürden zu überwinden. Dabei strebt der deutsche Staat "
+"danach, die Vergleichbarkeit der Ausbildung sicherzustellen. Auf den ersten "
+"Blick wirkt dieser Prozess erschlagend und schreckt viele Arbeitgeber ab. "
+"Türfa vereinfacht Ihnen das Leben, indem wir den reibungslosen Ablauf des "
+"Verfahrens gewährleisten. Eine unserer Kernkompetenzen ist, Sie von Anfang "
+"bis Ende mit unserer Expertise bei der Abwicklung bürokratischer Abläufe für "
+"die Anstellung türkischer, medizinischer Fachkräfte zu unterstützen. Im "
+"Durchschnitt dauern die Verfahren 6 Monate. "
+
+#: .\templates\home.html:107
+msgid "Bakım yerleştirmesinde başarılı işe alım nasıl gerçekleşir? "
+msgstr "Wie funktioniert erfolgreiches On-Boarding bei der Pflegevermittlung?"
+
+#: .\templates\home.html:110
+msgid ""
+"Organizasyonel desteğin yanı sıra, yabancı çalışanlara Almanya'ya "
+"varışlarından önce ve sonra eşlik etmek başarılı bir entegrasyon için ön "
+"koşuldur. Türfa bu nedenle ilgili tüm taraflara sürekli destek sunmaktadır. "
+msgstr ""
+"Neben der organisatorischen Hilfe ist die Begleitung ausländischer "
+"Arbeitnehmer vor und nach der Ankunft in Deutschland Voraussetzung für eine "
+"erfolgreiche Integration. Türfa bietet allen Beteiligten daher eine "
+"durchgehende Betreuung."
+
+#: .\templates\home.html:137
+msgid "Firmanız için"
+msgstr "Wir finden"
+
+#: .\templates\home.html:138
+msgid "en uygun adayları"
+msgstr "den besten Kandidaten"
+
+#: .\templates\home.html:139
+msgid "buluyoruz"
+msgstr "für Ihr Unternehmen"
+
+#: .\templates\home.html:146
+msgid "Türfa ne iş yapar?"
+msgstr "Was macht Türfa?"
+
+#: .\templates\home.html:148
+msgid ""
+"'Türfa' Türk vasıflı işçi anlamına gelmektedir. Genç bir şirket olarak, "
+"Almanya'da kalıcı istihdam için Türkiye'den yüksek nitelikli işçileri işe "
+"almayı ve yerleştirmeyi işimiz haline getirdik. Hastaneleri kısa ve uzun "
+"vadeli personel açıklarını kapatma konusunda destekliyoruz. Bunu yaparken "
+"fizyoterapistlerden hemşirelere, geriatri hemşirelerinden cerrahi ve "
+"anestezi asistanlarına, uzman ve asistan doktorlara kadar tüm yelpazeyi "
+"kapsıyoruz. "
+msgstr ""
+"'Türfa' steht für türkische Fachkräfte. Als junges Unternehmen haben wir es "
+"uns zur Aufgabe gemacht, hochqualifizierte Arbeitskräfte aus der Türkei für "
+"dauerhafte Arbeitsverhältnisse in Deutschland zu rekrutieren und zu "
+"vermitteln. Wir unterstützen Klinken dabei, kurz- und langfristige "
+"Personallücken zu schließen. Dabei decken wir das gesamte Spektrum von "
+"Physiotherapeuten, Pflegefachkräften, Altenpflegern, operations- und "
+"anästhesietechnischen Assistenten bis hin zu Fach- und Assistenzärzte ab."
+
+#: .\templates\home.html:151
+msgid ""
+"Verimli bir kalıcı kadroya giden yolda, işe alım sürecinde aşağıdaki "
+"hizmetlerle size destek oluyoruz: "
+msgstr ""
+"Auf dem Weg zu einem leistungsfähigen Stammpersonal unterstützen wir Sie bei "
+"der Personalvermittlung mit folgenden Dienstleistungen:"
+
+#: .\templates\home.html:154
+msgid "İşe alım aşamasında:"
+msgstr "In der Rekrutierungsphase:"
+
+#: .\templates\home.html:159
+msgid "Almanya ve Türkiye'de uygun Türk profesyonellerin işe alınması "
+msgstr ""
+"Rekrutierung geeigneter türkischer Fachkräfte in Deutschland und in der "
+"Türkei "
+
+#: .\templates\home.html:164
+msgid ""
+"Dil testini de içeren bir değerlendirme merkezi çerçevesinde adayların "
+"taranması ve yetenek testi "
+msgstr ""
+"Screening der Kandidaten und Eignungsprüfung im Rahmen eines Assessment "
+"Centers, das auch einen Sprachtest beinhaltet "
+
+#: .\templates\home.html:168
+msgid ""
+"Video konferans yoluyla veya Türkiye'de yerinde mülakatların düzenlenmesi ve "
+"yürütülmesi "
+msgstr ""
+"Organisation und Durchführung von Vorstellungsgesprächen per Videokonferenz "
+"oder vor Ort in der Türkei "
+
+#: .\templates\home.html:172
+msgid "Tüm işe alım sürecine deneyimli çevirmenlerin eşlik etmesi "
+msgstr ""
+"Begleitung des gesamten Einstellungsprozesses mit erfahrenen Übersetzern "
+
+#: .\templates\home.html:177
+msgid "Aday seçiminden sonra ve iş başlamadan önce: "
+msgstr "Nach der Kandidatenauswahl und vor Arbeitsbeginn:"
+
+#: .\templates\home.html:182
+msgid ""
+"İkamet, istihdam ve konaklama ile ilgili gerekli tüm formalitelerin "
+"profesyonelce ele alınması "
+msgstr ""
+"Professionelle Abwicklung aller notwendigen Formalitäten rund um den "
+"Aufenthalt, die Beschäftigung sowie die Unterbringung "
+
+#: .\templates\home.html:187
+msgid ""
+"Gelecekteki işverenle işbirliği içinde hızlandırılmış prosedür dahil olmak "
+"üzere mesleki denklik konusunda destek "
+msgstr ""
+"Unterstützung bei der beruflichen Anerkennung inkl. beschleunigtem Verfahren "
+"in Zusammenarbeit mit dem zukünftigen Arbeitgeber "
+
+#: .\templates\home.html:191
+msgid "Konaklama yeri bulma konusunda yardım"
+msgstr "Hilfe bei der Wohnungssuche "
+
+#: .\templates\home.html:195
+msgid ""
+"Günlük çalışma hayatına hazırlık amacıyla işe özel, tıbbi içeriklere "
+"odaklanan Almanca dil kursları düzenlemek "
+msgstr ""
+"Durchführung von deutschen Sprachkursen mit Schwerpunkt auf "
+"berufsspezifische, medizinische Inhalte in Vorbereitung auf den "
+"Arbeitsalltag "
+
+#: .\templates\home.html:200
+msgid "İşe başladıktan sonra: "
+msgstr "Nach Arbeitsbeginn:"
+
+#: .\templates\home.html:205
+msgid ""
+"İlgili mesleki deneyime sahip çevirmenler aracılığıyla başlangıç aşamasında "
+"Türk profesyonellere destek "
+msgstr ""
+"Unterstützung der türkischen Fachkräfte in der Anfangsphase durch Übersetzer "
+"mit relevanter Berufserfahrung "
+
+#: .\templates\home.html:210
+msgid "Profesyoneller için profesyonel ve özel entegrasyon desteği "
+msgstr ""
+"Hilfestellung für die Fachkräfte bei der beruflichen und privaten "
+"Integration "
+
+#: .\templates\home.html:214
+msgid "Daha fazlası"
+msgstr "für Mehr"
+
+#: .\templates\home.html:234
+msgid "Bizi Tanıyın"
+msgstr "Lernen Sie uns kennen"
+
+#: .\templates\home.html:235
+msgid "Tıp uzmanları ile ekibinizi güçlendirin"
+msgstr "Medizinische Fachkräfte verstärken Ihr Team"
+
+#: .\templates\home.html:246
+#, python-format
+msgid ""
+" Almanya'da yıllardır kalifiye eleman sıkıntısı yaşanıyor. Bu durum "
+"özellikle tıp sektörünü zorluyor ve daha da kötüleşmesi bekleniyor. Güncel "
+"istatistiklere göre, yaklaşık 60.000 boş pozisyonla, Alman bakım "
+"tesislerindeki pozisyonların neredeyse %%4'ü doldurulmamış durumda. Bunun "
+"nedenleri arasında yüksek iş yükü, sık fazla mesai ve düşük ücret yer alıyor."
+msgstr ""
+"In Deutschland herrscht seit Jahren Fachkräftemangel. Dieser trifft vor "
+"allem den medizinischen Bereich hart und wird sich Erwartungen zufolge "
+"weiter verschärfen. Laut aktuellen Statistiken sind mit etwa 60.000 offenen "
+"Positionen fast 4% der Stellen in deutschen Pflegeeinrichtungen unbesetzt. "
+"Gründe hierfür sind die hohe Arbeitsbelastung, häufige Überstunden und die "
+"niedrige Bezahlung. "
+
+#: .\templates\home.html:249
+msgid ""
+"Buna karşılık, 60.000'den fazla Türk bakım çalışanı devam eden ekonomik kriz "
+"nedeniyle iş arıyor, ancak kendi ülkelerinde bulamıyor. Yurtdışından sağlık "
+"profesyonelleri için profesyonel bir işe alım ajansı olarak Türfa, hem "
+"Almanya'daki işverenlere hem de Türkiye'deki çalışanlara fayda sağlayan bir "
+"çözüm sunuyor. Yüksek nitelikli Türk doktor ve hemşirelerden oluşan "
+"ağımızla, sizin için uygun adayları işe alarak ve her iki tarafı da tüm "
+"bürokratik zorluklarda destekleyerek ekibinizi güçlendiriyoruz. Uzun vadeli "
+"ve başarılı bir istihdam ilişkisi için mümkün olan en iyi temeli oluşturmak "
+"amacıyla, hizmetlerimiz yalnızca profesyonellerin işe alınmasının ötesine "
+"geçmektedir. Türfa, çalışanların hızlı bir şekilde ayaklarının yere "
+"basmasını ve her şeyin sorunsuz bir şekilde yürümesini sağlamak için, "
+"Almanya'daki ilk yıllarında hem özel hem de profesyonel yaşamlarına "
+"entegrasyon ve resmi makamlarla ilgili konularda onlara eşlik eder. "
+msgstr ""
+"Im Gegensatz dazu suchen über 60.000 türkische Pflegekräfte aufgrund der "
+"anhaltenden Wirtschaftskrise nach Arbeit, werden im eigenen Land aber nicht "
+"fündig. Als professionelle Personalvermittlung für medizinische Fachkräfte "
+"aus dem Ausland bietet Türfa eine Lösung, von der Arbeitgeber in Deutschland "
+"und Arbeitnehmer in der Türkei gleichermaßen profitieren. Mit unserem "
+"Netzwerk hochqualifizierter, türkischer Ärzte und Pflegekräfte verstärken "
+"wir Ihr Team, indem wir passende Kandidaten für Sie rekrutieren und beide "
+"Parteien bei allen bürokratischen Herausforderungen unterstützen. Um die "
+"bestmögliche Basis für ein langfristiges und erfolgreiches Arbeitsverhältnis "
+"zu schaffen, gehen unsere Dienstleistungen über das reine Rekrutieren von "
+"Fachkräften hinaus. Damit Arbeitnehmer schnell Anschluss finden und alles "
+"reibungslos läuft, begleitet Türfa sie während ihres ersten Jahres in "
+"Deutschland sowohl bei der Integration im Privat- und Berufsleben als auch "
+"bei Behördenangelegenheiten."
+
+#: .\templates\home.html:263
+msgid ""
+"Türkiye'den iyi eğitimli doktorlar, personel açığını kapatmak için özellikle "
+"uygundur. Genç yaştalar ve genellikle aileleri ya da arkadaşları "
+"aracılığıyla Almanya ile bir bağları var. Öngörülebilir bir yaşam ve uzun "
+"vadeli bir iş ilişkisi istiyorlar. Bunun için Almanya'ya gelmeye motive "
+"oluyorlar. "
+msgstr ""
+"Gerade gut ausgebildete Mediziner aus der Türkei eignen sich "
+"überdurchschnittlich, um die Personallücke zu schließen. Sie sind jung und "
+"haben häufig über die Familie oder Freunde bereits einen Bezug zu "
+"Deutschland. Sie wünschen sich ein planbares Leben und ein langfristiges "
+"Arbeitsverhältnis. Dafür sind sie motiviert nach Deutschland zu kommen. "
+
+#: .\templates\home.html:269
+msgid ""
+"Üçüncü bir ülkeden gelen vasıflı bir işçi olarak Almanya'da çalışmak için "
+"aşılması gereken bir dizi bürokratik engel var. Alman devleti bu süreçte "
+"eğitimin karşılaştırılabilirliğini sağlamaya çalışıyor. İlk bakışta bu süreç "
+"bunaltıcı görünüyor ve birçok işvereni korkutuyor. Türfa, sürecin sorunsuz "
+"işlemesini sağlayarak hayatınızı kolaylaştırıyor. Temel yetkinliklerimizden "
+"biri, Türk tıp uzmanlarının istihdamı için bürokratik prosedürleri ele alma "
+"konusundaki uzmanlığımızla sizi baştan sona desteklemektir. Prosedürler "
+"ortalama 6 ay sürmektedir."
+msgstr ""
+"Um in Deutschland als Fachkraft aus einem Drittstaat zu arbeiten, gilt es "
+"einige bürokratische Hürden zu überwinden. Dabei strebt der deutsche Staat "
+"danach, die Vergleichbarkeit der Ausbildung sicherzustellen. Auf den ersten "
+"Blick wirkt dieser Prozess erschlagend und schreckt viele Arbeitgeber ab. "
+"Türfa vereinfacht Ihnen das Leben, indem wir den reibungslosen Ablauf des "
+"Verfahrens gewährleisten. Eine unserer Kernkompetenzen ist, Sie von Anfang "
+"bis Ende mit unserer Expertise bei der Abwicklung bürokratischer Abläufe für "
+"die Anstellung türkischer, medizinischer Fachkräfte zu unterstützen. Im "
+"Durchschnitt dauern die Verfahren 6 Monate. "
+
+#: .\templates\home.html:274
+msgid "Bakım yerleştirmesinde başarılı işe alım nasıl gerçekleşir?"
+msgstr "Wie funktioniert erfolgreiches On-Boarding bei der Pflegevermittlung?"
+
+#: .\templates\home.html:275
+msgid ""
+" Organizasyonel desteğin yanı sıra, yabancı çalışanlara Almanya'ya "
+"varışlarından önce ve sonra eşlik etmek başarılı bir entegrasyon için ön "
+"koşuldur. Türfa bu nedenle ilgili tüm taraflara sürekli destek sunmaktadır."
+msgstr ""
+"Neben der organisatorischen Hilfe ist die Begleitung ausländischer "
+"Arbeitnehmer vor und nach der Ankunft in Deutschland Voraussetzung für eine "
+"erfolgreiche Integration. Türfa bietet allen Beteiligten daher eine "
+"durchgehende Betreuung."
+
+#: .\templates\home.html:299
+msgid "Türfa sizin için doğru çözüme sahiptir! "
+msgstr "Türfa hat die richtige Lösung für Sie!"
+
+#: .\templates\home.html:309
+msgid ""
+"Personel ihtiyacı olan Alman klinikleri ile yüksek nitelikli Türk "
+"profesyonelleri bir araya getirmek bizim gücümüzdür. Size sunduğumuz yabancı "
+"adaylar eşdeğer, tanınmış niteliklere sahiptir. En azından hemşirelik "
+"eğitimini tamamlamış ve Telc B2 Almanca sertifikasına sahiptirler. Bu, dili "
+"bağımsız olarak kullanabildiklerini ve açık standart dilde bir konuşmanın "
+"ana noktalarını anlayabildiklerini belgelemektedir. "
+msgstr ""
+"Deutsche Kliniken mit Personalbedarf und hochqualifizierte, türkische "
+"Fachkräfte zusammenzubringen, ist unsere Stärke. Ausländische Kandidaten, "
+"die wir Ihnen vorstellen, haben dabei gleichwertige, anerkannte Abschlüsse. "
+"Sie besitzen mindestens eine abgeschlossene Pflegeausbildung und ein Telc B2 "
+"Deutsch Zertifikat. Dieses attestiert ihnen, dass sie die Sprache "
+"selbstständig anwenden und die Hauptpunkte einer Unterhaltung in klarer "
+"Standardsprache verstehen."
+
+#: .\templates\home.html:339
+msgid "Daha fazla"
+msgstr "für Mehr"
+
+#: .\templates\login.html:17 .\templates\shared\header.html:33
+msgid "Giriş"
+msgstr "Login"
+
+#: .\templates\login.html:24
+msgid "Kullanıcı Adı*"
+msgstr "Benutzername*"
+
+#: .\templates\login.html:31 .\templates\register.html:31
+msgid "Şifre*"
+msgstr "Passwort*"
+
+#: .\templates\login.html:36 .\templates\register.html:46
+msgid "Şifrenizi mi unuttunuz? "
+msgstr "Haben Sie Ihr Passwort vergessen?"
+
+#: .\templates\login.html:36
+msgid "Lütfen buraya tıklayınız"
+msgstr "Bitte klicken Sie hier."
+
+#: .\templates\register.html:17
+msgid "Kayıt ol"
+msgstr "Register"
+
+#: .\templates\register.html:24
+msgid "E-Posta*"
+msgstr "E-Mail*"
+
+#: .\templates\register.html:46
+msgid "Lütfen buraya tıklayın."
+msgstr "Bitte klicken Sie hier."
+
+#: .\templates\services-detail.html:12 .\templates\services-detail.html:15
+#: .\templates\shared\header.html:119
+msgid "Hizmetlerimiz"
+msgstr "Leistung"
+
+#: .\templates\services-detail.html:53
+msgid "Broşürü İndir"
+msgstr "Broschüre herunterladen"
+
+#: .\templates\shared\footer.html:12
+msgid "Sağlık Profesyonelleri İçin Almanya"
+msgstr "türkische Fachkräfte für Unternehme"
+
+#: .\templates\shared\header.html:19
+msgid "Çalışma saatleri: 9:00 AM – 17:30 PM"
+msgstr "Öffnungszeiten: 9:00 AM – 16:30 PM"
+
+#: .\templates\shared\header.html:29
+msgid "Oturumu Kapat"
+msgstr "Abmelden"
+
+#: .\templates\status.html:29
+msgid "Tüm Adaylar"
+msgstr "Alle Kandidaten"
+
+#: .\templates\status.html:32
+msgid "Seçilenler"
+msgstr "ausgewählte Kandidaten"
+
+#: .\templates\status.html:45 .\templates\status.html:105
+msgid "Ad Soyad"
+msgstr "Name Nachname"
+
+#: .\templates\status.html:48 .\templates\status.html:108
+msgid "CV"
+msgstr "CV"
+
+#: .\templates\status.html:81 .\templates\status.html:141
+msgid "Kaydet"
+msgstr "Speichern"
+
+#: .\templates\status.html:121
+msgid "Bilinmiyor"
+msgstr "Unbekannt"
+

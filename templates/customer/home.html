@@ -31,7 +31,7 @@
                                 <div class="row">
                                     <div class="col-lg-8">
                                         <div class="content">
-                                            <h2 data-animation="animated slideInRight">{% translate "Sağlık Profesyonelleri için Almanya'da <span>Çalışma ve Yerleşme Hizmetleri" %}</span></h2>
+                                            <h2 data-animation="animated slideInRight">{% translate "Sağlık Profesyonelleri için <span>Almanya" %}</span></h2>
                                             <br>
                                             <h3><span>{% translate "Ücretsiz danışmanlık" %}</span></h3>
                                             <a data-animation="animated zoomInUp" class="btn btn-theme effect btn-md" {% if "candidate" in request.path %}href="{% url 'candidate_contact' %}"{% else %}href="{% url 'contact' %}"{% endif %}>{% translate "Bize Ulaşın" %}</a>
@@ -60,38 +60,23 @@
                 <div class="row">
                     <div class="col-lg-8 offset-lg-2">
                         <div class="site-heading text-center">
-                            <h4>{% translate "Avantajlarımız" %}</h4>
-                            <h2>{% translate "Türfa ile Çalışmak için 4 Büyük Sebep" %}</h2>
+                            <h4>{% translate "Başvuru" %}</h4>
+                            <h2>{% translate "5 Adımda Almanya'da çalışmaya başlayın" %}</h2>
                             <div class="devider"></div>
                         </div>
                     </div>
-                    <!-- Single Item -->
-                    <!--<div class="single-item col-lg-3 col-md-6">
-                        <div class="item">
-                            <i class="flaticon-speech-bubble"></i>
-                            <div class="top">
-                                <span>01</span>
-                                <h4>IŞKUR Onaylı Istihdam Ofisi</h4>
-                            </div>
-                            <p>
-                                Türfa Iskur tarafindan sertifikalandirilmis yetkili bir Özel Istihdam Ofisidir ve bütün hizmetleri ISKUR`un 4904 sayili Kanunda belirtmis oldugu üzere is arayan icin ücretsizdir ve tamami ile is veren tarafindan finanse edilir.  
-                            </p>
-                            <a href="#"><i class="arrow_right"></i></a>
-                        </div>
-                    </div>-->
-                    <!-- Single Item -->
                     <!-- Single Item -->
                     <div class="single-item col-lg-4 col-md-6">
                         <div class="item">
                             <i class="flaticon-label"></i>
                             <div class="top">
                                 <span>01</span>
-                                <h4>{% translate "Nitelikli Dil Egitimi" %}</h4>
+                                <h4>{% translate "Başvuru formunun iletilmesi ve Mülakat" %}</h4>
                             </div>
                             <p>
-                                {% translate "Türfa´nin düzenledigi bütün dil egitimleri TELC sertifikali ve alanindan mezun hocalar tarafindan düzenlenmektedir. Ders programi Alman Dil Egitim kurumlarininki baz alinarak hazirlanmistir. " %}
+                                {% translate "Web sitemiz üzerinden başvuru formunu doldurun ve bizimle iletişim bilgilerinizi paylaşın. Ardından, sizinle mail veya telefon yolu ile iletişime geçen sorumlumuzun yönlendirmesiyle bir ön mülakat tarihi belirleyin. İnsan Kaynakları sorumlumuz ile yüz yüze veya video konferans yolu ile bir ön mülakat gerçekleştirin. " %}
                             </p>
-                            <a href="#"><i class="arrow_right"></i></a>
+                            <a href="{% url 'candidate_form' %}"><i class="arrow_right"></i></a>
                         </div>
                     </div>
                     <!-- Single Item -->
@@ -101,10 +86,10 @@
                             <i class="flaticon-file"></i>
                             <div class="top">
                                 <span>02</span>
-                                <h4>{% translate "Adil İş Politikası" %}</h4>
+                                <h4>{% translate "Evrakların Teslimi, Çeviri ve Kontrol" %}</h4>
                             </div>
                             <p>
-                                {% translate "Türfa is veren ve is arayan arasindaki sözlesmelerin iki taraf adina da adil olup olmadigini yasalar ve market kosullarini göz önünde bulundurarak degerlendirir. Calisanlar arasinda ayrim calisma saatleri, maas ve mesai gibi konularda ayrim gözetilmesine izin vermez. " %}    
+                                {% translate "İş veren ile ilk etkileşiminiz başlıyor! Mesleki geçmişinizi ve çalışma vizenizin Almaya’da işe başlamak için uygunluğunu kontrol ediyoruz. Bunun için, size iletmiş olduğumuz listede yer alan evrakları web sitemiz üzerinden veya mail yolu ile bize göndermeniz gerekiyor. Mesleki geçmişinizi kontrol edebilmek adına, sigorta dökümünüze ve geçmiş işyerinizden verilen bir referansa ihtiyaç duyuyoruz." %}    
                             </p>
                             <a href="#"><i class="arrow_right"></i></a>
                         </div>
@@ -116,12 +101,48 @@
                             <i class="flaticon-file"></i>
                             <div class="top">
                                 <span>03</span>
-                                <h4>{% translate "Genis Capli Is olanaklari" %}</h4>
+                                <h4>{% translate "Özlük Dosyasının teslimi ve İş görüşmesi" %}</h4>
                             </div>
                             <p>
-                                {% translate "Türfa Almanya´da Sachsen, Sachsen-Anhalt ve Berlin eyaletlerinde faaliyet göstermektedir ve faaliyet gösterdigi bütün eyaletlerde anlasmali is verenleri bulunur." %}    
+                                {% translate "Bütün evraklarınızı kontrol ettikten sonra ,sizinle olan görüşmelerimizin içeriğini Almanca bir rapor ve onaylanmış CV’niz ile birlikte işeren ile paylaşıyoruz. İş verenin ihtiyaçlarının karşılandığını düşünmesi durumunda sıradaki mülakata geçiyorsunuz! Bu aşamada görüşmeler video konferans yolu ile veya yüz yüze gerçekleşiyor." %}    
+                            </p>
+                            <p>
+                                {% translate "Önemli Not: Almanca seviyenizin B2’nın altında olması durumunda görüşmede çevirmen hizmeti Türfa tarafından verilmektedir. " %}
                             </p>
                             <a href="#"><i class="arrow_right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Single Item -->
+                    <!-- Single Item -->
+                    <div class="single-item col-lg-4 col-md-6">
+                        <div class="item">
+                            <i class="flaticon-file"></i>
+                            <div class="top">
+                                <span>04</span>
+                                <h4>{% translate "Adım Tanınırlık, Dil Eğitimi ve Vize Başvurusu" %}</h4>
+                            </div>
+                            <p>
+                                {% translate "İşverenin sizinle çalışmak istemesi durumunda gerekli bütün bürokratik işlemleri yürütüyor ve gerekli olması durumunda ücretsiz, hızlandırılmış almanca dil ve entegrasyon kursları düzenliyoruz. Ayrıca, işverenin teklif etmemesi ve sizin ihtiyaç duymanız durumunda, Almanya´da bir konut bulmanıza yardımcı oluyor veya paylaşımlı ev öneriyoruz!" %}    
+                            </p>
+                            <p>
+                                {% translate "Not: Konaklayacağınız yere dair kira kontratı vize için zorunlu bir evraktır." %}
+                            </p>
+                            <a href="#"><i class="arrow_right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Single Item -->
+                    <!-- Single Item -->
+                    <div class="single-item col-lg-4 col-md-6">
+                        <div class="item">
+                            <i class="flaticon-file"></i>
+                            <div class="top">
+                                <span>05</span>
+                                <h4>{% translate "Destekleme ve Yönlendirme" %}</h4>
+                            </div>
+                            <p>
+                                {% translate "Almanya’ya gelişiniz sonrası vizenizi oturum izni ile değiştirmenize yardımcı oluyor ve iş yerinizde sizi yönlendiriyor; dil bariyeri ve adaptasyon konularında sizi destekliyoruz!" %}    
+                            </p>
+                            <a href="{% url 'candidate_form' %}"><i class="arrow_right"></i></a>
                         </div>
                     </div>
                     <!-- Single Item -->
@@ -130,47 +151,6 @@
         </div>
     </div>
     <!-- End Features Area -->
-
-     <!-- Star Services Area
-    ============================================= -->
-    <div class="services-area bg-gray default-padding bottom-less">
-        <!-- Shape -->
-        <div class="right-shape">
-            <img src="{% static 'img/shape/9-red.png' %}" alt="Shape">
-        </div>
-        <!-- Shape -->
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2">
-                    <div class="site-heading text-center">
-                        <h4>{% translate "BİZİ tanıyın" %}</h4>
-                        <h2>{% translate "Türfa Hakkında" %}</h2>
-                        <div class="devider"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container-full">
-            <div class="services-items">
-                <div class="row">
-                    <div class="col-md-12">
-                        <p>
-                            {% translate "Türfa Almanya´da yalnızca Berlin, Sachsen ve Sachsen-Anhalt eyaletlerindeki anlaşmalı olduğu hastane, klinik, hasta bakim kezleri için istihdam ofisi ve danismanlik hizmeti verir. Bu kapsamda iş veren için çalışan bulur ve buldugu çalışan ile ön görüşmeleri gerçekleştirir, çalışanın meslek doküman ve kabiliyetlerini kontrol eder bunun icin gerekirse dil ve mesleki beceri tespit sinavlari organize eder. Vize ve istihdam ile ilgili bürokratik ve yasal süreçleri vekaleten yürütür veya takip eder. Gerekli durumlarda mesleki egitimler ve konferanslar düzenler. Is arayanin ihtiyac duymasi halinde konut veya paylasimli yasam alani bulunmasi icin yardimci olur. " %}    
-                        </p>
-                        <p>
-                            {% translate "Türfa adil çalışma ortamı ve koşullarının sağlanması için güven kurumu olarak kendisinin yaptığı bütün iş bulma faaliyetlerinde iş sözleşmelerini denetler. Çalışma saati, ücret, mesai ücreti tatil günleri gibi konularda ilgili eyaletteki piyasa ortalamasının altına düşülmeyeceğini garanti eder." %}    
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-       
-        <br>
-        
-    </div>
-    <!-- End Services Area -->
-
-    
 
     <!-- Star About Area
     ============================================= -->
@@ -195,53 +175,58 @@
                     </div>
 
                     <div class="col-lg-6 info">
-                        <h4>{% translate "Çalışma koşulları" %}</h4>
-                        <h2>{% translate "Türfa ile çalışmak için neler gereklidir ?" %}</h2>
-                        <p>
+                        <h4>{% translate "Avantajlarımız" %}</h4>
+                        <h2>{% translate "Neden Türfa’yı Tercih Etmelisiniz?" %}</h2>
+                        {% comment %} <p>
                             {% translate "Bizimle çalışmak için öncelikle bizimle bir ön iş görüşme yapmanız gerekir. Bunun haricinde Aşağıdaki belge, yetkinliklere sahip olmalısınız:  " %}    
-                        </p>
+                        </p> {% endcomment %}
                         <ul>
                             <li>
                               <p>
-                               {% translate " Mesleki Diploma: Tip, Hemşirelik, Ameliyathane Teknikerliği, Hasta Bakıcılık  " %}
+                                <strong class="colorWhite">{% translate "Profesyonel Vize Danışmanlığı ve Mesleki tanınırlık hizmeti:" %}</strong>
+                              </p>
+                              <p>
+                                {% translate "Mesleki Diploma: Tip, Hemşirelik, Ameliyathane Teknikerliği, Hasta Bakıcılık  " %}
                               </p>
                             </li>
                             <li>
                               <p>
-                                {% translate "Adli sicil kaydı yoktur belgesi" %}
+                                <strong class="colorWhite">{% translate "Tam Kapsamlı Mesleki Eğitim ve Hazırlık: " %}</strong>
                               </p>
-                            </li>
-                            <li>
-                              <p>{% translate "Borcu yoktur belgesi" %}</p>
-                            </li>
-                            <li>
                               <p>
-                                {% translate "Mezun olunan Üniversiteden alınmış saatlik açıklamalı ders programı(Cirriclum)" %}
-                              </p>
-                            </li>
-                            <li>
-                              <p>
-                                {% translate "Almanca A1 Dil Belgesi (Geothe Institut,ÖSD veya TELC) " %}
-                              </p>
-                            </li>
-                            <li>
-                              <p>
-                                {% translate "Almanya´daki işlemlerinize başlamamız için Almanca Türkçe vekalet. (Vollmacht)" %}
-                              </p>
-                            </li>
-                            <li>
-                              <p>
-                                {% translate "A2 Sigorta kayıt dökümü" %}
+                                {% translate "Sizi gelecekteki mesleğinize hazırlıyoruz. Tıbbi Almanca kursları, meslek seminerleri ve entegrasyon kursları düzenliyoruz. Almanya’daki meslektaşlarınız ve gelecekte çalışma ihtimaliniz bulunan firmalar ile işe başlamanız için gerekli görüşmeleri organize ediyoruz. " %}
                               </p>
                             </li>
                             <li>
                                 <p>
-                                    {% translate "CV (çalıştığınız veya eğitim gördüğünüz kurumdan bir referans verilmesi zorunludur.) " %}
+                                  <strong class="colorWhite">{% translate "Nitelikli Dil Eğitimi: " %}</strong>
+                                </p>
+                                <p>
+                                  {% translate "Alanlarında son derece deneyimli Almanca öğretmenlerimiz, Telc veya Geothe Institut tarafından verilmiş sertifikalara sahiptir. " %}
                                 </p>
                             </li>
                             <li>
                                 <p>
-                                    {% translate "Mesleki veya takım elbise ile çekilmiş 1 adet vesikalık fotoğraf. Dijital veya Hardcopy" %}
+                                    <strong class="colorWhite">{% translate "Online Takip ve Süreç yönetimi:" %}</strong>
+                                </p>
+                                <p>
+                                    {% translate "İşlemleriniz esnasında tüm süreçleri web sitemiz üzerinden online olarak takip edebilir; gerekli belgeleri sisteme yükleyebilir, dilediğinizde görüntüleyebilir ve indirebilirsiniz. İşlemlerinizi bu şekilde yürütmek, sürecin sizin açınızdan daha sağlıklı, daha hızlı ve daha güvenli ilerlemesini sağlar! " %}
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong class="colorWhite">{% translate "Ulaşılabilirlik:" %}</strong>
+                                </p>
+                                <p>
+                                    {% translate "Mesleki denklik süreciniz ve Dil Eğitiminiz boyunca uzman kadromuz ile yanınızda oluyor ve sizi ihtiyacınız olan tüm noktalarda destekliyoruz. " %}
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong class="colorWhite">{% translate "Deneyim:" %}</strong>
+                                </p>
+                                <p>
+                                    {% translate "Yurtdışında yaşamaya ve çalışmaya başlamak herkes için karmaşık bir durumdur. Alman bürokrasisine ve yeni bir yaşam tarzına adapte olmak, başlangıçta sanıldığı kadar kolay olmayabilir. Deneyimli ekibimiz, önünüze çıkan zorlukların üstesinden gelmenizi sağlar ve vergi beyannamenizden, ulaşım ve konaklama ihtiyacınıza, hatta oturum kaydınızın tamamlanmasına kadar her anlamda size yardımcı olur.  " %}
                                 </p>
                             </li>
                         </ul>
@@ -254,19 +239,18 @@
     </div>
     <!-- End About Area -->
 
-       <!-- Star Services Area
-    ============================================= -->
+    {% if services %}
     <div class="services-area bg-gray default-padding bottom-less">
         <!-- Shape -->
         <div class="right-shape">
-            <img src="{% static 'img/shape/9-red.png' %}" alt="Shape">
+            <img src="/static/img/shape/9-red.png" alt="Shape">
         </div>
         <!-- Shape -->
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
                     <div class="site-heading text-center">
-                        <h2>{% translate "Türfa hangi meslek gruplarına hizmet verir?" %}</h2>
+                        <h2>{% translate "Türfa‘nın hizmet verdiği meslek grupları" %}</h2>
                         <div class="devider"></div>
                     </div>
                 </div>
@@ -276,7 +260,7 @@
             <div class="services-items">
                 <div class="row">
                     <div class="col-md-12 mb-5">
-                        {% translate "Turfa sağlık sektörü çalışanlarına hizmet verir. Hizmet verdiği meslek grupları Almanya Federal Cumhuriyetinin belirlemiş olduğu vize prosedürüne göre ikiye ayrılmıştır. Kendi meslek grubunuz ile ilgili bilgi almak için lütfen aşağıdan kendi meslek grubunuzu bulunuz." %}    
+                        {% translate "Türfa, Almanya Federal Cumhuriyeti’nin vize koşullarını baz alarak çalıştığı grupları ikiye ayırmıştır.  Lütfen aşağıdaki seçenekler arasından kendi çalışma grubunuzu seçiniz." %}
                     </div>
                 </div>
             </div>
@@ -284,39 +268,33 @@
         <div class="container-full">
             <div class="services-items">
                 <div class="row">
-                    <!-- Single Item -->
-                    <div class="col-lg-6 col-md-6 single-item">
-                        {% for item in services %}
-                        <div class="item">
-                            <div class="info">
-                                <i class="flaticon-money"></i>
-                                <h4>
-                                    {% blocktrans with item.title as title %}
-                                        {{title}}
-                                    {% endblocktrans %}
-                                </h4>
-                                <p>
-                                    {% blocktrans with item.text|safe as text %}
-                                        {{text}}
-                                    {% endblocktrans %}
-                                </p>
-                                <div class="bottom">
-                                    <span>{{forloop.counter}}</span>
-                                    <a {% if candidate in request.path %}href="{% url 'candidate_services_detail' item.slug %}"{% else %}href="{% url 'services_detail' item.slug %}"{% endif %}>Daha fazlası</a>
+                    {% for item in services %}
+                        <!-- Single Item -->
+                        <div class="col-lg-6 col-md-6 single-item">
+                            <div class="item">
+                                <div class="info">
+                                    <i class="flaticon-money"></i>
+                                    <h4>{% if "tr" in request.path %}{{item.title|safe}}{% else %} {{item.title_de|safe}} {% endif %}</h4>
+                                    <p>
+                                        {% if "tr" in request.path %}{{item.text_short|safe}} {% else %}{{item.text_short_de|safe}} {% endif %}
+                                    </p>
+                                    <div class="bottom">
+                                        <span>01</span>
+                                        <a {% if "candidate" in request.path %} href="{% url 'candidate_services_detail' item.slug %}"{% endif %}>Daha fazlası</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        {% endfor %}
-                    </div>
-                    <!-- End Single Item -->
+                        <!-- End Single Item -->
+                    {% endfor %}
                 </div>
             </div>
         </div>
         <br>
         
     </div>
-    <!-- End Services Area -->
-
+    {% endif %}
+    
     {% if blog %}
     <!-- Start Blog 
     ============================================= -->
@@ -355,11 +333,11 @@
                                     </div>
                                     <h4>
                                         <a {% if "candidate" in request.path %} href="{% url 'candidate_blog_detail' item.slug %}"{% else %} href="{% url 'blog_detail' item.slug %}"{% endif %}>
-                                            {% blocktrans with item.title|safe as title %}{{title}}{% endblocktrans %}
+                                            {% if "tr" in request.path %}{{item.title|safe}}{% else %}{{item.title_de|safe}}{% endif %}
                                         </a>
                                     </h4>
                                     <p>
-                                        {% blocktrans with item.text_short|safe as text_short %}{{text_short}}{% endblocktrans %}
+                                        {% if "tr" in request.path %}{{item.text_short|safe}}{% else %}{{item.text_short_de|safe}}{% endif %}
                                     </p>
                                 </div>
                             </div>

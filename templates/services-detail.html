@@ -30,7 +30,7 @@
                 
                 <div class="col-lg-8 services-single-content">
                     <img class="mb-2" src="{{ services.img_url.url }}" alt="Thumb">
-                    {{ services.text | safe }}
+                    {% if "tr" in request.path %}{{ services.text | safe }}{% else %}{{ services.text_de | safe }}{% endif %}
                 </div>
 
                 <div class="col-lg-4 services-sidebar">

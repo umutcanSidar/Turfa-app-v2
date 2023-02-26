@@ -11,7 +11,7 @@
             <div class="col-lg-8 offset-lg-2">
                 <h1>{% translate "Hakkımızda" %}</h1>
                 <ul class="breadcrumb">
-                    <li><a {% if "candidate" in request.path %} href="{% url 'candidate_home' %}?cookieset=1" {% else %}href="{% url 'home' %}?cookieset=1"{% endif %}><i class="fas fa-home"></i> {% translate "Ana sayfa" %})</a></li>
+                    <li><a {% if "candidate" in request.path %} href="{% url 'candidate_home' %}?cookieset=1" {% else %}href="{% url 'home' %}?cookieset=1"{% endif %}><i class="fas fa-home"></i> {% translate "Ana sayfa" %}</a></li>
                     <li class="active">{% translate "Hakkımızda" %}</li>
                 </ul>
             </div>

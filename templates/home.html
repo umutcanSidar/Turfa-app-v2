@@ -31,10 +31,10 @@
                                 <div class="row">
                                     <div class="col-lg-8">
                                         <div class="content">
-                                            <h2 data-animation="animated slideInRight">{% translate "Wir finden Fachkräfte für Ihre <span>Unternehmen</span>" %}</h2>
+                                            <h2 data-animation="animated slideInRight">{% translate "Şirketiniz için <span>Türk profesyoneller</span> buluyoruz" %}</h2>
                                             <br>
-                                            <h3><span>{% translate "Kostenlose Beratungsgespräch" %}</span></h3>
-                                            <a data-animation="animated zoomInUp" class="btn btn-theme effect btn-md" href="{% url 'contact' %}">{% translate "Kontakt verknüpfen" %}</a>
+                                            <h3><span>{% translate "Ücretsiz danışmanlık" %}</span></h3>
+                                            <a data-animation="animated zoomInUp" class="btn btn-theme effect btn-md" href="{% url 'contact' %}">{% translate "Bize ulaşın" %}</a>
                                         </div>
                                     </div>
                                 </div>
@@ -60,8 +60,8 @@
                 <div class="row">
                     <div class="col-lg-8 offset-lg-2">
                         <div class="site-heading text-center">
-                            <h4>{% translate "Überblick" %}</h4>
-                            <h2>{% translate "Was bietet TürFa für Ihre Unternehmen?" %}</h2>
+                            <h4>{% translate "Genel Bakış" %}</h4>
+                            <h2>{% translate "Yurtdışından işçi alımında en önemli üç köşe taşı" %}</h2>
                             <div class="devider"></div>
                         </div>
                     </div>
@@ -71,10 +71,13 @@
                             <i class="flaticon-speech-bubble"></i>
                             <div class="top">
                                 <span>01</span>
-                                <h4>{% translate "Unterbringung & Onboarding" %}</h4>
+                                <h4>{% translate "Yurtdışından adayları işe almayı bu kadar cazip kılan nedir?" %}</h4>
                             </div>
                             <p>
-                                {% translate "Übernahme von allen Formalitäten für Aufenthalt, Beschäftigung und Unterbringung. Begleitung der beruflichen und privaten Integration" %}
+                                {% translate " Almanya'daki kalifiye eleman açığı yurtiçinde çözülemiyor. Avusturya ya da İsviçre gibi Almanca konuşulan diğer ülkelerde de durum pek iyi değil. Bu ülkelerde halihazırda 86.000'den fazla hemşirelik personeli açığı var. Bu nedenle talebi karşılamak için kendi arka bahçemizin ötesine bakmalıyız. " %}
+                            </p>
+                            <p>
+                                {% translate "  Türkiye'den iyi eğitimli doktorlar, personel açığını kapatmak için özellikle uygundur. Genç yaştalar ve genellikle aileleri ya da arkadaşları aracılığıyla Almanya ile bir bağları var. Öngörülebilir bir yaşam ve uzun vadeli bir iş ilişkisi istiyorlar. Bunun için Almanya'ya gelmeye motive oluyorlar." %}
                             </p>
                             <a href="#"><i class="arrow_right"></i></a>
                         </div>
@@ -86,10 +89,10 @@
                             <i class="flaticon-label"></i>
                             <div class="top">
                                 <span>02</span>
-                                <h4>{% translate "Rekrutierung" %}</h4>
+                                <h4>{% translate "Bürokrasi çok karmaşık değil mi?" %}</h4>
                             </div>
                             <p>
-                                {% translate "Rekrutierung geeigneter Bewerber in Istanbul (nach bedarf). Durchführung von Sprachkursen mit Integration und medizinische Inhalte" %}
+                                {% translate " Üçüncü bir ülkeden gelen vasıflı bir işçi olarak Almanya'da çalışmak için aşılması gereken bir dizi bürokratik engel var. Alman devleti bu süreçte eğitimin karşılaştırılabilirliğini sağlamaya çalışıyor. İlk bakışta bu süreç bunaltıcı görünüyor ve birçok işvereni korkutuyor. Türfa, sürecin sorunsuz işlemesini sağlayarak hayatınızı kolaylaştırıyor. Temel yetkinliklerimizden biri, Türk tıp uzmanlarının istihdamı için bürokratik prosedürleri ele alma konusundaki uzmanlığımızla sizi baştan sona desteklemektir. Prosedürler ortalama 6 ay sürmektedir. " %}
                             </p>
                             <a href="#"><i class="arrow_right"></i></a>
                         </div>
@@ -101,10 +104,10 @@
                             <i class="flaticon-file"></i>
                             <div class="top">
                                 <span>03</span>
-                                <h4>{% translate "Überprüfung" %}</h4>
+                                <h4>{% translate "Bakım yerleştirmesinde başarılı işe alım nasıl gerçekleşir? " %}</h4>
                             </div>
                             <p>
-                                {% translate "Suche nach Fachkräfte und Überprüfung von Kandidaten (Assessment und Sprachprüfung)" %}
+                                {% translate "Organizasyonel desteğin yanı sıra, yabancı çalışanlara Almanya'ya varışlarından önce ve sonra eşlik etmek başarılı bir entegrasyon için ön koşuldur. Türfa bu nedenle ilgili tüm taraflara sürekli destek sunmaktadır. " %}
                             </p>
                             <a href="#"><i class="arrow_right"></i></a>
                         </div>
@@ -131,53 +134,85 @@
                                 <i class="flaticon-target"></i>
                             </div>
                             <div class="content text-center">
-                                <span>{% translate "Wir finden" %}</span>
-                                <h3 class="mb-0">{% translate "den besten Kandidaten" %}</h3>
-                                <span>{% translate "für Ihr Unternehmen" %}</span>
+                                <span>{% translate "Firmanız için" %}</span>
+                                <h3 class="mb-0">{% translate "en uygun adayları" %}</h3>
+                                <span>{% translate "buluyoruz" %}</span>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-lg-6 info">
-                        <h4>{% translate "Unsere Vorteile" %}</h4>
-                        <h2>{% translate "Was macht Türfa?" %}</h2>
+                        <h4>{% translate "Avantajlarımız" %}</h4>
+                        <h2>{% translate "Türfa ne iş yapar?" %}</h2>
                         <p>
-                            {% translate "Türfa findet qualifizierten türkischen Fachkräften für Unternehmen und helfen Ihnen bei der Einstellung für folgende Berufe: Fach- und Assistentsärzte, Pflegefachkräfte, Altenpfleger, OTA, ATA; Physiotherapeuten. " %}    
+                            {% translate "'Türfa' Türk vasıflı işçi anlamına gelmektedir. Genç bir şirket olarak, Almanya'da kalıcı istihdam için Türkiye'den yüksek nitelikli işçileri işe almayı ve yerleştirmeyi işimiz haline getirdik. Hastaneleri kısa ve uzun vadeli personel açıklarını kapatma konusunda destekliyoruz. Bunu yaparken fizyoterapistlerden hemşirelere, geriatri hemşirelerinden cerrahi ve anestezi asistanlarına, uzman ve asistan doktorlara kadar tüm yelpazeyi kapsıyoruz. " %}    
                         </p>
+                        <p>
+                            {% translate "Verimli bir kalıcı kadroya giden yolda, işe alım sürecinde aşağıdaki hizmetlerle size destek oluyoruz: " %}
+                        </p>
+                        <span>
+                            {% translate "İşe alım aşamasında:" %}
+                        </span>
                         <ul>
                             <li>
                               <p>
-                                {% translate "Suche nach Fachkräfte und Überprüfung von Kandidaten (Assessment und Sprachprüfung)" %}
+                                {% translate "Almanya ve Türkiye'de uygun Türk profesyonellerin işe alınması " %}
                               </p>
                             </li>
                             <li>
                               <p>
-                                {% translate "Organisation und Durchführung von Vorstellungsgesprächen im Türkei oder Online" %}
+                                {% translate "Dil testini de içeren bir değerlendirme merkezi çerçevesinde adayların taranması ve yetenek testi " %}
                               </p>
                             </li>
                             <li>
-                              <p>{% translate "Rekrutierung geeigneter Bewerber in Istanbul (nach bedarf)." %}</p>
-                            </li>
-                            <li>
-                              <p>
-                                {% translate "Übernahme von allen Formalitäten für Aufenthalt, Beschäftigung und Unterbringung" %}
-                              </p>
+                              <p>{% translate "Video konferans yoluyla veya Türkiye'de yerinde mülakatların düzenlenmesi ve yürütülmesi " %}</p>
                             </li>
                             <li>
                               <p>
-                                {% translate "Begleitung der Arbeit und des Einstellungsprozesses mit Übersetzern" %}
+                                {% translate "Tüm işe alım sürecine deneyimli çevirmenlerin eşlik etmesi " %}
                               </p>
                             </li>
-                            <li>
-                              <p>
-                                {% translate "Begleitung der beruflichen und privaten Integration" %}
-                              </p>
-                            </li>
-                            
                         </ul>
-                        <a class="btn btn-light effect btn-md" href="{% url 'about' %}">{% translate "Erfahren Sie Mehr" %}</a>
+                        <span>
+                            {% translate "Aday seçiminden sonra ve iş başlamadan önce: " %}
+                        </span>
+                        <ul>
+                            <li>
+                            <p>
+                                {% translate "İkamet, istihdam ve konaklama ile ilgili gerekli tüm formalitelerin profesyonelce ele alınması " %}
+                            </p>
+                            </li>
+                            <li>
+                            <p>
+                                {% translate "Gelecekteki işverenle işbirliği içinde hızlandırılmış prosedür dahil olmak üzere mesleki denklik konusunda destek " %}
+                            </p>
+                            </li>
+                            <li>
+                            <p>{% translate "Konaklama yeri bulma konusunda yardım" %}</p>
+                            </li>
+                            <li>
+                            <p>
+                                {% translate "Günlük çalışma hayatına hazırlık amacıyla işe özel, tıbbi içeriklere odaklanan Almanca dil kursları düzenlemek " %}
+                            </p>
+                            </li>
+                        </ul>
+                        <span>
+                            {% translate "İşe başladıktan sonra: " %}
+                        </span>
+                        <ul>
+                            <li>
+                            <p>
+                                {% translate "İlgili mesleki deneyime sahip çevirmenler aracılığıyla başlangıç aşamasında Türk profesyonellere destek " %}
+                            </p>
+                            </li>
+                            <li>
+                            <p>
+                                {% translate "Profesyoneller için profesyonel ve özel entegrasyon desteği " %}
+                            </p>
+                            </li>
+                        </ul>
+                            <a class="btn btn-light effect btn-md" href="{% url 'about' %}">{% translate "Daha fazlası" %}</a>
                     </div>
-                    
                 </div>
             </div>
         </div>
@@ -196,10 +231,8 @@
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
                     <div class="site-heading text-center">
-                        <h4>Unsere Deinstleistungen</h4>
-                        <h2>Medizinische Fachkräfte</h2>
-                        <br>
-                        <h3>gesundheitlichen Bereich</h3>
+                        <h4>{% translate "Bizi Tanıyın" %}</h4>
+                        <h2>{% translate "Tıp uzmanları ile ekibinizi güçlendirin" %}</h2>
                         <div class="devider"></div>
                     </div>
                 </div>
@@ -210,38 +243,36 @@
                 <div class="row">
                     <div class="col-md-12">
                         <p>
-                            Aktuell fehlen in Deutschland 120.000 Pflegekräfte und der Bedarf wird in den nächsten Jahren stetig steigen.
+                            {% translate " Almanya'da yıllardır kalifiye eleman sıkıntısı yaşanıyor. Bu durum özellikle tıp sektörünü zorluyor ve daha da kötüleşmesi bekleniyor. Güncel istatistiklere göre, yaklaşık 60.000 boş pozisyonla, Alman bakım tesislerindeki pozisyonların neredeyse %4'ü doldurulmamış durumda. Bunun nedenleri arasında yüksek iş yükü, sık fazla mesai ve düşük ücret yer alıyor." %}
                         </p>
                         <p>
-                            Während in Deutschland ein Fachkräftemangel herrscht, gibt es in der Türkei aufgrund der anhaltenden Wirtschaftskrise über 60.000 arbeitslose Pflegekräfte. Als Unternehmen bieten wir eine Lösung von der sowohl Sie als Arbeitgeber in Deutschland als auch Arbeitnehmer aus der Türkei profitieren. Denn diese Fachkräfte finden wir für Sie! Wir rekrutieren Fachkräfte in der Türkei die in Deutschland arbeiten möchten, bringen Sie mit den passenden Kandidaten zusammen und unterstützen Sie bei der Durchführung aller bürokratischer und organisatorischer Prozesse. Außerdem unterstützen wir Ihre Arbeitnehmer während ihres ersten Jahrs in Deutschland sowohl bei bürokratischen Abläufen als auch bei der Integration, um so einen bestmöglichen Start für ein langfristiges und erfolgreiches Arbeitsverhältnis zu schaffen.
+                            {% translate "Buna karşılık, 60.000'den fazla Türk bakım çalışanı devam eden ekonomik kriz nedeniyle iş arıyor, ancak kendi ülkelerinde bulamıyor. Yurtdışından sağlık profesyonelleri için profesyonel bir işe alım ajansı olarak Türfa, hem Almanya'daki işverenlere hem de Türkiye'deki çalışanlara fayda sağlayan bir çözüm sunuyor. Yüksek nitelikli Türk doktor ve hemşirelerden oluşan ağımızla, sizin için uygun adayları işe alarak ve her iki tarafı da tüm bürokratik zorluklarda destekleyerek ekibinizi güçlendiriyoruz. Uzun vadeli ve başarılı bir istihdam ilişkisi için mümkün olan en iyi temeli oluşturmak amacıyla, hizmetlerimiz yalnızca profesyonellerin işe alınmasının ötesine geçmektedir. Türfa, çalışanların hızlı bir şekilde ayaklarının yere basmasını ve her şeyin sorunsuz bir şekilde yürümesini sağlamak için, Almanya'daki ilk yıllarında hem özel hem de profesyonel yaşamlarına entegrasyon ve resmi makamlarla ilgili konularda onlara eşlik eder. " %}    
                         </p>
                         <p>
                             <strong>
-                                Die drei wichtigsten Eckpunkte bei der Rekrutierung von Arbeitskräften aus dem Ausland
+                                {% translate "Yurtdışından işçi alımında en önemli üç köşe taşı" %}
                             </strong>
                         </p>
                         <ul>
                             <li>
                                 <p>
-                                    <b>3- Wieso überhaupt aus dem Ausland rekrutieren?</b> <br />
-                                    Aktuell fehlen 120.000 Pflegekräfte in Deutschland und dieser massive Bedarf wird in den nächsten Jahren stetig wachsen, denn die Bevölkerung in Deutschland wird immer älter. Doch Arbeitnehmer in deutschsprachigen Ländern zu finden wird immer schwieriger, da auch in Österreich und der Schweiz aktuell schon über 86.000 Pflegekräfte fehlen.
-                                    <br/><br/>
-                                    Deshalb sind wir davon überzeugt, dass Pflegekräfte aus der Türkei eine gute Lösung darstellen. Die Arbeitnehmer in der Türkei sind jung, gut ausgebildet, haben häufig schon einen Bezug zu Deutschland und wollen deshalb hier ein langfristiges Arbeitsverhältnis beginnen um ein planbares und sicheres Leben führen zu können.
+                                    <b>{% translate "Yurtdışından adayları işe almayı bu kadar cazip kılan nedir?" %}</b> <br />
+                                    {% translate " Almanya'daki kalifiye eleman açığı yurtiçinde çözülemiyor. Avusturya ya da İsviçre gibi Almanca konuşulan diğer ülkelerde de durum pek iyi değil. Bu ülkelerde halihazırda 86.000'den fazla hemşirelik personeli açığı var. Bu nedenle talebi karşılamak için kendi arka bahçemizin ötesine bakmalıyız. " %}    
+                                </p>
+                                <p>
+                                    {% translate "Türkiye'den iyi eğitimli doktorlar, personel açığını kapatmak için özellikle uygundur. Genç yaştalar ve genellikle aileleri ya da arkadaşları aracılığıyla Almanya ile bir bağları var. Öngörülebilir bir yaşam ve uzun vadeli bir iş ilişkisi istiyorlar. Bunun için Almanya'ya gelmeye motive oluyorlar. " %}
                                 </p>
                             </li>
                             <li>
                                 <p>
-                                    <b>2- Ist die ganze Bürokratie nicht viel zu kompliziert?</b> <br />
-                                    Der bürokratische Aufwand der notwendig ist, damit ein Arbeitnehmer aus einem Drittstaat in Deutschland arbeiten darf, kann erschlagend wirken. Deshalb ist ein wichtiger Baustein unserer Dienstleistung für Sie die Begleitung und Übernahme aller bürokratischen Prozesse, um so einen reibungslosen Ablauf des Verfahrens zu gewährleisten und Ihren idealen Kandidaten zu Ihnen zu bringen. Das gesamte Verfahren wird voraussichtlich 6 Monate dauern.    
+                                    <b>{% translate "Bürokrasi çok karmaşık değil mi?" %}</b> <br />
+                                    {% translate "Üçüncü bir ülkeden gelen vasıflı bir işçi olarak Almanya'da çalışmak için aşılması gereken bir dizi bürokratik engel var. Alman devleti bu süreçte eğitimin karşılaştırılabilirliğini sağlamaya çalışıyor. İlk bakışta bu süreç bunaltıcı görünüyor ve birçok işvereni korkutuyor. Türfa, sürecin sorunsuz işlemesini sağlayarak hayatınızı kolaylaştırıyor. Temel yetkinliklerimizden biri, Türk tıp uzmanlarının istihdamı için bürokratik prosedürleri ele alma konusundaki uzmanlığımızla sizi baştan sona desteklemektir. Prosedürler ortalama 6 ay sürmektedir." %}    
                                 </p>
                             </li>
                             <li>
                                 <p>
-                                    <b>3- Wie funktioniert erfolgreiches On-Boarding?</b><br />
-                                    Um eine erfolgreiche Integration ausländischer Arbeitnehmer in Deutschland zu gewährleisten sind sowohl organisatorische Hilfestellung als auch eine Betreuung der Arbeitnehmer vor und nach der Ankunft in Deutschland notwendig.    
-                                </p>
-                                <p>
-                                    Mehr!
+                                    <b>{% translate "Bakım yerleştirmesinde başarılı işe alım nasıl gerçekleşir?" %}</b><br />
+                                    {% translate " Organizasyonel desteğin yanı sıra, yabancı çalışanlara Almanya'ya varışlarından önce ve sonra eşlik etmek başarılı bir entegrasyon için ön koşuldur. Türfa bu nedenle ilgili tüm taraflara sürekli destek sunmaktadır." %}    
                                 </p>
                             </li>
                         </ul>
@@ -249,53 +280,10 @@
                 </div>
             </div>
         </div>
-       
-        <div class="container-full">
-            <div class="services-items">
-                <div class="row">
-                    <!-- Single Item -->
-                    <div class="col-lg-6 col-md-6 single-item">
-                        <div class="item">
-                            <div class="info">
-                                <i class="flaticon-money"></i>
-                                <h4>{% translate "Ärzte" %}</h4>
-                                <p>
-                                    {% translate "Alles was Sie wissen müssen" %}
-                                </p>
-                                <div class="bottom">
-                                    <span>01</span>
-                                    <a href="{% url 'blog-list' %}">{% translate "herunterladen" %}</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
-                    <!-- Single Item -->
-                    <div class="col-lg-6 col-md-6 single-item">
-                        <div class="item">
-                            <div class="info">
-                                <i class="flaticon-budget"></i>
-                                <h4>{% translate "Medizinische Fachkräfte" %}
-                                </h4>
-                                <p>
-                                    {% translate "Alles was Sie wissen müssen" %}
-                                    <br>
-                                </p>
-                                <div class="bottom">
-                                    <span>02</span>
-                                    <a href="{% url 'blog-list' %}">{% translate "herunterladen" %}</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <br>
-        
     </div>
     <!-- End Services Area -->
 
+    {% if services %}
         <!-- Star Services Area
     ============================================= -->
     <div class="services-area bg-gray default-padding bottom-less">
@@ -308,7 +296,7 @@
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
                     <div class="site-heading text-center">
-                        <h2>{% translate "Auslandsrekrutierung" %}</h2>
+                        <h2>{% translate "Türfa sizin için doğru çözüme sahiptir! " %}</h2>
                         <div class="devider"></div>
                     </div>
                 </div>
@@ -318,7 +306,7 @@
             <div class="services-items">
                 <div class="row">
                     <div class="col-md-12 mb-5">
-                        {% translate "Wenn Sie eine bestimmte Menge von Fachkräfte in Ihre Unternehmen brauchen, bieten wir unsere Rekrutierungslösung. D.h wir finden beruflich passende Kandidaten für Sie mit wenig Deutschkenntnise und organisieren für sie medizinische Super Intensive Sprachkurse, Workshops und Gespräche mit Ihren Kollegen aus Deutschland." %}    
+                        {% translate "Personel ihtiyacı olan Alman klinikleri ile yüksek nitelikli Türk profesyonelleri bir araya getirmek bizim gücümüzdür. Size sunduğumuz yabancı adaylar eşdeğer, tanınmış niteliklere sahiptir. En azından hemşirelik eğitimini tamamlamış ve Telc B2 Almanca sertifikasına sahiptirler. Bu, dili bağımsız olarak kullanabildiklerini ve açık standart dilde bir konuşmanın ana noktalarını anlayabildiklerini belgelemektedir. " %}    
                     </div>
                 </div>
             </div>
@@ -326,42 +314,35 @@
         <div class="container-full">
             <div class="services-items">
                 <div class="row">
+                    {% for item in services %}
                     <!-- Single Item -->
                     <div class="col-lg-6 col-md-6 single-item">
                         <div class="item">
                             <div class="info">
                                 <i class="flaticon-money"></i>
-                                <h4>{% translate "Ärzte" %}</h4>
+                                <h4>
+                                    {% if "tr" in request.path %}
+                                    {{item.title|safe}}
+                                    {% else %}
+                                    {{item.title_de|safe}}
+                                    {% endif %}
+                                </h4>
                                 <p>
-                                    {% translate "Alles was Sie wissen müssen" %}
+                                    {% if "tr" in request.path %}
+                                    {{item.text_short|safe}}
+                                    {% else %}
+                                    {{item.text_short_de|safe}}
+                                    {% endif %}
                                 </p>
                                 <div class="bottom">
                                     <span>01</span>
-                                    <a href="" download>{% translate "herunterladen" %}</a>
+                                    <a {% if "candidate" in request.path %}href="{% url 'candidate_services_detail' item.slug %}"{% else %}{% url 'services_detail' item.slug %}{% endif %} download>{% translate "Daha fazla" %}</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- End Single Item -->
-                    <!-- Single Item -->
-                    <div class="col-lg-6 col-md-6 single-item">
-                        <div class="item">
-                            <div class="info">
-                                <i class="flaticon-budget"></i>
-                                <h4>
-                                    {% translate "Medizinische Fachkräfte" %}
-                                </h4>
-                                <p>
-                                    {% translate "Alles was Sie wissen müssen" %}
-                                    <br>
-                                </p>
-                                <div class="bottom">
-                                    <span>02</span>
-                                    <a href="" download>{% translate "herunterladen" %}</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    {% endfor %}
                 </div>
             </div>
         </div>
@@ -369,59 +350,7 @@
         
     </div>
     <!-- End Services Area -->
-
-    {% if blog %}
-    <!-- Start Blog 
-    ============================================= -->
-    <div class="blog-area bg-gray default-padding bottom-less">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2">
-                    <div class="site-heading text-center">
-                        <h4>{% translate "wichtige Informationen" %}</h4>
-                        <h2>{% translate "aktuelle Informationen über das Thema Personalvermmitlung und Rekrutierung" %}</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="blog-items">
-                <div class="row">
-                    {% for item in blog %}
-                    <div class="single-item col-lg-4 col-md-6">
-                        <div class="item">
-                            <div class="thumb">
-                                <img src="{{ item.img_url.url }}" alt="Thumb">
-                                <div class="date">{{item.created_at}}</div>
-                            </div>
-
-                            <div class="info">
-                                <div class="meta">
-                                    <ul>
-                                        <li>
-                                            <a>{{ item.writer }}</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <h4>
-                                    <a {% if "candidate" in request.path %} href="{% url 'candidate_blog_detail' item.slug %}"{% else %} href="{% url 'blog_detail' item.slug %}"{% endif %}>
-                                        {% blocktrans with item.title|safe as title %}{{title}}{% endblocktrans %}
-                                    </a>
-                                </h4>
-                                <p>
-                                    {% blocktrans with item.text_short|safe as text_short %}{{text_short}}{% endblocktrans %}
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    {% endfor %}
-                                       
-                </div>
-            </div>
-        </div>
-    </div>
-    {%endif%}
-    <!-- End Blog Area --> 
+    {% endif %}
 
 {% endblock %}
 {% block 'scripts' %}

@@ -56,6 +56,7 @@ class Settings(models.Model):
 
 class ContactModel(models.Model):
     content = RichTextField(_("İçerik"))
+    content_de = RichTextField(_("İçerik"))
     role=models.BooleanField(_("Kullanıcı Grubu"), choices=ROLE_CHOICES)
 
     class Meta:
@@ -129,7 +130,11 @@ class StatusModel(models.Model):
 
 class ServiceModel(models.Model):
     title=RichTextField(_("Başlık"))
+    title_de=RichTextField(_("Başlık Almanca"))
     text=RichTextField(_("İçerik"))
+    text_de=RichTextField(_("İçerik Almanca"))
+    text_short=RichTextField(_("Kısa Metin"))
+    text_short_de=RichTextField(_("Kısa Metin Almanca"))
     slug=models.CharField(_("Slug"), max_length=200)
     img_url = models.FileField(_("Görsel"), upload_to="services/", max_length=100, validators=[FileExtensionValidator(['jpg', 'png'])])
     pdf = models.FileField(_("PDF"), upload_to="services/", max_length=100, validators=[FileExtensionValidator(['pdf'])])
@@ -145,13 +150,17 @@ class ServiceModel(models.Model):
 class BlogModel(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, blank=True)
     title = RichTextField(_("Başlık"), blank=True)
+    # title_de = RichTextField(_("Başlık Almanca"), blank=True)
     img_url = models.FileField(_("Görsel"), upload_to="blog/", max_length=100, null=True, blank=True)
     pdf = models.FileField(_("PDF"), upload_to="blog/pdf/", max_length=100, validators=[FileExtensionValidator(['pdf'])])
     text = RichTextField(_("İçerik"), blank=True)
+    text_de = RichTextField(_("İçerik Almanca"), blank=True)
     text_short = RichTextField(_("Kısa içerik"), blank=False)
+    text_short_de = RichTextField(_("Kısa içerik Almanca"), blank=False)
     created_at = models.DateField(_("Yayın Tarihi"))
     slug=models.CharField(_("Slug"), max_length=200)
-    role = models.BooleanField(_("Kullanıcı Grubu"),choices=ROLE_CHOICES, default=True)
+    slug_de=models.CharField(_("Slug Almanca"), max_length=200)
+    role = models.BooleanField(_("Kullanıcı Grubu"),choices=ROLE_CHOICES)
 
     class Meta:
         verbose_name = "Blog yazısı"
@@ -162,8 +171,11 @@ class BlogModel(models.Model):
     
 class AboutModel(models.Model):
     title = RichTextField(_("Başlık"), blank=True)
+    title_de = RichTextField(_("Başlık Almanca"), blank=True)
     about = RichTextField(_("Hakkında"), blank=True)
+    about_de = RichTextField(_("Hakkında Almanca"), blank=True)
     about_alt=RichTextField(_("Hakkında(tam genişlik)"), blank=True)
+    about_alt_de=RichTextField(_("Hakkında(tam genişlik) Almanca"), blank=True)
     signf = models.FileField(_("İmza"), upload_to="uploads/about/", max_length=100, null=True, blank=True)
     img_url = models.FileField(_("Görsel"), upload_to="uploads/about/", max_length=100, null=True, blank=True)
     role = models.BooleanField(_("Kullanıcı Grubu"), choices=ROLE_CHOICES, default=0)

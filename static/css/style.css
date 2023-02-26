@@ -7,6 +7,7 @@ input[type="file"]  { border: 0!important }
 
 .colorRed { color: red!important }
 .usTabs { display: flex!important }
+.colorWhite { color: #fff; }
 
 /* ----------------------------------
 
@@ -2436,17 +2437,17 @@ body,
 
 .about-area .info ul {
     margin-right: -15px;
-    margin-top: 35px;
+    /* margin-top: 35px; */
     overflow: hidden;
 }
 
 .about-area .info li {
-    float: left;
-    width: 50%;
+    /* float: left;
+    width: 50%; */
     padding: 0 15px;
     position: relative;
     padding-left: 60px;
-    min-height: 84px;
+    min-height: 52px;
     margin-top: 15px;
 }
 

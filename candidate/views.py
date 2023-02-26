@@ -33,7 +33,6 @@ class HomeView(View):
         else:
             self.context['services'] = ServiceModel.objects.filter(role=True)
             self.context['blog'] = BlogModel.objects.filter(role=False)
-
         return render(request, self.template_name, self.context)
     
 class CandidateServicesView(View):

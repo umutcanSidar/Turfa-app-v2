@@ -58,7 +58,7 @@
                       <td>{{s.candidates.name}} {{s.candidates.surname}}</td>
                       
                       <td>{{ s.candidates.birthday }}</td>
-                      <td>{% if s.candidates.german %}{{ s.candidates.german }} {% else %}{% translate "Bilinmiyor" %}{% endif %}</td>
+                      <td>{% if s.candidates.german %}A{{s.candidates.german}}{% endif %}</td>
                       <td>
                         <a
                           href="{{ s.cv.url }}"

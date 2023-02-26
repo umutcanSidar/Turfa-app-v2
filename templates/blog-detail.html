@@ -30,7 +30,11 @@
             <div class="row">
                 <div class="col-lg-8 services-single-content">
                     <img src="{{ all_blog.img_url.url }}" alt="Thumb">
-                    {{ all_blog.text | safe }}
+                    {% if "tr" in request.path %}
+                        {{ all_blog.text | safe }}
+                        {% else %}
+                        {{ all_blog.text_de | safe }}
+                    {% endif %}
                 </div>
 
                 <div class="col-lg-4 services-sidebar">

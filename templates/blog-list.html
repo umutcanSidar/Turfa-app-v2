@@ -42,7 +42,9 @@
                                 <div class="single-item col-lg-4 col-md-6">
                                     <div class="item">
                                         <div class="thumb">
+                                            {% if item.img_url %}
                                             <img src="{{item.img_url.url}}" alt="Thumb">
+                                            {% endif %}
                                             <div class="date">{{ item.created_at }}</div>
                                         </div>
 
@@ -55,11 +57,15 @@
                                             </ul>
                                             </div>
                                             <h4>
-                                                <a {% if "candidate" in request.path %} href="{% url 'candidate_blog_detail' item.slug %}"{% else %} href="{% url 'blog_detail' item.slug %}"{% endif %}>{{item.title|safe}}</a>
+                                                <a {% if "candidate" in request.path %} href="{% url 'candidate_blog_detail' item.slug %}"{% else %} href="{% url 'blog_detail' item.slug %}"{% endif %}>
+                                                    {% if "tr" in request.path %}{{item.title|safe}} {% else %}{{item.title_de|safe}} {% endif %}
+                                                </a>
                                             </h4>
+                                            {% if item.text_short or item.text_short_de %}
                                             <p>
-                                                {{item.text_short|safe}}
+                                                {% if "tr" in request.path %}{{item.text_short|safe}}{% else %}{{item.text_short_de|safe}}{% endif %}
                                             </p>
+                                            {% endif %}
                                         </div>
                                     </div>
                                 </div>

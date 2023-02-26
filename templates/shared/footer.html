@@ -42,7 +42,7 @@
               </div>
               <div class="col-lg-3 col-md-6 item">
                 <div class="f-item contact-widget">
-                  <h4 class="widget-title">İletişim</h4>
+                  <h4 class="widget-title">{% translate "İletişim" %}</h4>
                   <div class="address">
                     <ul>
                       <li>
@@ -50,7 +50,7 @@
                           <i class="fas fa-home"></i>
                         </div>
                         <div class="content">
-                          <strong>Adres:</strong>
+                          <strong>{% translate "Adres" %}:</strong>
                           {{ setting_item.address }}
                         </div>
                       </li>
@@ -59,7 +59,7 @@
                           <i class="fas fa-envelope"></i>
                         </div>
                         <div class="content">
-                          <strong>E-Posta:</strong>
+                          <strong>{% translate "E-Posta" %}:</strong>
                           <a href="mailto:info@tuerfa.com">{{setting_item.mail}}</a>
                         </div>
                       </li>
@@ -68,7 +68,7 @@
                           <i class="fas fa-phone"></i>
                         </div>
                         <div class="content">
-                          <strong>Telefon:</strong>
+                          <strong>{% translate "Telefon" %}:</strong>
                           <a href="tel:2151234567">{{setting_item.phone}}</a>
                         </div>
                       </li>
