@@ -16,6 +16,14 @@ STATUS_CHOICES=(
     ("3", "Tamamlandı")
 )
 
+GERMAN_CHOICES = (
+    ("0", "A0"),
+    ("1", "A1"),
+    ("2", "A2"),
+    ("3", "B1"),
+    ("4", "B2"),
+)
+
 class CandidateModel(models.Model):
     name=models.CharField(_("Ad"), max_length=100)
     surname=models.CharField(_("Soyad"), max_length=100)
@@ -29,6 +37,7 @@ class CandidateModel(models.Model):
     postcode=models.CharField(_("Posta Kodu"), max_length=6)
     address=models.CharField(_("Adres"), max_length=200)
     photo=models.FileField(_("Fotoğraf"), upload_to="uploads/isarayan/", validators=[FileExtensionValidator(['jpg','svg','png'])], blank=True)
+    german=models.CharField(_("Almanca"), choices=GERMAN_CHOICES, max_length=50, blank=True, null=True)
     status=models.CharField(_("Durumu"), choices=STATUS_CHOICES, max_length=50, default="0")
 
     class Meta:

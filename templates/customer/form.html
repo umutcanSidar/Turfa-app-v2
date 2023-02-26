@@ -96,9 +96,17 @@
             </div>
            </div>       
             <div class="row">
-              <div class="col-lg-12 mt-5">
+              <div class="col-lg-12">
+                {% comment %} <script>
+                    grecaptcha.enterprise.ready(function() {
+                        grecaptcha.enterprise.execute('{{recaptcha_site_key}}', {action: '/contact/'}).then(function(token) {
+                            document.getElementById('g-recaptcha-response').value = token;
+                        });
+                    });
+                    </script>
+                    <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">  {% endcomment %}
                 <button type="submit" name="submit" id="submit">
-                  {% translate "Gönder" %} <i class="fa fa-paper-plane"></i>
+                    {% translate "Gönder" %} <i class="fa fa-paper-plane"></i>
                 </button>
               </div>
             </div>

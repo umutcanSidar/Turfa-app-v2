@@ -9,6 +9,19 @@ from django.core import mail
 from django.utils.translation import gettext as _
 
 # Create your views here.
+
+class CvView(View):
+    template_name = "admin/cv.html"
+    context={}
+
+    def get(self, request, *args, **kwargs):
+        self.context["info"] = CandidateModel.objects.get(pk=kwargs["pk"])
+        self.context["experiences"] = ExperienceModel.objects.get(candidate=kwargs["pk"])
+        self.context["education"] = EducationModel.objects.get(candidate=kwargs["pk"])
+
+        return render(request, self.template_name, self.context)
+
+
 class HomeView(View):
     template_name="customer/home.html"
     context={}
@@ -236,7 +249,7 @@ class CandidateFormView(View):
             html="Yeni bir başvuru geldi!\nisim:"+name+"\neposta: "+email+"\nTelefon: "+phone+"\n<a href='https://türfa.de' target='_blank'>Buradan</a> düzenleyebilirsin."
             newStatus.save()
            
-            mail.send_mail(_("Başvuru"), html, 'postmaster-web@tuerfa.de', ['umutcansidar@gmail.com'], fail_silently=False)
+            mail.send_mail(_("Başvuru"), html, 'postmaster-web@tuerfa.de', ['kilavuz.berker@tuerfa.de','kulke.nikko@tuerfa.de'], fail_silently=False)
 
             return HttpResponseRedirect(self.success_url)
 

@@ -10,6 +10,8 @@ from candidate.models import CandidateModel
 from .forms import StatusForm
 from django.contrib.auth.mixins import LoginRequiredMixin
 
+from django.conf import settings
+import requests
 
 
 # Create your views here.
@@ -28,14 +30,14 @@ class StatusView(View,LoginRequiredMixin):
                     updateStatus = StatusModel.objects.filter(id=status_pk).update(user=user, status=str(candidate_status))
                 else:
                     updateStatus = StatusModel.objects.filter(id=status_pk).update(status=str(candidate_status), user=user)
-                return HttpResponseRedirect("/status/")            
+                return HttpResponseRedirect("/status/")           
+            else:
+                 return HttpResponseRedirect(self.login_url)
 
         return render(request, self.template_name, self.context)
 
     def get(self, request):
-
-        self.context["candidate_candidate"] = StatusModel.objects.filter(status="1", user=request.user)
-        self.context["candidate_choosen"] = StatusModel.objects.filter(user=request.user, status="2")
+        self.context["status"] = StatusModel.objects.filter(user=request.user)
        
         return render(request, self.template_name, self.context)
     
@@ -63,14 +65,14 @@ class SuccesView(View):
     def get(self, request):
         return render(request, self.template_name)
 
-# class ForgotPasswordView(View):
-#     template_name="forgot-password.html"
+class ForgotPasswordView(View):
+    template_name="forgot-password.html"
 
-#     def get(self, request):
-#         return render(request, self.template_name)
+    def get(self, request):
+        return render(request, self.template_name)
 
-#     def post(self, request):
-#         return render(request, self.template_name)
+    def post(self, request):
+        return render(request, self.template_name)
 
 class RegisterView(View):
     template_name="register.html"
@@ -198,6 +200,7 @@ class ContactView(View):
     template_name="contact.html"
     form_class= ContactForm
     success_url="/success/"
+    error_url="/error/"
     model=ContactModel
     
     def post(self, request):
@@ -206,19 +209,36 @@ class ContactView(View):
             email=request.POST['email']
             phone=request.POST['phone']
             message=request.POST['message']
+            recaptcha_response = request.POST['g-recaptcha-response']
 
+            data = {
+                'secret': settings.GOOGLE_RECAPTCHA_SECRET_KEY,
+                'response': recaptcha_response
+            }
+
+            r = requests.post('https://www.google.com/recaptcha/api/siteverify', data=data)
+            result = r.json()
 
             html="isim:"+name+"\neposta: "+email+"\nTelefon: "+phone+"\Mesaj: "+message
-
-            mail.send_mail(_("İletişim"), html, 'postmaster-web@tuerfa.de', ['umutcansidar@gmail.com'], fail_silently=False)
-
+            mail.send_mail(_("İletişim"), html, 'postmaster-web@tuerfa.de', ['kilavuz.berker@tuerfa.de','kulke.nikko@tuerfa.de'], fail_silently=False)
             return HttpResponseRedirect(self.success_url)
+
+            # if result['success']:
+            #     html="isim:"+name+"\neposta: "+email+"\nTelefon: "+phone+"\Mesaj: "+message
+            #     mail.send_mail(_("İletişim"), html, 'postmaster-web@tuerfa.de', ['umutcansidar@gmail.com'], fail_silently=False)
+            #     return HttpResponseRedirect(self.success_url)
+            # else:
+            #     return HttpResponseRedirect("/error/")
+        else:
+            return HttpResponseRedirect("/error/")
+            
     
     def get(self, request):
 
         role_url=request.get_full_path()
         context={
-            'form': self.form_class()
+            'form': self.form_class(),
+            'recaptcha_site_key':settings.GOOGLE_RECAPTCHA_SITE_KEY
         }
 
         if "candidate" in role_url:

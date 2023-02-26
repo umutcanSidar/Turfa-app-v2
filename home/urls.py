@@ -1,5 +1,5 @@
 from django.urls import path, include
-from .views import HomeView, BlogView, ContactView, LoginView, RegisterView, SuccesView, LogoutView, AboutView,ServiceDetailsView, BlogDetailView, StatusView
+from .views import HomeView, BlogView, ContactView, LoginView, RegisterView, SuccesView, LogoutView, AboutView,ServiceDetailsView, BlogDetailView, StatusView, ErrorView
 from django.contrib.auth import views as auth_views
 from django.contrib.auth.decorators import login_required
 
@@ -21,14 +21,14 @@ urlpatterns = [
     path("logout/",LogoutView.as_view(), name="logout"),
     path("register/",RegisterView.as_view(), name="register"),
     
-    path("reset_password/",auth_views.PasswordResetView.as_view(), name="reset_password"),
-    path("reset_password_sent/",auth_views.PasswordResetDoneView.as_view(), name="password_reset_done"),
-    path("reset/<uidb64>/<token>",auth_views.PasswordResetConfirmView.as_view(), name="password_reset_confirm"),
-    path("reset_password_complete/",auth_views.PasswordResetCompleteView.as_view(), name="password_reset_complete"),
+    path("reset_password/",auth_views.PasswordResetView.as_view(template_name="commons/forgot-password.html"), name="reset_password"),
+    path("reset_password_sent/",auth_views.PasswordResetDoneView.as_view(template_name="commons/password_reset_done.html"), name="password_reset_done"),
+    path("reset/<uidb64>/<token>",auth_views.PasswordResetConfirmView.as_view(template_name="commons/password_reset_confirm.html"), name="password_reset_confirm"),
+    path("reset_password_complete/",auth_views.PasswordResetCompleteView.as_view(template_name="commons/password_reset_complete.html"), name="password_reset_complete"),
 
     
     path("success/", SuccesView.as_view(), name="success"),
-    path("error/", SuccesView.as_view(), name="error"),
+    path("error/", ErrorView.as_view(), name="error"),
 
     # CANDIDATE FORM
     path("candidate/", include("candidate.urls"))

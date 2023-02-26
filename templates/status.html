@@ -34,40 +34,31 @@
         </ul>
         <div class="tab-content" id="myTabContent">
           <div class="tab-pane fade show active" id="complete_candidate" role="tabpanel" aria-labelledby="home-tab">
-            <form method="post" class="white-popup-block" id="candidate"> 
-              {% if candidate_candidate %}
+            <form method="post" class="white-popup-block" id="candidate">
+              {% csrf_token %}
+              {% if status %}
               <div class="table-wrap">
                 <table class="table">
                   <thead class="thead-dark">
                     <tr>
-                      <th>Vor- und Nachname </th>
-                      <th>Geburtsdatum </th>
-                      <th>Status </th>
-                      <th>Lebenslauf</th>
-                      <th>Seç</th>
-                      <th>Seç</th>
+                      <th>{% translate "" %}</th>
+                      <th>{% translate "Ad Soyad" %} </th>
+                      <th>{% translate "Doğum Tarihi" %}</th>
+                      <th>{% translate "Almanca" %}</th>
+                      <th>{% translate "CV" %}</th>
+                      <th>{% translate "Durum" %}</th>
                       <th></th>
                     </tr>
                   </thead>
                   <tbody>
-                    {% for s in candidate_candidate %}
+                    {% for s in status %}
+                    {% if s.status == "1" %}
                     <tr class="alert" role="alert">
+                      <td>{{s.candidates.id}}</td>
                       <td>{{s.candidates.name}} {{s.candidates.surname}}</td>
-                      <!--<th scope="row">001</th>-->
-                      <td>{{ s.candidates.birthday }}</td>
-                      <td>
-                        
-                      {% csrf_token %}
-                      <input type="hidden" name="id" value="{{s.pk}}">
                       
-                      <select class="form-control" name="status" id="id_status">
-                        <option value="1" {% if s.status == "1" %}selected{% endif %}>Aday</option>
-                        <option value="2">Seçildi</option>
-                        <option value="3">Tamamlandı</option>
-                      </select>
-
-                    </form> 
-                    </td>
+                      <td>{{ s.candidates.birthday }}</td>
+                      <td>{% if s.candidates.german %}{{ s.candidates.german }} {% else %}{% translate "Bilinmiyor" %}{% endif %}</td>
                       <td>
                         <a
                           href="{{ s.cv.url }}"
@@ -76,48 +67,6 @@
                           >[herunterladen]</a
                         >
                       </td>
-                      <td>
-                        {{s.candidates.city}}
-                      </td>
-                      <td>
-                        <div class="form-group">
-                          <button style="margin-top: 0; height: 30px; font-size: 12px; padding: 0 10px; line-height: 30px" type="submit" name="submit" id="submit">
-                            {% translate "Kaydet" %}
-                          </button>
-                        </div>
-                      </td>
-                    </tr>
-                    {% endfor %}
-                  </tbody>
-                </table>
-              </div>
-              {% else %}
-              <h2>Noch nicht hochgeladen</h2>
-              {% endif %} 
-            </form>
-          </div>
-          <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-            <form method="post" class="white-popup-block" id="choosen"> 
-              {% csrf_token %}
-              {% if candidate_choosen %}
-              <div class="table-wrap">
-                <table class="table">
-                  <thead class="thead-dark">
-                    <tr>
-                      <th>Vor- und Nachname </th>
-                      <th>Geburtsdatum </th>
-                      <th>Status </th>
-                      <th>Lebenslauf</th>
-                      <th></th>
-                      <th></th>
-                    </tr>
-                  </thead>
-                  <tbody>                    
-                    {% for s in candidate_choosen %}
-                    <tr class="alert" role="alert">
-                      <td>{{s.candidates.name}} {{s.candidates.surname}}</td>
-                      <!--<th scope="row">001</th>-->
-                      <td>{{ s.candidates.birthday }}</td>
                       <td> 
                         <input type="hidden" name="id" value="{{s.pk}}">
                         <select class="form-control" name="status" id="id_status">
@@ -127,14 +76,6 @@
                         </select>
                       </td>
                       <td>
-                        <a
-                          href="{{ s.cv.url }}"
-                          class="__cf_email__"
-                          download
-                          >[herunterladen]</a
-                        >
-                      </td>
-                      <td>
                         <div class="form-group">
                           <button style="margin-top: 0; height: 30px; font-size: 12px; padding: 0 10px; line-height: 30px" type="submit" name="submit" id="submit">
                             {% translate "Kaydet" %}
@@ -142,70 +83,77 @@
                         </div>
                       </td>
                     </tr>
-                    {% endfor %}
+                    {% endif %}
+                  {% endfor %}
                   </tbody>
                 </table>
               </div>
               {% else %}
               <h2>Noch nicht hochgeladen</h2>
-              {% endif %}
-            </form>  
+              {% endif %} 
+            </form>
           </div>
-          {% comment %} <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-            <form class="white-popup-block" method="post" id="complete"> 
-              {% if candidate_done %}
+          <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            <form method="post" class="white-popup-block" id="candidate">
+              {% csrf_token %}
+              {% if status %}
               <div class="table-wrap">
                 <table class="table">
                   <thead class="thead-dark">
                     <tr>
-                      <th>Vor- und Nachname </th>
-                      <th>Geburtsdatum </th>
-                      <th>Status </th>
-                      <th>Lebenslauf</th>
+                      <th>{% translate "" %}</th>
+                      <th>{% translate "Ad Soyad" %} </th>
+                      <th>{% translate "Doğum Tarihi" %}</th>
+                      <th>{% translate "Almanca" %}</th>
+                      <th>{% translate "CV" %}</th>
+                      <th>{% translate "Durum" %}</th>
                       <th></th>
                     </tr>
                   </thead>
                   <tbody>
-                    {% for s in candidate_done %}
-                    <tr class="alert" role="alert">
-                      <td>{{s.name}} {{s.surname}}</td>
-                      <!--<th scope="row">001</th>-->
-                      <td>{{ s.birthday }}</td>
-                      <td>{% translate "Tamamlandı" %}</td>
-                      <td>
-                        <a
-                          href="{{ s.cv.url }}"
-                          class="__cf_email__"
-                          download
-                          >[herunterladen]</a
-                        >
-                      </td>
-                      <td>
-                        <div class="form-group">
-                          <input name="candidate_check" style="margin: 0; min-height: 30px" type="checkbox" class="form-check-input" id="exampleCheck1" {% if s.status == "Adaylar" %}{% endif %}>
-                        </div> 
-                        {{form.as_p}}
-                      </td>
-                      <td>
-                        <div class="form-group">
-                          <button style="margin-top: 0; height: 30px; font-size: 12px; padding: 0 10px; line-height: 30px" type="submit" name="submit" id="submit">
-                            {% translate "Kaydet" %}
-                          </button>
-                        </div>
-                      </td>
-                    </tr>
+                    {% for s in status %}
+                      {% if s.status == "2" %}
+                      <tr class="alert" role="alert">
+                        <td>{{s.candidates.id}}</td>
+                        <td>{{s.candidates.name}} {{s.candidates.surname}}</td>
+                        
+                        <td>{{ s.candidates.birthday }}</td>
+                        <td>{% if s.candidates.german %}{{ s.candidates.german }} {% else %}{% translate "Bilinmiyor" %}{% endif %}</td>
+                        <td>
+                          <a
+                            href="{{ s.cv.url }}"
+                            class="__cf_email__"
+                            download
+                            >[herunterladen]</a
+                          >
+                        </td>
+                        <td> 
+                          <input type="hidden" name="id" value="{{s.pk}}">
+                          <select class="form-control" name="status" id="id_status">
+                            <option value="1">Aday</option>
+                            <option value="2" {% if s.status == "2" %}selected{% endif %}>Seçildi</option>
+                            <option value="3">Tamamlandı</option>
+                          </select>
+                        </td>
+                        <td>
+                          <div class="form-group">
+                            <button style="margin-top: 0; height: 30px; font-size: 12px; padding: 0 10px; line-height: 30px" type="submit" name="submit" id="submit">
+                              {% translate "Kaydet" %}
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                      {% endif %}
                     {% endfor %}
                   </tbody>
                 </table>
               </div>
               {% else %}
               <h2>Noch nicht hochgeladen</h2>
-              {% endif %}
-            </form>  
-          </div> {% endcomment %}
+              {% endif %} 
+            </form>
+          </div>
         </div>
-        
-          
       </div>
     </div>
   </div>

@@ -1,0 +1,167 @@
+{% load static %}
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="TÜRFA - Personalvermittlung">
+
+    <!-- ========== Page Title ========== -->
+    <title>{% block pageTitle %}TÜRFA - Personalvermittlung{% endblock pageTitle %}</title>
+
+    <!-- ========== Favicon Icon ========== -->
+    <link rel="shortcut icon" href="{% static 'img/favicon.png' %}" type="image/x-icon">
+
+    <!-- ========== Start Stylesheet ========== -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/themify-icons.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/elegant-icons.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/flaticon-set.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/magnific-popup.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/owl.carousel.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/owl.theme.default.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/animate.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/bootsnav.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <link href="{% static 'css/responsive.css' %}" rel="stylesheet" />
+    <!-- ========== End Stylesheet ========== -->
+</head>
+
+<body class="torch-red">
+    <!-- Header 
+        ============================================= -->
+    <header id="home">
+    <!-- Start Navigation -->
+    <nav
+        class="navbar navbar-default inc-top-bar navbar-fixed navbar-transparent white bootsnav"
+        style="margin-top: 0!important;"
+    >
+        <div class="container-full">
+        <!-- Start Header Navigation -->
+        <div class="navbar-header text-center">
+            <a class="navbar-brand" {% if "candidate" in request.path %} href="{% url 'candidate_home' %}?cookieset=1" {% else %}href="{% url 'home' %}?cookieset=1"{% endif %}>
+            <img src="{{setting_item.logo.url}}" class="logo logo-display" alt="Logo" />
+            <img
+                src="{{setting_item.logo.url}}"
+                class="logo logo-scrolled"
+                alt="Logo"
+            />
+            </a>
+        </div>
+        <!-- End Header Navigation -->
+        </div>
+    </nav>
+    <!-- End Navigation -->
+    </header>
+    <!-- End Header -->
+    <style>
+        div.header { background-color: #e76928; padding: 30px 0; }
+        span.name { color: black; font-size: 30px; }
+        ul.info li span { color: black; }
+        ul.info li.flex { display: flex; align-items: baseline; }
+        span.title { font-size: 30px; color: #f0b38a; margin-top: 30px; display: block; }
+    </style>
+    {% if info %}
+    <div class="blog-area bg-gray default-padding bottom-less" style="padding-top: 85px;">
+        <div class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <img src="{{info.img_url.url}}" alt="">
+                    </div>
+                    <div class="col">
+                        <span class="name">{{info.name}} {{info.surname}}</span>
+                        <ul class="info">
+                            <li>
+                                <strong>{% translate 'Doğum Tarihi' %}: </strong>
+                                <span>{{info.birthday}}</span>
+                            </li>
+                            <li>
+                                <strong>{% translate 'Meslek' %}: </strong>
+                                <span>{%if experiences %}{{experiences.position}}{%endif%}</span>
+                            </li>
+                            <li>
+                                <strong>{% translate 'Medeni Durum' %}: </strong>
+                                <span>{% if info.martial_status %}{% translate "Evli" %}{% else %}{% translate "Bekar" %} {% endif %}</span>
+                            </li>
+                            <li>
+                                <strong>{% translate 'Çocuk Sayısı' %}: </strong>
+                                <span>{{info.children}}</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <span class="title">{% translate "Motivasyon Mektubu" %}</span>
+                        <p>{{info.letter}}</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <span class="title">{% translate "Çalışma Geçmişi" %}</span>
+                    </div>
+                    {% if experiences.length > 1 %}
+                    {% for e in experiences %}
+                    <div class="col-12">
+                        <p>{{e.institution_name}}</p>
+                    </div>
+                    {% endfor %}
+                    {% else %}
+                    <div class="col">
+                        <ul class="info" style="margin-top: 15px">
+                            <li class="flex">
+                                <strong>{{experiences.entry_date|date:'m/Y'}} - {{experiences.quit_date|date:'m/Y'}}</strong>
+                                <div style="margin-left: 30px; display: inline-block">
+                                    <span style="display: block;">{{experiences.position}}</span>
+                                    <span>{{experiences.institution_name}}</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    {% endif %}
+
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <span class="title">{% translate "Eğitim Geçmişi" %}</span>
+                    </div>
+                    {% if education.length > 1 %}
+                    {% for e in education %}
+                    <div class="col-12">
+                        <p>{{e.university_name}}</p>
+                    </div>
+                    {% endfor %}
+                    {% else %}
+                    <div class="col">
+                        <ul class="info" style="margin-top: 15px">
+                            <li class="flex">
+                                <strong>{{education.entry_date|date:'m/Y'}} - {{education.graduated_at|date:'m/Y'}}</strong>
+                                <div style="margin-left: 30px; display: inline-block">
+                                    <span style="display: block">
+                                        {{education.university_name}}
+                                    </span>
+                                    <span>
+                                        {{education.departman}}
+                                    </span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    {% endif %}
+
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+</body>
+</html>

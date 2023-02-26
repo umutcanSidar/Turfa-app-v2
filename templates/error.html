@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
-
+{% load i18n %}
 {% block 'content' %}
 
  <!-- Start Breadcrumb 
@@ -9,7 +9,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
-                    <h1>ERROR</h1>
+                    <h1>{% translate "Hata!" %}</h1>
                 </div>
             </div>
         </div>
@@ -22,9 +22,9 @@
             <div class="row align-center">
                 <div class="col-lg-12 text-center info">
                     <div class="content">
-                        <h2>Error</h2>
+                        <h2>{% translate "Hata!" %}</h2>
                         <p>
-                           404 NOT FOUND
+                           {% translate "Bir hata ile karşılaştık!" %}
                         </p>
                     </div>
                 </div>
