@@ -1,5 +1,7 @@
 from django.db import models
 from ckeditor.fields import RichTextField
+from ckeditor_uploader.fields import RichTextUploadingField
+
 from django.utils.translation import gettext as _
 from django.core.validators import FileExtensionValidator
 
@@ -131,8 +133,8 @@ class StatusModel(models.Model):
 class ServiceModel(models.Model):
     title=RichTextField(_("Başlık"))
     title_de=RichTextField(_("Başlık Almanca"))
-    text=RichTextField(_("İçerik"))
-    text_de=RichTextField(_("İçerik Almanca"))
+    text=RichTextUploadingField(_("İçerik"))
+    text_de=RichTextUploadingField(_("İçerik Almanca"))
     text_short=RichTextField(_("Kısa Metin"))
     text_short_de=RichTextField(_("Kısa Metin Almanca"))
     slug=models.CharField(_("Slug"), max_length=200)
@@ -153,8 +155,8 @@ class BlogModel(models.Model):
     # title_de = RichTextField(_("Başlık Almanca"), blank=True)
     img_url = models.FileField(_("Görsel"), upload_to="blog/", max_length=100, null=True, blank=True)
     pdf = models.FileField(_("PDF"), upload_to="blog/pdf/", max_length=100, validators=[FileExtensionValidator(['pdf'])])
-    text = RichTextField(_("İçerik"), blank=True)
-    text_de = RichTextField(_("İçerik Almanca"), blank=True)
+    text = RichTextUploadingField(_("İçerik"), blank=True)
+    text_de = RichTextUploadingField(_("İçerik Almanca"), blank=True)
     text_short = RichTextField(_("Kısa içerik"), blank=False)
     text_short_de = RichTextField(_("Kısa içerik Almanca"), blank=False)
     created_at = models.DateField(_("Yayın Tarihi"))

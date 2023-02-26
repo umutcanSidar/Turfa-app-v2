@@ -116,7 +116,10 @@ AUTH_USER_MODEL="home.User"
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
 
-LANGUAGE_CODE = 'tr-tr'
+LANGUAGE_CODE = 'tr'
+USE_I18N = True
+
+USE_TZ = True
 
 LANGUAGES = [
     ('de', 'German'),
@@ -124,12 +127,8 @@ LANGUAGES = [
     ('tr', "Türkçe"),
 ]
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Europe/Istanbul'
 LOCALE_PATHS = [os.path.join(BASE_DIR, 'locale')]
-USE_I18N = True
-
-USE_TZ = True
-
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
@@ -138,11 +137,10 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     BASE_DIR / 'static'
 ]
-STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
-
-
-MEDIA_ROOT = os.path.join(BASE_DIR,'uploads')
-MEDIA_URL = '/uploads/'
+STATIC_ROOT = "/home/gwceh9ato1f1/public_html/static"
+MEDIA_ROOT = os.path.join(BASE_DIR,'media')
+MEDIA_URL = '/media/'
+MEDIA_ROOT  ='/home/gwceh9ato1f1/public_html/media'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
@@ -184,10 +182,8 @@ CKEDITOR_CONFIGS = {
     }
 }
 
-
-CKEDITOR_BASEPATH = "/static/ckeditor/ckeditor/"
 CKEDITOR_UPLOAD_PATH = "uploads/"
+
 
 GOOGLE_RECAPTCHA_SITE_KEY = "6LfzgKckAAAAAM3wBJEZZYFApNb3v8_fewkN2Kz4"
 GOOGLE_RECAPTCHA_SECRET_KEY = "6LfzgKckAAAAAELG_bv5W1h7BNxezpNia-APt0fF"
-
