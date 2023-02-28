@@ -147,11 +147,6 @@ MEDIA_ROOT  ='/home/gwceh9ato1f1/public_html/media'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
-EMAIL_HOST = 'smtp.ionos.de'
-EMAIL_PORT = '587'
-EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'postmaster-web@tuerfa.de'
-EMAIL_HOST_PASSWORD = 'TUrfa.901'
 
 CKEDITOR_CONFIGS = {
     'default': {
