@@ -154,7 +154,7 @@ class BlogModel(models.Model):
     title = RichTextField(_("Başlık"), blank=True)
     # title_de = RichTextField(_("Başlık Almanca"), blank=True)
     img_url = models.FileField(_("Görsel"), upload_to="blog/", max_length=100, null=True, blank=True)
-    pdf = models.FileField(_("PDF"), upload_to="blog/pdf/", max_length=100, validators=[FileExtensionValidator(['pdf'])])
+    pdf = models.FileField(_("PDF"), upload_to="blog/pdf/", max_length=100, validators=[FileExtensionValidator(['pdf'])], blank=True)
     text = RichTextUploadingField(_("İçerik"), blank=True)
     text_de = RichTextUploadingField(_("İçerik Almanca"), blank=True)
     text_short = RichTextField(_("Kısa içerik"), blank=False)
