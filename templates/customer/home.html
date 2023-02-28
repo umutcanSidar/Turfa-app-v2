@@ -230,7 +230,7 @@
                                 </p>
                             </li>
                         </ul>
-                        <a class="btn btn-light effect btn-md" href="about-us.html">{% translate "Hakkımızda" %}</a>
+                        <a class="btn btn-light effect btn-md" {% if "candidate" in request.path %}href="{% url 'about' %}"{%else%}href="{% url 'candidate_about' %}"{%endif%}">{% translate "Hakkımızda" %}</a>
                     </div>
                     
                 </div>
