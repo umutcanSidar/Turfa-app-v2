@@ -319,7 +319,7 @@
                         <div class="single-item col-lg-4 col-md-6">
                             <div class="item">
                                 <div class="thumb">
-                                    <img src="{{item.img_url.url}}" alt="Thumb">
+                                    {% if item.img_url %}<img src="{{item.img_url.url}}" alt="Thumb">{%endif%}
                                     <div class="date">{{ item.created_at }}</div>
                                 </div>
 

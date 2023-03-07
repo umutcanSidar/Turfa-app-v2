@@ -20,7 +20,6 @@ PUBLISHED_CHOICES = (
     (True, "Yayında")
 )
 
-
 YES_NO_CHOICES=(
     (0, "Hayır"),
     (1, "Evet")
@@ -152,12 +151,12 @@ class ServiceModel(models.Model):
 class BlogModel(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, blank=True)
     title = RichTextField(_("Başlık"), blank=True)
-    # title_de = RichTextField(_("Başlık Almanca"), blank=True)
+    title_de = RichTextField(_("Başlık Almanca"), blank=True, null=True)
     img_url = models.FileField(_("Görsel"), upload_to="blog/", max_length=100, null=True, blank=True)
     pdf = models.FileField(_("PDF"), upload_to="blog/pdf/", max_length=100, validators=[FileExtensionValidator(['pdf'])], blank=True)
     text = RichTextUploadingField(_("İçerik"), blank=True)
     text_de = RichTextUploadingField(_("İçerik Almanca"), blank=True)
-    text_short = RichTextField(_("Kısa içerik"), blank=False)
+    text_short = RichTextField(_("Kısa içerik"), blank=True)
     text_short_de = RichTextField(_("Kısa içerik Almanca"), blank=False)
     created_at = models.DateField(_("Yayın Tarihi"))
     slug=models.CharField(_("Slug"), max_length=200)
