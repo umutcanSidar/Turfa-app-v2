@@ -29,7 +29,7 @@
         <div class="services-details-items">
             <div class="row">
                 <div class="col-lg-8 services-single-content">
-                    <img src="{{ all_blog.img_url.url }}" alt="Thumb">
+                    {% if all_blog.img_url %}<img src="{{ all_blog.img_url.url }}" alt="Thumb">{%endif%}
                     {% if "tr" in request.path %}
                         {{ all_blog.text | safe }}
                         {% else %}

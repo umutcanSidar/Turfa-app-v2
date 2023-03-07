@@ -146,10 +146,10 @@ class HomeView(View):
     def get(self, request):
         if "candidate" in request.get_full_path(): 
             self.context['services'] = ServiceModel.objects.filter(role=False)
-            self.context['blog'] = BlogModel.objects.filter(role=True)
+            self.context['blog'] = BlogModel.objects.filter(role=False)
         else:
             self.context['services'] = ServiceModel.objects.filter(role=True)
-            self.context['blog'] = BlogModel.objects.filter(role=False)
+            self.context['blog'] = BlogModel.objects.filter(role=True)
 
         return render(request, self.template_name, self.context)
     
@@ -176,9 +176,9 @@ class BlogView(View):
         role_url=request.get_full_path()
 
         if "candidate" in role_url:
-            all_blog = self.model.objects.all().filter(role=True)
-        else:
             all_blog = self.model.objects.all().filter(role=False)
+        else:
+            all_blog = self.model.objects.all().filter(role=True)
 
         return render(request, self.template_name, {'all_blog':all_blog})
     
@@ -190,9 +190,9 @@ class BlogDetailView(View):
         role_url=request.get_full_path()
 
         if "candidate" in role_url:
-            all_blog = self.model.objects.filter(role=True,slug=kwargs['slug']).first()
-        else:
             all_blog = self.model.objects.filter(role=False,slug=kwargs['slug']).first()
+        else:
+            all_blog = self.model.objects.filter(role=True,slug=kwargs['slug']).first()
 
         return render(request, self.template_name, {'all_blog':all_blog})
     

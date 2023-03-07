@@ -36,7 +36,7 @@
                 {% endif %}
                 
                 <div class="col-lg-{% if about.img_url %}6{% else %}12{% endif %} info">
-                    {{about.about|safe}}
+                    {% if "tr" in request.path %}{{about.about|safe}}{%else%}{{about.about_de|safe}}{%endif%}
                 </div>
                 {% if about.about_alt %}
                 <div class="col-lg-12 info mt-5">
