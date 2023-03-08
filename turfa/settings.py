@@ -1,3 +1,4 @@
+
 """
 Django settings for turfa project.
 
@@ -12,7 +13,8 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 
 from pathlib import Path
 import os
-
+import mimetypes
+mimetypes.add_type("text/css", ".css", True)
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -26,7 +28,7 @@ SECRET_KEY = 'django-insecure-ortoc#&cuuh*l3up5b&8efp-!j8=r1xir7ac@k@m-+t^97^v!=
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["xn--trfa-0ra.de","www.xn--trfa-0ra.de","*"]
 
 
 # Application definition
@@ -41,7 +43,8 @@ INSTALLED_APPS = [
     'candidate',
     'customer',
     'home',
-    'ckeditor'
+    'ckeditor',
+    'ckeditor_uploader',
 ]
 
 MIDDLEWARE = [
@@ -137,10 +140,10 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     BASE_DIR / 'static'
 ]
-STATIC_ROOT = "/home/gwceh9ato1f1/public_html/static"
+STATIC_ROOT = "/home/ubuntu/Project/Turfa-v2-app/static"
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 MEDIA_URL = '/media/'
-MEDIA_ROOT  ='/home/gwceh9ato1f1/public_html/media'
+MEDIA_ROOT  ='/home/ubuntu/Project/Turfa-v2-app/media'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
@@ -176,9 +179,9 @@ CKEDITOR_CONFIGS = {
         ]),
     }
 }
-
-CKEDITOR_UPLOAD_PATH = "uploads/"
-
+CKEDITOR_JQUERY_URL = 'https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js'
+CKEDITOR_UPLOAD_PATH = "/home/ubuntu/Project/Turfa-v2-app/uploads/"
+CKEDITOR_IMAGE_BACKEND = "pillow"
 
 GOOGLE_RECAPTCHA_SITE_KEY = "6LfzgKckAAAAAM3wBJEZZYFApNb3v8_fewkN2Kz4"
 GOOGLE_RECAPTCHA_SECRET_KEY = "6LfzgKckAAAAAELG_bv5W1h7BNxezpNia-APt0fF"

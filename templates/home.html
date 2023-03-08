@@ -336,7 +336,7 @@
                                 </p>
                                 <div class="bottom">
                                     <span>01</span>
-                                    <a {% if "candidate" in request.path %}href="{% url 'candidate_services_detail' item.slug %}"{% else %}{% url 'services_detail' item.slug %}{% endif %} download>{% translate "Daha fazla" %}</a>
+                                    <a {% if "candidate" in request.path %}href="{% url 'candidate_services_detail' item.slug %}"{% else %} href="{% url 'services_detail' item.slug %}"{% endif %}>{% translate "Daha fazla" %}</a>
                                 </div>
                             </div>
                         </div>
